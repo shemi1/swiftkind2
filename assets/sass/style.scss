@@ -1,0 +1,52 @@
+//overrides
+
+/* import the necessary Bootstrap files */
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+//overrides
+@import 'overrides/bootstrap';
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+//overrides
+@import 'overrides/animate';
+
+
+
+//global
+@import 'global/functions';
+@import 'global/typography';
+@import 'global/variables';
+
+@import 'global/mixins/flex';
+@import 'global/mixins/responsive';
+@import 'global/mixins/components';
+
+@import 'global/utils';
+
+
+//components - elements that may or may not be in all of the pages
+
+@import 'components/avatar';
+@import 'components/buttons';
+@import 'components/forms';
+@import 'components/badges';
+@import 'components/modals';
+@import 'components/section';
+@import 'components/photos';
+
+
+//partials - elements that are part of all the pages
+
+@import 'partials/nav';
+@import 'partials/footer';
+
+//pages
+
+@import 'pages/homepage';
+@import 'pages/process';
+@import 'pages/projects';
+	

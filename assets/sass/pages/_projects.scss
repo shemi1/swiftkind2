@@ -1,0 +1,100 @@
+   .stayed-top{
+    position: fixed;
+    top:0;
+    z-index: 999999;
+
+   }
+
+   .projects {
+    &-page{
+        height: 100%;
+        @include flexbox();
+        @include align-items(flex-end);
+        overflow-y: hidden;
+        padding-top:40vh;
+        .projects{
+            padding:0;
+            .projects--img{
+                animation-duration: 2s;
+            }
+        }
+    }
+        padding-top: $spacing-xxxlg;
+        padding-bottom: $spacing-xxxlg;
+
+        &--swiper {
+            .swiper {
+                &-container {}
+
+                &-wrapper {}
+
+                &-slide {}
+
+                &-pagination {
+                    position: relative;
+                    text-align: left;
+                    color: transparent;
+                    @include flex-align-center();
+                    font-size: $small;
+
+                    &-current {
+                        color: $charcoal-grey;
+                    }
+
+                    &-total {
+                        color: $charcoal-grey;
+                        @include flex-align-center();
+
+                        &:before {
+                            content: "";
+                            width: torem(58);
+                            height: 1px;
+                            background: $charcoal-grey;
+                            display: block;
+                            margin-right: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+            .swiper-button-next {
+                background-image: url(../images/next-arrow.svg);
+            }
+        }
+
+        &--item {
+            @include flexbox();
+            @include align-items(start);
+            @include justify-content(center);
+            background: rgba($white, 0.8);
+            &.redirecting{
+                opacity: 0;
+                @include transition(all ease 1s);
+            }
+
+            &--content {
+               
+
+                padding-top: 2rem;
+                max-width: torem(450);
+
+                .slide-details {
+
+                    margin-top: $spacing-xxlg;
+                    @include flex-align-center();
+                    @include justify-content(space-between);
+
+                    .more-details {
+                        margin-top: torem(-18);
+                        font-size: $small;
+                        @include flex-align-center();
+
+                        .arrow-right {
+                            margin-left: 0.5rem;
+                        }
+                    }
+                }
+
+            }
+        }
+    }

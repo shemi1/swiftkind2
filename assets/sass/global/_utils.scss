@@ -1,0 +1,105 @@
+html,
+body {
+    color: $charcoal-grey;
+    height: 100%;
+    
+    font: normal normal 100%/1.6
+     'Volte Regular',  'Helvetica', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative !important;
+    * {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    &.no-scroll{
+        overflow-y: hidden;
+    }
+}
+
+//typography
+h1,
+.h1 {
+    font-size: $h1;
+    @include font-family(Volte, Semibold);
+    line-height: inherit;
+    letter-spacing: -0.4px;
+}
+
+h2,
+.h2 {
+    font-size: $h2;
+    letter-spacing: -0.4px;
+    line-height: inherit;
+}
+
+h3,
+.h3 {
+    font-size: $h3;
+    line-height: inherit;
+    letter-spacing: -0.4px;
+}
+
+h4,
+.h4 {
+    font-size: $h4;
+    line-height: inherit;
+    letter-spacing: -0.4px;
+
+}
+
+h5,
+.h5 {
+    font-size: $h5;
+    line-height: inherit;
+
+}
+
+h6,
+.h6 {
+    font-size: $h6;
+    line-height: inherit;
+
+}
+
+p {
+    font-size: $normal;
+    margin-bottom: 0rem;
+}
+
+label {
+    font-size: 1rem;
+}
+
+small {
+    font-size: $small;
+    font-weight: normal;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: $charcoal-grey;
+     @include transition(all ease-in 0.3s);
+    &:hover {
+        text-decoration: none;
+        color: $accent-color;
+        @include transition(all ease-in 0.3s);
+    }
+    .arrow-right{
+        fill: $charcoal-grey;
+    }
+}
+
+.title-strong{
+    font-family: $volte-smb;
+}
+.text-md{
+    font-family: $volte-md;
+}
+.paragraph-light{
+    font-family: $volte-lgt;
+}
+
+

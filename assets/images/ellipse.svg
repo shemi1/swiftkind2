@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="264" height="264" viewBox="0 0 264 264">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x1=".148" x2=".864" y1=".181" y2=".872" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ebf2fd" stop-opacity=".243"/>
+            <stop offset="1" stop-color="#e3e9ff" stop-opacity=".706"/>
+        </linearGradient>
+    </defs>
+    <circle id="ellipse" cx="132" cy="132" r="132" class="cls-1"/>
+</svg>

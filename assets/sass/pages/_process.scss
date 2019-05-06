@@ -1,0 +1,76 @@
+.process {
+    .hero {
+        &--content {
+
+            width: 100%;
+            @include flexbox();
+            @include align-items(flex-end);
+        }
+    }
+
+    &-stages {
+        padding-top: $spacing-xxxlg;
+        padding-bottom: $spacing-xxxlg;
+
+        p {
+            margin-bottom: $spacing-xlg;
+        }
+
+    }
+
+    .team-represent {
+        padding-bottom: $spacing-xxxlg;
+
+        .team-photo {
+            -webkit-clip-path: polygon(100% 0, 100% 68%, 64% 68%, 0% 100%, 0 37%, 59% 4%);
+            clip-path: polygon(100% 0, 100% 68%, 64% 68%, 0% 100%, 0 37%, 59% 4%);
+
+            background: {
+                image: url(../images/priscilla-du-preez-623040-unsplash.jpg);
+                size: cover;
+                position: center;
+            }
+
+            width: 100%;
+            height: 70vh;
+
+        }
+    }
+
+    .standpoint {
+        padding-top: $spacing-xxxlg;
+        padding-bottom: $spacing-xxxlg;
+
+        &--statement {
+
+            letter-spacing: -0.5px;
+            font-size: torem(25);
+            margin-bottom: $spacing-xlg;
+        }
+    }
+
+    .logo {
+        &--meaning {
+            padding-top: $spacing-xxxlg;
+            padding-bottom: $spacing-xxxlg;
+            margin-bottom: $spacing-xxxlg;
+            background:#F9FAFC;
+            position: relative;
+            &:before {
+                content: '';
+                width: 50%;
+                height: 0;
+                border-right: 0px solid transparent;
+                border-left: 200px solid transparent;
+                border-bottom: 80px solid #F9FAFC;
+                position: absolute;
+                top: -80px;
+                right: 0;
+            }
+        }
+
+        &--element {
+            margin-bottom: $spacing-xxlg;
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.contact-us {
+    text-align: center;
+    padding-top: $spacing-xxxlg;
+    &--email {
+        @include flexbox();
+        @include flex-direction(column);
+        padding-top: $spacing-xxxlg;
+        padding-bottom: $spacing-xxxlg;
+
+        a {
+            font-size: torem(45);
+            font-family: $volte-smb;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            position: relative;
+
+            &:before {
+                content: "";
+                width: 25%;
+                height: 1px;
+                background-color: rgba($charcoal-grey, 0.3);
+                display: block;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                position: absolute;
+                bottom: -0.75rem;
+            }
+        }
+    }
+}
+
+footer {
+    padding-bottom: 2rem;
+
+    .address {
+        max-width: 30%;
+        line-height: 1.67;
+    }
+
+    a {
+        font-size: $small;
+        font-family: $volte-md;
+    }
+}

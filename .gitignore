@@ -1,0 +1,8 @@
+*DS_Store
+*.pyc
+*local_settings
+*sqlite3
+
+media/
+static/
+

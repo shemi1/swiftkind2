@@ -1,0 +1,197 @@
+.homepage {
+
+
+
+    .services {
+        padding-top: $spacing-xxxlg;
+        padding-bottom: $spacing-xxxlg;
+        background: rgba($white, 0.8);
+
+        &.boxed {
+            padding: $spacing-xxxlg;
+            background: #f9f9f9;
+        }
+
+        &--item {
+            margin-bottom: $spacing-xlg;
+
+            p {
+                font-family: $volte-md;
+                line-height: 1.88;
+            }
+        }
+
+        &--swiper {
+            margin-left: auto;
+            margin-right: 0;
+
+            .swiper {
+                &-wrapper {}
+
+                &-slide {
+                    max-width: torem(420);
+                }
+            }
+        }
+    }
+
+
+
+    .team {
+        padding-top: $spacing-xxxlg;
+        padding-bottom: $spacing-xxxlg;
+        background: rgba($white, 0.8);
+
+        &--member {
+            @include flex-align-center();
+            position: relative;
+
+            &:after {
+                content: "";
+                background-image: url('../images/square-icon-sm.svg');
+                width: torem(45);
+                height: torem(45);
+                position: absolute;
+                left: 4rem;
+                bottom: 0rem;
+               opacity: 0;
+               @include transition(opacity 0.3s ease);
+            }
+
+
+            img {
+                margin-right: $spacing-xlg;
+            }
+
+            p {
+                line-height: 1;
+            }
+            &:hover{
+                &:after{
+                    opacity: 1;
+                    @include transition(opacity 0.3s ease);
+                }
+            }
+        }
+    }
+
+    .testimony {
+        padding-top: $spacing-xxxlg;
+        padding-bottom: $spacing-xxxlg;
+        background: rgba($white, 0.8);
+
+        &--swiper {
+            .swiper-slide {
+                opacity: 0.2;
+                @include justify-align-center();
+                @include transition(all ease-in 0.3s);
+
+                .testimony--content {
+                    &:before {
+                        @include transition(all ease-in 0.3s);
+                        background-image: url('../images/test-sq-1.svg');
+                    }
+                }
+
+                &.swiper-slide-active {
+                    opacity: 1;
+                    @include transition(all ease-in 0.3s);
+
+                    .testimony--content {
+                        &:before {
+                            @include transition(all ease-in 0.3s);
+                            background-image: url('../images/test-sq-1.svg');
+                        }
+                    }
+                }
+            }
+        }
+
+        &--content {
+            width: torem(500);
+            height: torem(500);
+            position: relative;
+            @include justify-align-center();
+
+            &:before {
+                content: "";
+
+                background: {
+                    image: url('../images/test-sq-1.svg');
+                    repeat: no-repeat;
+                }
+
+                ;
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                z-index: 0;
+            }
+
+            &:after {
+                content: "";
+
+                background: {
+                    image: url('../images/test-sq-2.svg');
+                    repeat: no-repeat;
+                }
+
+                ;
+                position: absolute;
+                width: torem(330.63);
+                height: torem(407.7);
+                right:0;
+                bottom:0;
+                z-index: 0;
+            }
+
+            .testimony-wrapper {
+                max-width: torem(375);
+
+                p {
+                    font-size: $h5;
+                    margin-bottom: $spacing-xxlg;
+
+                }
+
+                a {
+                    span {
+                        color: $accent-color;
+                        font-family: $volte-smb;
+                    }
+                }
+            }
+
+
+        }
+    }
+
+    .hiring {
+        padding-top: $spacing-xxxlg;
+        padding-bottom: $spacing-xxxlg;
+        background: rgba($white, 0.5);
+    }
+
+
+}
+
+
+.box {}
+
+.box1 {
+    top: 30%;
+    position: fixed;
+    z-index: 0;
+    left: 0;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="680.533" height="680.532" viewBox="0 0 680.533 680.532">
+    <defs>
+        <style>
+            .cls-1{fill:url(#linear-gradient)}
+        </style>
+        <linearGradient id="linear-gradient" x1=".5" x2=".5" y2="1" gradientUnits="objectBoundingBox">
+            <stop offset="0" stop-color="#ebeffd" stop-opacity="0"/>
+            <stop offset="1" stop-color="#fafafa"/>
+        </linearGradient>
+    </defs>
+    <path id="Subtraction_1" d="M1902 4221h-519v-519h519v519zm-454-454v389h389v-389z" class="cls-1" data-name="Subtraction 1" transform="rotate(67 3724.96 1166.647)"/>
+</svg>

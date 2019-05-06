@@ -1,0 +1,10 @@
+/* CONVERT: PX TO REM;
+ * @desc : converts PX values to REM;
+ */
+
+@function torem($value){
+	@return #{$value / $basefont}rem;
+}
+@function toem($value){
+	@return #{$value / $basefont}em;
+}

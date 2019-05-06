@@ -1,0 +1,31 @@
+.clip {
+    margin-top: $spacing-xxlg;
+    width: torem(400);
+    height: torem(600);
+    object-fit: cover;
+    object-position: center top;
+    -webkit-clip-path: polygon(10% 0, 99% 49%, 11% 100%, 11% 69%, 53% 49%, 10% 27%);
+    clip-path: polygon(10% 0, 99% 49%, 11% 100%, 11% 69%, 53% 49%, 10% 27%);
+
+}
+
+.clip-arrow-up {
+    -webkit-clip-path: polygon(76% 5%, 101% 82%, 72% 84%, 69% 68%, 22% 82%, 0% 34%);
+    clip-path: polygon(76% 5%, 101% 82%, 72% 84%, 69% 68%, 22% 82%, 0% 34%);
+}
+
+
+.arrow-up__standout {
+    &:before {
+        content: "";
+        height: torem(418);
+        width: torem(350);
+        display: block;
+        border-top: solid 35px $accent-color;
+        border-left: solid 35px $accent-color;
+        position: absolute;
+        transform: rotate(76deg);
+        top: 0.75rem;
+        left: 4rem;
+    }
+}

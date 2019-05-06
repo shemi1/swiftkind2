@@ -1,0 +1,25 @@
+// @each $color,
+// $value in $theme-colors {
+//     .btn-ghost-#{$color} {
+//         border: solid 1px $value;
+//         background-color: transparent;
+//         color: $value;
+//         font-family: $Display-Semibold;
+//         &:hover{
+//         	background-color:  $value;
+//         	color: $white;
+//         }
+
+//     }
+// }
+
+// ]
+
+
+
+.btn {
+	min-height: torem(50);
+	padding-left: 3rem;
+	padding-right: 3rem;
+	font-family: $volte-smb;
+}

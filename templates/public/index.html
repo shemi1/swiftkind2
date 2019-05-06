@@ -1,0 +1,327 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<main>
+    <img src="{% static 'images/subtraction-1.svg' %}" class=" box1"  data-speed="2" data-margin="200" data-0="transform:rotate(0deg)" data-400="transform:rotate(45deg)" data-401="top:2%; width: 40%; left: 0%"data-600="top:20%; 
+                width: 30%; left: 50%" data-710="transform:rotate(45deg); opacity:1" data-900="transform:rotate(30deg);opacity: 0.5;">
+                <img src="{% static 'images/subtraction-1.svg' %}" class=" box1"  data-speed="2" data-margin="200" data-0="transform:rotate(20deg)" data-400="transform:rotate(90deg)" data-401="bottom:0%; width: 20%; right: 20%"data-600="bottom:50%; 
+                width: 40%; right: 0%" data-710="transform:rotate(45deg); opacity:1" data-900="transform:rotate(30deg);opacity: 0.5;"  data-1100="transform:rotate(20deg);right:0%;opacity:1; width:50%;" data-1400="transform:rotate(90deg);right:10%; width:10% " >
+    <article class="homepage">
+        <section class="container hero">
+            <div class="hero--content">
+                <div id="info"></div>
+                 <!-- <canvas id="canvas" width="100" height="100%"></canvas> -->
+                <h3>Digital Product</h3>
+                <h1 class="hero-text box"data-speed="3">Design & Development Company</h1>
+                
+            </div>
+            <div class="hero--links">
+                <a href="https://github.com/Swiftkind" class="">1,404 contributions on Github last year</a>
+                <a href="{% url 'process' %}" class="">Understand our process</a>
+            </div>
+        </section>
+        <section class="container services boxed wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">
+            <div class="row align-items-center">
+                <div class="col-md-5">
+                    <div class="box" data-speed="4">
+                        <h2 class="title-strong mb-5 svc-title wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0" >Development</h2>
+                        <div class="services--item">
+                            <h5 class="title-strong wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0" >Backend</h5>
+                            <p class=" wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0">
+                                Python (2.x & 3.x) / Django Framework / Restful APIs (DRF) / Angular JS (1.x,2 & 4) / JavaScript (ES5/ES6) / MySQL, Sqlite, PostgreSQL Linux/Ubuntu (DO, AWS) / 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="services--item box" data-speed="5">
+                        <h5 class="title-strong wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0">API</h5>
+                        <p class="wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0">
+                            Django Rest Framework / Linux/Ubuntu Servers / Nginx (uwsgi/gunicorn)
+                        </p>
+                    </div>
+                    <div class="services--item box" data-speed="1">
+                        <h5 class="title-strong wow fadeInLeft"data-wow-duration="0.4s">Cross-Platform</h5>
+                        <p class="wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0">
+                            Ionic / AngularJS / Firebase / Titanium
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-5 offset-1">
+                    <div class="box" data-speed="1">
+                        <h5 class="wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0">In a design-driven world,  some of  our folks carefully crafted design guidelines to help us deliver every message we have in a more effective and systematic manner. </h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container-fluid px-0 services">
+                <img src="{% static 'images/ellipse.svg' %}" class="box1" data-0="opacity:0" data-1400="0.1" data-1500="width:10%; left: 20%; opacity:0.3;" data-2000="width: 20%; left: 50%;opacity:0.6" data-2001="top: 20%;"data-2500="top: 80%" data-3000=" width:10%; opacity:0.6" data-4500="opacity: 0; width: 80%">
+            <div class="row no-gutters">
+                <div class="col-md-6 offset-md-6">
+                    <h2 class="title-strong mb-5 svc-title wow fadeInRight" data-wow-duration="0.4s" data-wow-delay="0">Design</h2>
+                </div>
+                <div class="col-md-4 offset-1">
+                    <h5 class="ml-3 wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0">In a design-driven world,  some of  our folks carefully crafted design guidelines to help us deliver every message we have in a more effective and systematic manner. </h5>
+                </div>
+                <div class="col-md-6 offset-1">
+                    <div class="swiper-container services--swiper swiper__generic  wow fadeInRight" data-wow-duration="0.4s" data-wow-delay="0">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="{% static 'images/image-4.png' %}" data-rjs="3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'images/image-3.png' %}" data-rjs="3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'images/image-4.png' %}" data-rjs="3">
+                            </div>
+                             <div class="swiper-slide">
+                                <img src="{% static 'images/image-3.png' %}" data-rjs="3">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 offset-3 services--item text-center py-5  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0">
+                    <p>Analysis & Strategy / Web & Mobile / Wireframes / Mockups / Prototypes / Responsive Design / E-commerce / Business Tools / Illustrations / UI/UX / Adobe Creative Suite / Sketch / Invisionapp / Zeplin / Just Everthing</p>
+                </div>
+                
+            </div>
+        </section>
+        <section class="projects container">
+            <div class="swiper-container projects--swiper swiper__generic  wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="projects--item">
+                            <img src="{% static 'images/jd-chow-1531217-unsplash.png' %}" class="clip" data-rjs="3">
+                            <div class="projects--item--content services--item">
+                                <h2 class="title-strong">Beaubay</h2>
+                                <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</h6>
+                                <p>Backend / API / UI/UX</p>
+                                 <!-- Add Pagination -->
+                                <div class="slide-details">
+                                    <div class="swiper-pagination"></div>
+                                    <a href="" class="more-details">Details
+                                        <img src="{% static 'images/arrow-right.svg' %}" class="arrow-right">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="projects--item">
+                            <img src="{% static 'images/david-billings-1528554-unsplash.png' %}" class="clip" data-rjs="3">
+                            <div class="projects--item--content services--item">
+                                <h2 class="title-strong">Beaubay</h2>
+                                <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</h6>
+                                <p>Backend / API / UI/UX</p>
+                                 <!-- Add Pagination -->
+                                <div class="slide-details">
+                                    <div class="swiper-pagination"></div>
+                                    <a href="" class="more-details">Details
+                                        <img src="{% static 'images/arrow-right.svg' %}" class="arrow-right">
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section class="container team">
+            <div class="text-right">
+                <h2 class="title-strong mb-4">Our Team</h2>
+                <h5>Talented People behind Swiftkind</h5>
+            </div>
+            <div class="row py-5">
+                <div class="col-md-4">
+                    <div class="team--member wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0">
+                        <img src="{% static 'images/team/0000-earvin-2.png' %}" data-rjs="3">
+                        <div>
+                            <h6 class="title-strong mb-0">Earvin Gemenez</h6>
+                            <p>Co-Founder & CEO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.1s">
+                        <img src="{% static 'images/team/0003-ralph-1.png' %}" data-rjs="3">
+                        <div>
+                            <h6 class="title-strong mb-0">Ralph Leyga</h6>
+                            <p>Co-Founder & COO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.2s">
+                        <img src="{% static 'images/team/manny-1-3-x.png' %}" data-rjs="3">
+                        <div>
+                            <h6 class="title-strong mb-0">Manny Candidier</h6>
+                            <p>Co-Founder & CTO</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="row py-5">
+                <div class="col-md-4">
+                    <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.2s">
+                        <img src="{% static 'images/team/0005-resty-1.png' %}" data-rjs="3">
+                        <div>
+                            <h6 class="title-strong mb-0">Restie Antiquin</h6>
+                            <p>UI/UX Designer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.4">
+                        <img src="{% static 'images/team/0010-gong-1.png' %}" data-rjs="3">
+                        <div>
+                            <h6 class="title-strong mb-0">Jerome Rumbaoa</h6>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.5">
+                        <img src="{% static 'images/team/0007-dudz-1.png' %}" data-rjs="3">
+                        <div>
+                            <h6 class="title-strong mb-0">Sanny Candidier</h6>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-md-4">
+                    <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.6">
+                        <img src="{% static 'images/team/0038-kyle-1.png' %}" data-rjs="3">
+                        <div>
+                            <h6 class="title-strong mb-0">Kyle Sun</h6>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.7">
+                        <img src="{% static 'images/team/0041-anton-1.png' %}" data-rjs="3">
+                        <div>
+                            <h6 class="title-strong mb-0">Anton Sison</h6>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.8">
+                        <img src="{% static 'images/team/0015-mae-2.png' %}" data-rjs="3">
+                        <div>
+                            <h6 class="title-strong mb-0">Mae Mendez</h6>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-md-4">
+                    <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0">
+                        <img src="{% static 'images/team/0031-shem-1.png' %}" data-rjs="3">
+                        <div>
+                            <h6 class="title-strong mb-0">Shem Ipanag</h6>
+                            <p>Software Engineer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.1">
+                        <img src="{% static 'images/team/0023-mimi-2.png' %}" data-rjs="3">
+                        <div>
+                            <h6 class="title-strong mb-0">Kerstine Rondilla</h6>
+                            <p>Project Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimony">
+            <div class="container py-5">
+                <div class="w-50">
+                    <h2 class="title-strong mb-4  wow fadeInLeft" data-wow-duration="0.4s" data-wow-delay="0">Testimonies</h2>
+                <h6 class=" wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0">We also take immense pride on our dedication to our clients through swift response and exceptional customer service. With full enthusiasm, we seek to build solid long term relationship based on trust.</h6>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="swiper-container testimony--swiper  wow fadeInRight" data-wow-duration="0.4s" data-wow-delay="0">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimony--content">
+                                <div class="testimony-wrapper">
+                                    <p>We also take immense pride on our dedication to our clients exceptional customer service.  With full enthusiasm, we seek to build solid long term relationship based on trust.</p>
+                                    <div class="text-right">
+                                        <a href="">
+                                            <span>JOHN DOE CTO</span>
+                                            WHATEVER INC.
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimony--content">
+                                <div class="testimony-wrapper">
+                                    <p>We also take immense pride on our dedication to our clients exceptional customer service.  With full enthusiasm, we seek to build solid long term relationship based on trust.</p>
+                                    <div class="text-right">
+                                        <a href="">
+                                            <span>JOHN DOE CTO</span>
+                                            WHATEVER INC.
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimony--content">
+                                <div class="testimony-wrapper">
+                                    <p>We also take immense pride on our dedication to our clients exceptional customer service.  With full enthusiasm, we seek to build solid long term relationship based on trust.</p>
+                                    <div class="text-right">
+                                        <a href="">
+                                            <span>JOHN DOE CTO</span>
+                                            WHATEVER INC.
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="hiring container-fluid p-0">
+            <div class="row no-gutters align-items-center">
+                <div class="col-md-4 offset-2 ">
+                    <div class=" ">
+                        <h3 class="title-strong wow fadeInUp" data-wow-duration="0.4s">Join our team</h3>
+                        <p class="mb-4  wow fadeInUp" data-wow-duration="0.5s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor</p>
+                        <button class="btn btn-primary  wow fadeInUp" data-wow-duration="0.6s">View positions</button>
+                    </div>
+
+                </div>
+                <div class="col-md-4 offset-1">
+                    <img src="{% static 'images/brooke-cagle-609873-unsplash-1.jpg' %}" data-rjs="3" class="img-fluid  wow fadeInUp" data-wow-duration="0.4s">
+                </div>
+            </div>
+        </section>
+        <section class="contact-us">
+            <div class="container">
+                <h3 class="title-strong">Let’s talk about the future!</h3>
+                <h6 class="mb-5">Or maybe start a project with us?</h6 class="mb-5">
+                    <div class="contact-us--email">
+                        <img src="{% static 'images/envelope.svg' %}">
+                        <a href="">business@swiftkind.com</a>
+                    </div>
+            </div>
+        </section>
+    </article>
+</main>
+{% endblock %}

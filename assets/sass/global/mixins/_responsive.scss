@@ -1,0 +1,35 @@
+/* RESPONSIVE
+ * @desc : Declares breakpoints for each device;
+ */
+
+$phone-width: toem(300);
+$tablet-width: toem(768);
+$desktop-width: toem(992);
+$desktop-md-width: toem(1200);
+$desktop-lg-width:toem(1440);
+$desktop-xlg-width:toem(1600);
+
+@mixin mobile {
+    @media (min-width: $phone-width) and (max-width: $tablet-width) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+        @content;
+    }
+}
+
+
+@mixin desktop {
+    @media (min-width: $desktop-width) and (max-width: $desktop-md-width) {
+        @content;
+    }
+}
+
+@mixin desktop-lg {
+    @media (min-width: $desktop-lg-width) {
+        @content;
+    }
+}
