@@ -49,7 +49,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'swiftkind2.urls'
+ROOT_URLCONF = 'swiftkind.urls'
 
 TEMPLATES = [
     {
@@ -67,7 +67,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'swiftkind2.wsgi.application'
+WSGI_APPLICATION = 'swiftkind.wsgi.application'
 
 
 # Database
