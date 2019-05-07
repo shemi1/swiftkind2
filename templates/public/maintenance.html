@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block header %}{% endblock %}
+
+{% block content %}
+<div class="site-down container">
+    <div class="row align-items-end">
+        <div class="col-md-5">
+            <h6>Hello! Our site is</h6>
+            <h2>under construction.</h2>
+            <p>Hang on, we’re sailing soon!</p>
+        </div>
+        <div class="col-md-7">
+            <img src="{% static 'images/moon.svg' %}">
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block footer %}{% endblock %}

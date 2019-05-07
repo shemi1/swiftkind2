@@ -8860,4 +8860,37 @@ canvas {
           .projects--item--content .slide-details .more-details .arrow-right {
             margin-left: 0.5rem; }
 
+.loading {
+  width: 100vh;
+  height: 100vh;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  -ms-flex-pack: center; }
+  .loading--content {
+    display: block; }
+    .loading--content h6 {
+      letter-spacing: 18px;
+      font-family: "Volte Semibold";
+      text-transform: uppercase; }
+
+.site-down {
+  padding-top: 6.25rem; }
+  .site-down h6 {
+    font-family: "Volte Medium";
+    line-height: 1; }
+  .site-down h2 {
+    font-family: "Volte Semibold";
+    line-height: 1; }
+
 /*# sourceMappingURL=style.css.map */

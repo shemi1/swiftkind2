@@ -1,0 +1,13 @@
+.loading{
+	width: 100vh;
+	height: 100vh;
+	@include justify-align-center();
+	&--content{
+		display: block;
+		h6{
+			 letter-spacing: 18px;
+			 font-family: $volte-smb;
+			 text-transform: uppercase;
+		}
+	}
+}
