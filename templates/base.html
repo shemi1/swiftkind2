@@ -100,12 +100,14 @@
         {% block content %}{% endblock %}
 
         {% block footer %}
-        <footer class="container d-flex justify-content-between">
-            <small class="address">Door 1, 3rd Floor, Consuelo Building, J.P. Laurel Avenue, Lanang, Davao City, Philippines, 8000</small>
-            <div>
-                <a href="" class="mr-4">Github</a>
-                <a href="" class="mr-4">Linkedin</a>
-                <a href="">Facebook</a>
+        <footer>
+            <div class="container d-flex justify-content-between">
+                <small class="address">Door 1, 3rd Floor, Consuelo Building, J.P. Laurel Avenue, Lanang, Davao City, Philippines, 8000</small>
+                <div>
+                    <a href="" class="mr-4">Github</a>
+                    <a href="" class="mr-4">Linkedin</a>
+                    <a href="">Facebook</a>
+                </div>
             </div>
         </footer>
         {% endblock %}
@@ -117,13 +119,12 @@
         <script type="text/javascript" src="{% static 'js/dist/threejs/three.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/dist/WebGL/WebGL.js' %}"></script>
 
+        <script type="text/javascript" src="{% static 'node_modules/stickybits/dist/jquery.stickybits.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'node_modules/wowjs/dist/wow.js' %}"></script>
-        <script type="text/javascript" src="{% static 'node_modules/skrollr/dist/skrollr.min.js' %}"></script>
-        <script type="text/javascript" src="{% static 'js/dist/inertiaScroll/jquery-inertiaScroll.js' %}"></script>
         <script type="text/javascript" src="{% static 'node_modules/swiper/dist/js/swiper.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'node_modules/retinajs/dist/retina.min.js' %}"></script>
         <!-- PLUG IN -->
-        <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/53148/perlin.js'></script>
+       
         <script type="text/javascript" src="{% static 'js/main.js' %}"></script>
     </body>
 
