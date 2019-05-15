@@ -83,10 +83,18 @@ $(document).ready(function() {
 
 
     }, 2000);
+
+
     var screen = $(window).width();
-    if(screen >= 1024 || screen < 768){
+
+    //calls drawdots whenever screen is not ipad/tablet
+    var is_iPad = navigator.userAgent.match(/iPad/i) != null;
+    if( is_iPad == false){
         drawDots();
     }
+    console.log();
+
+    //draws particles on html
     function drawDots() {
         if (WEBGL.isWebGLAvailable() === false) {
             document.body.appendChild(WEBGL.getWebGLErrorMessage());

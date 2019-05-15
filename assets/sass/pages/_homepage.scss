@@ -9,12 +9,20 @@
             padding: 0;
         }
 
+        @include mobile {
+            padding: 0;
+        }
+
         .boxed {
             padding: $spacing-xlg;
             background: rgba($white, 0.8);
 
             @include tablet {
                 padding-right: 0;
+            }
+
+            @include mobile {
+                padding: 2rem 0;
             }
         }
 
@@ -128,11 +136,20 @@
             height: torem(700);
 
         }
+        @include mobile{
+            padding:2.5rem;
+        }
 
         &--content {
             max-width: 40%;
             margin-left: 10%;
+
+            @include mobile {
+                max-width: 100%;
+                margin-left: 0;
+            }
         }
+
     }
 
     .clients {
@@ -144,12 +161,24 @@
 
         }
 
+        @include mobile {
+            padding: $spacing-xxxlg $spacing-lg;;
+        }
+
         &--content {
             max-width: 75%;
             margin: 0 auto;
-            @include tablet{
+
+            @include tablet {
                 max-width: 100%;
                 font-size: $h5;
+            }
+
+            @include mobile {
+                max-width: 100%;
+                h4{
+                    font-size: $h6 !important;
+                }
             }
 
         }
@@ -161,6 +190,9 @@
         padding: $spacing-xxxlg;
         text-align: center;
         background: $white;
+        @include mobile{
+            padding:$spacing-lg;
+        }
 
         &--swiper {
             max-width: torem(700);

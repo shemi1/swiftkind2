@@ -8302,6 +8302,9 @@ a {
 .paragraph-light {
   font-family: "Volte Light"; }
 
+.text-emp {
+  font-family: "Volte Semibold Italic"; }
+
 .btn {
   min-height: 3.125rem;
   padding-left: 3rem;
@@ -8412,65 +8415,65 @@ html {
       line-height: 1.29;
       letter-spacing: -1px; }
       .hero--content h1 .glitch:nth-child(1):before {
-        animation-delay: 2s; }
+        animation-delay: 5s; }
       .hero--content h1 .glitch:nth-child(1):after {
-        animation-delay: 2s; }
+        animation-delay: 5s; }
       .hero--content h1 .glitch:nth-child(2):before {
         animation-delay: 2s; }
       .hero--content h1 .glitch:nth-child(2):after {
         animation-delay: 2s; }
       .hero--content h1 .glitch:nth-child(3):before {
-        animation-delay: 9s; }
+        animation-delay: 6s; }
       .hero--content h1 .glitch:nth-child(3):after {
-        animation-delay: 9s; }
+        animation-delay: 6s; }
       .hero--content h1 .glitch:nth-child(4):before {
-        animation-delay: 8s; }
+        animation-delay: 20s; }
       .hero--content h1 .glitch:nth-child(4):after {
-        animation-delay: 8s; }
+        animation-delay: 20s; }
       .hero--content h1 .glitch:nth-child(5):before {
-        animation-delay: 25s; }
+        animation-delay: 20s; }
       .hero--content h1 .glitch:nth-child(5):after {
-        animation-delay: 25s; }
+        animation-delay: 20s; }
       .hero--content h1 .glitch:nth-child(6):before {
         animation-delay: 24s; }
       .hero--content h1 .glitch:nth-child(6):after {
         animation-delay: 24s; }
       .hero--content h1 .glitch:nth-child(7):before {
-        animation-delay: 7s; }
+        animation-delay: 28s; }
       .hero--content h1 .glitch:nth-child(7):after {
-        animation-delay: 7s; }
+        animation-delay: 28s; }
       .hero--content h1 .glitch:nth-child(8):before {
-        animation-delay: 24s; }
+        animation-delay: 8s; }
       .hero--content h1 .glitch:nth-child(8):after {
-        animation-delay: 24s; }
+        animation-delay: 8s; }
       .hero--content h1 .glitch:nth-child(9):before {
-        animation-delay: 36s; }
+        animation-delay: 27s; }
       .hero--content h1 .glitch:nth-child(9):after {
-        animation-delay: 36s; }
+        animation-delay: 27s; }
       .hero--content h1 .glitch:nth-child(10):before {
-        animation-delay: 10s; }
+        animation-delay: 50s; }
       .hero--content h1 .glitch:nth-child(10):after {
-        animation-delay: 10s; }
+        animation-delay: 50s; }
       .hero--content h1 .glitch:nth-child(11):before {
-        animation-delay: 11s; }
+        animation-delay: 33s; }
       .hero--content h1 .glitch:nth-child(11):after {
-        animation-delay: 11s; }
+        animation-delay: 33s; }
       .hero--content h1 .glitch:nth-child(12):before {
-        animation-delay: 24s; }
+        animation-delay: 48s; }
       .hero--content h1 .glitch:nth-child(12):after {
-        animation-delay: 24s; }
+        animation-delay: 48s; }
       .hero--content h1 .glitch:nth-child(13):before {
-        animation-delay: 39s; }
+        animation-delay: 52s; }
       .hero--content h1 .glitch:nth-child(13):after {
-        animation-delay: 39s; }
+        animation-delay: 52s; }
       .hero--content h1 .glitch:nth-child(14):before {
-        animation-delay: 14s; }
+        animation-delay: 70s; }
       .hero--content h1 .glitch:nth-child(14):after {
-        animation-delay: 14s; }
+        animation-delay: 70s; }
       .hero--content h1 .glitch:nth-child(15):before {
-        animation-delay: 45s; }
+        animation-delay: 30s; }
       .hero--content h1 .glitch:nth-child(15):after {
-        animation-delay: 45s; }
+        animation-delay: 30s; }
     .hero--content .btn-cta {
       animation: shadow 6s infinite; }
     @media (min-width: 48em) and (max-width: 62em) {
@@ -8478,6 +8481,11 @@ html {
         font-size: 2.9375rem; }
       .hero--content h3 {
         font-size: 1.125rem; } }
+    @media (min-width: 18.75em) and (max-width: 48em) {
+      .hero--content {
+        max-width: 100%; }
+        .hero--content h1 {
+          font-size: 1.875rem; } }
   .hero--links {
     position: absolute;
     left: 0;
@@ -9009,12 +9017,18 @@ footer {
   @media (min-width: 48em) and (max-width: 62em) {
     .homepage .services {
       padding: 0; } }
+  @media (min-width: 18.75em) and (max-width: 48em) {
+    .homepage .services {
+      padding: 0; } }
   .homepage .services .boxed {
     padding: 1.875rem;
     background: rgba(255, 255, 255, 0.8); }
     @media (min-width: 48em) and (max-width: 62em) {
       .homepage .services .boxed {
         padding-right: 0; } }
+    @media (min-width: 18.75em) and (max-width: 48em) {
+      .homepage .services .boxed {
+        padding: 2rem 0; } }
   .homepage .services--container .svc-title {
     color: #01d9b6;
     font-family: "Volte Medium"; }
@@ -9115,15 +9129,25 @@ footer {
   @media (min-width: 100em) {
     .homepage .hiring {
       height: 43.75rem; } }
+  @media (min-width: 18.75em) and (max-width: 48em) {
+    .homepage .hiring {
+      padding: 2.5rem; } }
   .homepage .hiring--content {
     max-width: 40%;
     margin-left: 10%; }
+    @media (min-width: 18.75em) and (max-width: 48em) {
+      .homepage .hiring--content {
+        max-width: 100%;
+        margin-left: 0; } }
 .homepage .clients {
   background: #ffffff;
   padding: 6.25rem; }
   @media (min-width: 48em) and (max-width: 62em) {
     .homepage .clients {
       padding: 6.25rem 3.75rem; } }
+  @media (min-width: 18.75em) and (max-width: 48em) {
+    .homepage .clients {
+      padding: 6.25rem 1.25rem; } }
   .homepage .clients--content {
     max-width: 75%;
     margin: 0 auto; }
@@ -9131,11 +9155,19 @@ footer {
       .homepage .clients--content {
         max-width: 100%;
         font-size: 1.5rem; } }
+    @media (min-width: 18.75em) and (max-width: 48em) {
+      .homepage .clients--content {
+        max-width: 100%; }
+        .homepage .clients--content h4 {
+          font-size: 1.125rem !important; } }
 .homepage .testimony {
   margin: 6.25rem 0;
   padding: 6.25rem;
   text-align: center;
   background: #ffffff; }
+  @media (min-width: 18.75em) and (max-width: 48em) {
+    .homepage .testimony {
+      padding: 1.25rem; } }
   .homepage .testimony--swiper {
     max-width: 43.75rem; }
     .homepage .testimony--swiper .swiper-slide {
