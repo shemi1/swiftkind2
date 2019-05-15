@@ -23,13 +23,13 @@ $desktop-xlg-width:toem(1600);
 
 
 @mixin desktop {
-    @media (min-width: $desktop-width) and (max-width: $desktop-md-width) {
+    @media (min-width: $desktop-width) and (max-width: $desktop-lg-width) {
         @content;
     }
 }
 
 @mixin desktop-lg {
-    @media (min-width: $desktop-lg-width) {
+    @media (min-width: $desktop-xlg-width) {
         @content;
     }
 }

@@ -6,6 +6,7 @@
     position: fixed;
     z-index: $zindex-fixed;
     background: $white;
+    
 
 }
 
@@ -49,6 +50,7 @@
 
 body {
     &.menu-open {
+        overflow: hidden;
         .menu-toggle {
             &:before {
                 transform: rotate(45deg);
@@ -86,7 +88,7 @@ body {
         }
 
         .navigation-links {
-            margin-bottom: 5rem;
+            margin-bottom: 2rem;
             display: block;
 
             @include mobile {
@@ -94,7 +96,7 @@ body {
             }
 
             a {
-                font-family: $volte-md;
+                font-family: $volte-smb;
                 display: block;
                 margin-bottom: $spacing-md;
                 font-size: $h2;
@@ -105,16 +107,7 @@ body {
                 letter-spacing: 0;
                 text-transform: uppercase;
 
-                &::before {
-                    content: "";
-                    background-color: $primary;
-                    width: 0;
-                    height: 4px;
-                    position: absolute;
-                    left: 0;
-                    bottom: 0rem;
-                    @include transition(width 0.3s ease);
-                }
+               
 
                 &.active {
                     opacity: 1;
@@ -123,11 +116,6 @@ body {
                 &:hover {
                     opacity: 1;
                     transition: opacity 0.3s ease;
-
-                    &:before {
-                        width: 5rem;
-                        @include transition(width 0.3s ease);
-                    }
                 }
             }
         }
@@ -220,10 +208,6 @@ body {
     }
 
     &.menu-open {
-        overflow: auto;
-
-
-
         .nav-menu {
             @include transition(ease opacity 0.5s);
             width: 100%;
@@ -372,7 +356,6 @@ body {
         position: fixed;
         font-family: $volte-md;
         font-size: $normal;
-        bottom: 6rem;
         right: 8vw;
         z-index: 99;
         &:before{

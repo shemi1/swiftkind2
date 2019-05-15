@@ -1,8 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="34.303" height="10.101" viewBox="0 0 34.303 10.101">
+<svg xmlns="http://www.w3.org/2000/svg" width="41.804" height="13.857" viewBox="0 0 41.804 13.857">
     <defs>
         <style>
-            .cls-1{fill:#2e3039}
+            .cls-1{fill:#01d9b6;stroke:#01d9b6;stroke-width:2px}
         </style>
     </defs>
-    <path id="arrow-right" d="M1417.438 408.95l4.349-4.35h-33.349v-.5h33.35l-4.545-4.544.354-.354 4.949 4.949.2.2-4.949 4.949z" class="cls-1" transform="translate(-1388.438 -399.202)"/>
+    <path id="arrow-right" d="M1423.443 405.01l-6.067-6.01 6.067 6.01.433-.51-.433.51.495.49-.495-.49-5.5 6.49zm-40.443.49h39.875z" class="cls-1" transform="translate(-1383 -398.289)"/>
 </svg>

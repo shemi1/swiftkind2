@@ -8,6 +8,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: relative !important;
+    
     * {
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
@@ -52,6 +53,7 @@ h5,
 .h5 {
     font-size: $h5;
     line-height: inherit;
+     letter-spacing: -0.4px;
 
 }
 
@@ -59,6 +61,7 @@ h6,
 .h6 {
     font-size: $h6;
     line-height: inherit;
+     letter-spacing: -0.4px;
 
 }
 

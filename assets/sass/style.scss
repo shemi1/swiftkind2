@@ -11,8 +11,6 @@
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 
-//overrides
-@import 'overrides/animate';
 
 
 
@@ -25,18 +23,23 @@
 @import 'global/mixins/responsive';
 @import 'global/mixins/components';
 
+//overrides
+@import 'overrides/animate';
+
 @import 'global/utils';
 
 
+
 //components - elements that may or may not be in all of the pages
+
 
 @import 'components/avatar';
 @import 'components/buttons';
 @import 'components/forms';
 @import 'components/badges';
 @import 'components/modals';
-@import 'components/section';
 @import 'components/photos';
+@import 'components/layout';
 
 
 //partials - elements that are part of all the pages

@@ -1,13 +1,151 @@
-.loading{
-	width: 100vh;
-	height: 100vh;
-	@include justify-align-center();
-	&--content{
-		display: block;
-		h6{
-			 letter-spacing: 18px;
-			 font-family: $volte-smb;
-			 text-transform: uppercase;
-		}
-	}
+//loading animation
+.loading {
+    position: fixed;
+    display: block;
+    z-index: 9999;
+    background-color:transparent;
+    &--content {
+        display: block;
+        text-align: center;
+        opacity: 0;
+
+        .site-name {
+            position: relative;
+            margin-bottom: 1rem;
+
+            &:after {
+                content: "";
+                height: torem(40);
+                width: 100%;
+
+                background-color: $white;
+                position: absolute;
+                bottom: -2.5rem;
+                display: none;
+
+            }
+
+            h6 {
+                letter-spacing: 18px;
+                font-family: $volte-smb;
+                text-transform: uppercase;
+                width: torem(236);
+                margin: 0 auto;
+                position: absolute;
+                @include transition(margin-top 1s linear);
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+    }
+
+    &--progress {
+        width: torem(300);
+        height: 2px;
+        position: relative;
+
+        &:before {
+            content: "";
+            width: 100%;
+            height: 2px;
+            background-color: rgba($charcoal-grey, 0.3);
+            display: block;
+
+            border-radius: 2px;
+        }
+
+        &:after {
+            content: "";
+            width: 0%;
+            height: 2px;
+            background-color: rgba($charcoal-grey, 1);
+            display: block;
+            position: absolute;
+            border-radius: 2px;
+            top: 0;
+        }
+
+    }
+
+    &.site-loading {
+        width: 100vw;
+        height: 100vh;
+        @include justify-align-center();
+
+        .loading {
+            &--content {
+                opacity: 1;
+                transition-delay: 0.1s;
+
+                .site-name {
+                    h6 {
+                        bottom: -2rem;
+                        @include transition(bottom 0.3s ease-in);
+                        transition-delay: 1.5s;
+                    }
+
+                    &:after {
+                        display: block;
+                    }
+                }
+
+            }
+
+            &--progress {
+                transform: scaleX(0);
+                transform-origin: 100% 100%;
+                @include transition(transform 0.5s linear);
+                transition-delay: 1s;
+
+                &:after {
+                    width: 100%;
+                    @include transition(width 1s linear);
+                }
+            }
+        }
+
+    }
+}
+
+
+//styles after loading
+body {
+
+    main,
+    footer {
+        display: none;
+    }
+
+    .main-nav {
+        opacity: 0;
+        margin-top: -10%;
+    }
+
+    .scroll-down {
+        bottom: - 10%;
+        opacity: 0;
+    }
+
+    &.site-loaded {
+
+        main,
+        footer {
+            display: block;
+        }
+
+        .main-nav {
+            margin-top: 0;
+            opacity: 1;
+            @include transition(margin-top 0.3s linear);
+        }
+
+        .scroll-down {
+            bottom: 6rem;
+            opacity: 1;
+            @include transition(bottom 0.3s linear);
+        }
+
+    }
 }
