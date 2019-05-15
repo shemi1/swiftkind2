@@ -5,14 +5,16 @@
     .services {
         padding: $spacing-xxxlg;
 
-        @include tablet{
-            padding:0;
+        @include tablet {
+            padding: 0;
         }
+
         .boxed {
             padding: $spacing-xlg;
             background: rgba($white, 0.8);
-            @include tablet{
-                padding-right:0;
+
+            @include tablet {
+                padding-right: 0;
             }
         }
 
@@ -22,10 +24,12 @@
                 font-family: $volte-md;
             }
         }
-        &--row_wrap{
+
+        &--row_wrap {
             @include align-items(center);
-            @include tablet{
-                 @include align-items(flex-start);
+
+            @include tablet {
+                @include align-items(flex-start);
             }
         }
 
@@ -73,6 +77,7 @@
         padding-top: $spacing-xxxlg;
         padding-bottom: $spacing-xxxlg;
         background: rgba($white, 0.7);
+
         &--member {
             @include flex-align-center();
             position: relative;
@@ -108,7 +113,7 @@
     }
 
     .hiring {
-        padding:$spacing-xxxlg;
+        padding: $spacing-xxxlg;
         background: $white;
         height: torem(524);
         width: 100%;
@@ -118,50 +123,68 @@
         background-repeat: no-repeat;
         position: relative;
         @include flex-align-center();
-        @include desktop-lg{
-            height:torem(700);
-            
+
+        @include desktop-lg {
+            height: torem(700);
+
         }
-        &--content{
+
+        &--content {
             max-width: 40%;
             margin-left: 10%;
         }
     }
-    .clients{
+
+    .clients {
         background: $white;
-        padding:$spacing-xxxlg;
-        &--content{
+        padding: $spacing-xxxlg;
+
+        @include tablet {
+            padding: $spacing-xxxlg $spacing-xxlg;
+
+        }
+
+        &--content {
             max-width: 75%;
             margin: 0 auto;
-           
+            @include tablet{
+                max-width: 100%;
+                font-size: $h5;
+            }
+
         }
 
     }
-    .testimony{ 
-        margin:$spacing-xxxlg 0;
-         padding:$spacing-xxxlg;
-         text-align: center;
-         background:$white;
-         &--swiper{
-             max-width: torem(700);
-                
-            .swiper-slide{
-               margin: 0 auto 3rem;
-               a{
-                color: $accent-color;
-               }
+
+    .testimony {
+        margin: $spacing-xxxlg 0;
+        padding: $spacing-xxxlg;
+        text-align: center;
+        background: $white;
+
+        &--swiper {
+            max-width: torem(700);
+
+            .swiper-slide {
+                margin: 0 auto 3rem;
+
+                a {
+                    color: $accent-color;
+                }
             }
-            .swiper-pagination-bullet{
+
+            .swiper-pagination-bullet {
                 width: torem(54);
-              height: 2px;
-              background-color: $charcoal-grey;
-              opacity: 0.15;
-              border-radius: 0;
-              &-active{
-                opacity: 1;
-              }
+                height: 2px;
+                background-color: $charcoal-grey;
+                opacity: 0.15;
+                border-radius: 0;
+
+                &-active {
+                    opacity: 1;
+                }
             }
-         }
+        }
     }
 }
 
@@ -175,6 +198,7 @@
     left: 0;
     z-index: -1;
     display: none;
+
     @include mobile {}
 }
 
@@ -187,4 +211,5 @@ canvas {
     right: 0;
     bottom: 0;
     z-index: -3;
+
 }

@@ -8412,13 +8412,13 @@ html {
       line-height: 1.29;
       letter-spacing: -1px; }
       .hero--content h1 .glitch:nth-child(1):before {
-        animation-delay: 3s; }
+        animation-delay: 2s; }
       .hero--content h1 .glitch:nth-child(1):after {
-        animation-delay: 3s; }
+        animation-delay: 2s; }
       .hero--content h1 .glitch:nth-child(2):before {
-        animation-delay: 10s; }
+        animation-delay: 2s; }
       .hero--content h1 .glitch:nth-child(2):after {
-        animation-delay: 10s; }
+        animation-delay: 2s; }
       .hero--content h1 .glitch:nth-child(3):before {
         animation-delay: 9s; }
       .hero--content h1 .glitch:nth-child(3):after {
@@ -8428,45 +8428,45 @@ html {
       .hero--content h1 .glitch:nth-child(4):after {
         animation-delay: 8s; }
       .hero--content h1 .glitch:nth-child(5):before {
-        animation-delay: 15s; }
+        animation-delay: 25s; }
       .hero--content h1 .glitch:nth-child(5):after {
-        animation-delay: 15s; }
+        animation-delay: 25s; }
       .hero--content h1 .glitch:nth-child(6):before {
-        animation-delay: 18s; }
+        animation-delay: 24s; }
       .hero--content h1 .glitch:nth-child(6):after {
-        animation-delay: 18s; }
+        animation-delay: 24s; }
       .hero--content h1 .glitch:nth-child(7):before {
-        animation-delay: 21s; }
+        animation-delay: 7s; }
       .hero--content h1 .glitch:nth-child(7):after {
-        animation-delay: 21s; }
+        animation-delay: 7s; }
       .hero--content h1 .glitch:nth-child(8):before {
-        animation-delay: 8s; }
+        animation-delay: 24s; }
       .hero--content h1 .glitch:nth-child(8):after {
-        animation-delay: 8s; }
+        animation-delay: 24s; }
       .hero--content h1 .glitch:nth-child(9):before {
-        animation-delay: 45s; }
+        animation-delay: 36s; }
       .hero--content h1 .glitch:nth-child(9):after {
-        animation-delay: 45s; }
+        animation-delay: 36s; }
       .hero--content h1 .glitch:nth-child(10):before {
         animation-delay: 10s; }
       .hero--content h1 .glitch:nth-child(10):after {
         animation-delay: 10s; }
       .hero--content h1 .glitch:nth-child(11):before {
-        animation-delay: 33s; }
+        animation-delay: 11s; }
       .hero--content h1 .glitch:nth-child(11):after {
-        animation-delay: 33s; }
+        animation-delay: 11s; }
       .hero--content h1 .glitch:nth-child(12):before {
-        animation-delay: 36s; }
+        animation-delay: 24s; }
       .hero--content h1 .glitch:nth-child(12):after {
-        animation-delay: 36s; }
+        animation-delay: 24s; }
       .hero--content h1 .glitch:nth-child(13):before {
-        animation-delay: 26s; }
+        animation-delay: 39s; }
       .hero--content h1 .glitch:nth-child(13):after {
-        animation-delay: 26s; }
+        animation-delay: 39s; }
       .hero--content h1 .glitch:nth-child(14):before {
-        animation-delay: 42s; }
+        animation-delay: 14s; }
       .hero--content h1 .glitch:nth-child(14):after {
-        animation-delay: 42s; }
+        animation-delay: 14s; }
       .hero--content h1 .glitch:nth-child(15):before {
         animation-delay: 45s; }
       .hero--content h1 .glitch:nth-child(15):after {
@@ -9121,9 +9121,16 @@ footer {
 .homepage .clients {
   background: #ffffff;
   padding: 6.25rem; }
+  @media (min-width: 48em) and (max-width: 62em) {
+    .homepage .clients {
+      padding: 6.25rem 3.75rem; } }
   .homepage .clients--content {
     max-width: 75%;
     margin: 0 auto; }
+    @media (min-width: 48em) and (max-width: 62em) {
+      .homepage .clients--content {
+        max-width: 100%;
+        font-size: 1.5rem; } }
 .homepage .testimony {
   margin: 6.25rem 0;
   padding: 6.25rem;

@@ -5,4 +5,6 @@
 
 media/
 static/
-
+assets/node_modules/
+assets/.sass-cache/
+*style.css.map
