@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .cls-1{fill:#ebfffc}.cls-2{fill:#01d9b6;font-size:16px;font-family:FontAwesome5ProRegular,&quot;Font Awesome 5 Pro&quot;}
+        </style>
+    </defs>
+    <g id="check-mark" transform="translate(-183 -436)">
+        <circle id="Ellipse_171" cx="12" cy="12" r="12" class="cls-1" data-name="Ellipse 171" transform="translate(183 436)"/>
+        <text id="check" class="cls-2" transform="translate(187 454)">
+            <tspan x="0" y="0">check</tspan>
+        </text>
+    </g>
+</svg>

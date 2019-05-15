@@ -1,7 +1,8 @@
 .process {
     .hero {
         &--content {
-
+            padding:0;
+            text-align: left;
             width: 100%;
             @include flexbox();
             @include align-items(flex-end);
@@ -17,10 +18,9 @@
         }
 
     }
-
     .team-represent {
         padding-bottom: $spacing-xxxlg;
-
+        background: rgba($white, 0.8);
         .team-photo {
             -webkit-clip-path: polygon(100% 0, 100% 68%, 64% 68%, 0% 100%, 0 37%, 59% 4%);
             clip-path: polygon(100% 0, 100% 68%, 64% 68%, 0% 100%, 0 37%, 59% 4%);
@@ -40,7 +40,7 @@
     .standpoint {
         padding-top: $spacing-xxxlg;
         padding-bottom: $spacing-xxxlg;
-
+        background: rgba($white, 0.8);
         &--statement {
 
             letter-spacing: -0.5px;

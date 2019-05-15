@@ -1,236 +1,196 @@
 $(document).ready(function() {
-
     //triggers navbar's menu to open or close
-    $('.menu-toggle').on('click', function() {
-        $('body').toggleClass('menu-open');
-    })
-
-    // $(window).on('scroll', function() {
-    //     var scrollTop = $(window).scrollTop();
-
-    //     $('.svc-title').each(function(e) {
-    //         var scroll = $(this).offset().top;
-    //         var distance = scrollTop - scroll;
-
-    //         var vh = 800;
-    //         var rvh = (scroll + vh) - scrollTop;
-
-    //         console.log('distance: '+ distance);
-    //         console.log('scrollTop: '+ scrollTop);
-    //         console.log('rvh: '+ rvh);
-    //         if (distance > -300 && distance < vh) {
-    //             $(this).addClass('fixed-top');
-    //                 distance = 0;
-
-
-    //         }
-    //         if ( scrollTop > rvh) {
-    //                  $(this).removeClass('fixed-top');
-    //             }
 
-    //         // if (scrollTop > 1500 || scrollTop < 1000) {
+    var cameraPositionZ = 9000;
+    $('.loading').addClass('site-loading');
 
-    //         // }
-    //         // if (distance < 0) {
-    //         //     $(this).removeClass('fixed-top');
-    //         // }
-    //     });
+    setTimeout(function() {
+        cameraPositionZ = 30000;
+        //hides the loading screen
+        $('.loading').removeClass('site-loading');
 
+        //displays the contents of the body after the loading screen
+        $('body').addClass('site-loaded');
 
-    // });
+        //triggers the menu bar animation
+        $('.menu-toggle').on('click', function() {
+            $('body').toggleClass('menu-open');
+        });
 
-    // initialize swiper rtl
-    var swiper = new Swiper('.swiper__generic', {
-        slidesPerView: 1,
-        spaceBetween: 55,
+        // initialize swiper rtl
+        var swiper = new Swiper('.swiper__generic', {
+            slidesPerView: 1,
+            spaceBetween: 55,
 
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'fraction',
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'fraction',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
 
-    //testimony slider
+        //testimony slider
 
-    var swiper = new Swiper('.testimony--swiper', {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        freeMode: true,
-        centeredSlides: true,
-        pagination: {
-            el: '.swiper-pagination',
-            type: 'fraction',
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-    });
+        var swiper = new Swiper('.testimony--swiper', {
+            pagination: {
+                el: '.swiper-pagination'
+            },
+        });
 
 
-    //project before redirect animation
-    $('.projects--item  .more-details').on('click', function(e) {
-        $(".projects--item .projects--img").toggleClass('heartBeat');
-        $(".projects--item").toggleClass('redirecting');
-        e.preventDefault(); //will stop the link href to call the blog page
-        console.log('working');
-        // setTimeout(function() {
-        //     window.location.href = "index.html";
-        // }, 1000);
-    });
+        //project before redirect animation
+        $('.projects--item  .more-details').on('click', function(e) {
+            $(".projects--item .projects--img").toggleClass('heartBeat');
+            $(".projects--item").toggleClass('redirecting');
+            e.preventDefault(); //will stop the link href to call the blog page
+            console.log('working');
+            // setTimeout(function() {
+            //     window.location.href = "index.html";
+            // }, 1000);
+        });
 
 
-    //initialize skrollr
-    var s = skrollr.init();
+        //initialize wow js
 
-    //initialize inertia scroll
-    // $(".box").inertiaScroll({
-    //     parent: $(".page-wrapper")
-    // });
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 0, // default
+            mobile: true,
+            live: true // default
+        })
+        wow.init();
 
-    $(window).resize(function() {
-        if ($(window).width() > 1024) {
+       //initialize stickybits
 
-        }
-    })
+       $('.test-sticky').stickybits({
+           useStickyClasses: true,
+           stickyBitStickyOffset: 300
+       });
 
 
-    //initialize wow js
 
-    var wow = new WOW({
-        boxClass: 'wow', // animated element css class (default is wow)
-        animateClass: 'animated', // animation css class (default is animated)
-        offset: 150, // distance to the element when triggering the animation (default is 0)
-        mobile: true, // trigger animations on mobile devices (default is true)
-        live: true, // act on asynchronously loaded content (default is true)
-        callback: function(box) {
-             
-        },
-        scrollContainer: 'page-wrapper' // optional scroll container selector, otherwise use window
-    });
-    wow.init();
+    }, 0);
 
+    //draws the particles in the background
+    // if (WEBGL.isWebGLAvailable() === false) {
 
+    //     document.body.appendChild(WEBGL.getWebGLErrorMessage());
 
-    //webGL
-    if ( WEBGL.isWebGLAvailable() === false ) {
+    // }
 
-                document.body.appendChild( WEBGL.getWebGLErrorMessage() );
+    // var container;
 
-            }
+    // var camera, scene, renderer;
 
-            var container;
+    // var spheres = [];
 
-            var camera, scene, renderer;
+    // var mouseX = 0;
+    // var mouseY = 0;
 
-            var spheres = [];
+    // var windowHalfX = window.innerWidth / 2;
+    // var windowHalfY = window.innerHeight / 2;
 
-            var mouseX = 0;
-            var mouseY = 0;
+    // document.addEventListener('mousemove', onDocumentMouseMove, false);
 
-            var windowHalfX = window.innerWidth / 2;
-            var windowHalfY = window.innerHeight / 2;
+    // init();
+    // animate();
 
-            document.addEventListener( 'mousemove', onDocumentMouseMove, false );
+    // function init() {
 
-            init();
-            animate();
 
-            function init() {
+    //     container = document.createElement('div');
+    //     document.body.appendChild(container);
 
-                
-                container = document.createElement( 'div' );
-                document.body.appendChild( container );
+    //     camera = new THREE.PerspectiveCamera(20, window.innerWidth / window.innerHeight, 1, 100000);
+    //     camera.position.z = cameraPositionZ;
 
-                camera = new THREE.PerspectiveCamera( 20, window.innerWidth / window.innerHeight, 1, 100000 );
-                camera.position.z = 300;
+    //     scene = new THREE.Scene();
+    //     scene.background = new THREE.Color().setHSL(1, 1, 1);
 
-                scene = new THREE.Scene();
-                scene.background = new THREE.Color().setHSL( 1, 1, 1 );
+    //     var geometry = new THREE.SphereBufferGeometry(10, 2, 16);
+    //     var material = new THREE.MeshBasicMaterial({ color: '#ccd5e3' });
+    //     for (var i = 0; i < 200; i++) {
+    //         var mesh = new THREE.Mesh(geometry, material);
 
-                var geometry = new THREE.SphereBufferGeometry( 10, 2, 16 );
-                var material = new THREE.MeshBasicMaterial( { color: '#ccd5e3' } );
-                for ( var i = 0; i < 200; i ++ ) {
-                    var mesh = new THREE.Mesh( geometry, material );
+    //         mesh.position.x = Math.random() * 10000 - 5000;
+    //         mesh.position.y = Math.random() * 10000 - 5000;
+    //         mesh.position.z = Math.random() * 10000 - 5000;
 
-                    mesh.position.x = Math.random() * 10000 - 5000;
-                    mesh.position.y = Math.random() * 10000 - 5000;
-                    mesh.position.z = Math.random() * 10000 - 5000;
+    //         mesh.scale.x = mesh.scale.y = mesh.scale.z = Math.random() * 3 + 1;
 
-                    mesh.scale.x = mesh.scale.y = mesh.scale.z = Math.random() * 3 + 1;
+    //         scene.add(mesh);
 
-                    scene.add( mesh );
+    //         spheres.push(mesh);
 
-                    spheres.push( mesh );
+    //     }
 
-                }
 
+    //     //
 
-                //
+    //     renderer = new THREE.WebGLRenderer();
+    //     renderer.setPixelRatio(window.devicePixelRatio);
+    //     renderer.setSize(window.innerWidth, window.innerHeight);
+    //     container.appendChild(renderer.domElement);
 
-                renderer = new THREE.WebGLRenderer();
-                renderer.setPixelRatio( window.devicePixelRatio );
-                renderer.setSize( window.innerWidth, window.innerHeight );
-                container.appendChild( renderer.domElement );
+    //     //
 
-                //
+    //     window.addEventListener('resize', onWindowResize, false);
 
-                window.addEventListener( 'resize', onWindowResize, false );
+    // }
 
-            }
+    // function onWindowResize() {
 
-            function onWindowResize() {
+    //     windowHalfX = window.innerWidth / 2;
+    //     windowHalfY = window.innerHeight / 2;
 
-                windowHalfX = window.innerWidth / 2;
-                windowHalfY = window.innerHeight / 2;
+    //     camera.aspect = window.innerWidth / window.innerHeight;
+    //     camera.updateProjectionMatrix();
 
-                camera.aspect = window.innerWidth / window.innerHeight;
-                camera.updateProjectionMatrix();
+    //     renderer.setSize(window.innerWidth, window.innerHeight);
 
-                renderer.setSize( window.innerWidth, window.innerHeight );
+    // }
 
-            }
+    // function onDocumentMouseMove(event) {
 
-            function onDocumentMouseMove( event ) {
+    //     mouseX = (event.clientX - windowHalfX) * 100;
+    //     mouseY = (event.clientY - windowHalfY) * 100;
 
-                mouseX = ( event.clientX - windowHalfX ) * 100;
-                mouseY = ( event.clientY - windowHalfY ) * 100;
+    // }
 
-            }
+    // //
 
-            //
+    // function animate() {
 
-            function animate() {
+    //     requestAnimationFrame(animate);
 
-                requestAnimationFrame( animate );
+    //     render();
 
-                render();
+    // }
 
-            }
+    // function render() {
 
-            function render() {
+    //     var timer = 0.0001;
 
-                var timer = 0.0001 ;
+    //     for (var i = 0, il = spheres.length; i < il; i++) {
 
-                for ( var i = 0, il = spheres.length; i < il; i ++ ) {
+    //         var sphere = spheres[i];
 
-                    var sphere = spheres[ i ];
+    //         sphere.position.x = 5000 * Math.cos(timer + i);
+    //         sphere.position.y = 5000 * Math.sin(timer + i * 1.1);
 
-                    sphere.position.x = 5000 * Math.cos( timer + i );
-                    sphere.position.y = 5000 * Math.sin( timer + i * 1.1 );
+    //     }
 
-                }
+    //     camera.position.x += (mouseX - camera.position.x) * .05;
+    //     camera.position.y += (-mouseY - camera.position.y) * .05;
 
-                camera.position.x += ( mouseX - camera.position.x ) * .05;
-                camera.position.y += ( - mouseY - camera.position.y ) * .05;
+    //     camera.lookAt(scene.position);
 
-                camera.lookAt( scene.position );
+    //     renderer.render(scene, camera);
 
-                renderer.render( scene, camera );
+    // }
 
-            }
 });

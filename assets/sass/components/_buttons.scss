@@ -16,10 +16,37 @@
 // ]
 
 
-
 .btn {
-	min-height: torem(50);
-	padding-left: 3rem;
-	padding-right: 3rem;
-	font-family: $volte-smb;
+    min-height: torem(50);
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-family: $volte-smb;
+    border-radius: 0;
+    @include justify-align-center();
+}
+
+.btn-cta {
+    border-radius: torem(35);
+    box-shadow: 0 10px 30px 0 rgba(122, 130, 154, 0.16);
+    background-color: $white;
+    @include inline-flexbox();
+    white-space: nowrap;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-top: 2rem;
+
+    img {
+        margin-left: 0;
+        width: 0%;
+        @include transition(all 0.3s cubic-bezier(0.61, 0.18, 0.22, 1));
+    }
+    &:hover{
+    	background-color: $charcoal-grey;
+    	color: $accent-color;
+    	img{
+    		width: 100%;
+    		 margin-left: 1.5rem;
+    		 @include transition(all 0.3s cubic-bezier(0.61, 0.18, 0.22, 1));
+    	}
+    }
 }

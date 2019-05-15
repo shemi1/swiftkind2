@@ -1,0 +1,113 @@
+.page-wrapper,
+html {
+    zoom: 100% !important;
+
+
+}
+
+.hero {
+    height: 100vh;
+    @include flexbox();
+    @include align-items(center);
+    @include justify-content(flex-start);
+    position: relative;
+
+    &--content {
+        * {
+            z-index: 1;
+        }
+
+        max-width: 80%;
+        margin: 0 auto;
+        text-align: center;
+
+        h3 {
+            font-family: $volte-lgt;
+        }
+
+        h1 {
+            line-height: 1.29;
+            letter-spacing: -1px;
+
+            .glitch {
+                @for $i from 1 through 15 {
+
+                    $random: random(5);
+
+                    &:nth-child(#{$i}) {
+                        &:before {
+                            animation-delay: $i*$random + s;
+                        }
+
+                        &:after {
+                            animation-delay: $i*$random + s;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .btn-cta {
+            animation: shadow 6s infinite;
+        }
+
+        @include tablet {
+            h1 {
+                font-size: torem(47);
+            }
+
+            h3 {
+                font-size: $h6;
+            }
+        }
+
+
+    }
+
+    &--links {
+        position: absolute;
+        left: 0;
+        bottom: 20vh;
+
+        a {
+            display: block;
+            font-family: $volte-md;
+            line-height: 2;
+            position: relative;
+            padding-left: 0;
+            @include transition(all 0.3s);
+            opacity: 0;
+
+            @for $i from 1 through 3 {
+                &:nth-child(#{$i}) {
+
+                    animation: fadeInLeft ease-in 0.3s forwards;
+                    animation-delay: #{$i/4}s;
+                }
+            }
+
+            &:before {
+                content: "";
+                left: 0;
+                top: 50%;
+                width: 0;
+                height: 2px;
+                background: $accent-color;
+                display: block;
+                position: absolute;
+                @include transition(all $cubic-bezier 0.3s);
+            }
+
+            &:hover {
+                @include transition(all $cubic-bezier 0.3s);
+                padding-left: $spacing-xlg;
+
+                &:before {
+                    @include transition(all $cubic-bezier 0.3s);
+                    width: $spacing-xlg;
+                }
+            }
+        }
+    }
+}
