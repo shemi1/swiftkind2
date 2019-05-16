@@ -74,6 +74,10 @@
 
                 &-slide {
                     max-width: torem(420);
+                    img{
+                        width: 100%;
+                        margin: 0 auto;
+                    }
                 }
             }
         }
@@ -107,9 +111,7 @@
                 margin-right: $spacing-xlg;
             }
 
-            p {
-                line-height: 1;
-            }
+        
 
             &:hover {
                 &:after {
