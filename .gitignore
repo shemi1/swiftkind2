@@ -1,6 +1,6 @@
 *DS_Store
 *.pyc
-*local_settings
+swiftkind/local_settings.py
 *sqlite3
 
 media/
