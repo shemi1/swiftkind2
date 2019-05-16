@@ -1,13 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
     <defs>
         <style>
-            .cls-1{fill:#ebfffc}.cls-2{fill:#01d9b6;font-size:16px;font-family:FontAwesome5ProRegular,&quot;Font Awesome 5 Pro&quot;}
+            .cls-1{fill:#ebfffc}.cls-2{fill:#01d9b6}
         </style>
     </defs>
     <g id="check-mark" transform="translate(-183 -436)">
         <circle id="Ellipse_171" cx="12" cy="12" r="12" class="cls-1" data-name="Ellipse 171" transform="translate(183 436)"/>
-        <text id="check" class="cls-2" transform="translate(187 454)">
-            <tspan x="0" y="0">check</tspan>
-        </text>
+        <path id="Union_22" d="M1387.754 2618.188l-4.388-4.091a.5.5 0 0 1-.025-.708l.682-.731a.5.5 0 0 1 .707-.025l3.382 3.154 8.435-8.434a.5.5 0 0 1 .706 0l.707.707a.5.5 0 0 1 0 .708l-9.193 9.192a.5.5 0 0 1-.242.134l-.065.07a.5.5 0 0 1-.707.024z" class="cls-2" data-name="Union 22" transform="translate(-1195.207 -2165.207)"/>
     </g>
 </svg>

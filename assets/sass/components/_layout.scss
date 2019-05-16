@@ -90,7 +90,7 @@ html {
                 &:nth-child(#{$i}) {
 
                     animation: fadeInLeft ease-in 0.3s forwards;
-                    animation-delay: #{$i/4}s;
+                    animation-delay: #{4/$i}s;
                 }
             }
 

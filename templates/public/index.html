@@ -2,24 +2,16 @@
 {% load staticfiles %}
 
 {% block content %}
-<div class="loading">
-    <div class="loading--content">
-        <div class="site-name">
-            <h6>Swiftkind</h6>
-        </div>
-        <div class="loading--progress"></div>
-    </div>
-</div>
+
 
 
 <main>
-    <img src="{% static 'images/subtraction-1.svg' %}" class=" box1"  data-speed="2" data-margin="200" data-0="transform:rotate(0deg)" data-400="transform:rotate(45deg)" data-401="top:2%; width: 40%; left: 0%"data-600="top:20%; width: 30%; left: 50%" data-710="transform:rotate(45deg); opacity:1" data-900="transform:rotate(30deg);opacity: 0.5;" data-4000="opacity:0.8" data-5000="opacity:0.3">
-    <img src="{% static 'images/subtraction-1.svg' %}" class=" box1"  data-speed="2" data-margin="200" data-0="transform:rotate(20deg)" data-400="transform:rotate(90deg)" data-401="bottom:0%; width: 20%; right: 20%"data-600="bottom:50%; width: 40%; right: 0%" data-710="transform:rotate(45deg); opacity:1" data-900="transform:rotate(30deg);opacity: 0.5;"  data-1100="transform:rotate(20deg);right:0%;opacity:1; width:50%;" data-1400="transform:rotate(90deg);right:10%; width:10% " data-4000="left:10%; width: 40%; transform: rotate(20deg); opacity:0.6" data-5000="left:30%; width: 40%;transform: rotate(70deg); opacity:0.2" >
+ 
     <article class="homepage">
         <section class="container hero">
            <div class="hero--content">
                 <div id="info"></div>
-                 <!-- <canvas id="canvas" width="100" height="100%"></canvas> -->
+              
                
                     <h1 class="hero-text wow fadeInUp h2 glitch-wrapper" data-wow-duration="0.3s">
                         <span class="wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0s">A</span>
@@ -40,7 +32,6 @@
         <section class=" services wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">
             <div class="container">
                 <div class="row services--row_wrap">
-                
                     <div class="col-md-3 col-lg-5 col-sm-10 d-md-none d-lg-block d-block offset-sm-1 offset-md-0">
                         <img src="{% static 'images/undraw_process_e90d.svg' %}" class="img-fluid ">
                     </div>
@@ -87,7 +78,7 @@
             </div>
         </section>
         <section class="container-fluid px-0 services">
-            <img src="{% static 'images/ellipse.svg' %}" class="box1" data-0="opacity:0" data-1400="0.1" data-1500="width:10%; left: 20%; opacity:0.3;" data-2000="width: 20%; left: 50%;opacity:0.6" data-2001="top: 20%;"data-2500="top: 80%" data-3000=" width:10%; opacity:0.6" data-4500="opacity: 0; width: 80%">
+           
             <div class="row no-gutters services--container">
                 <div class="col-md-10 offset-1 col-lg-5">
                     <div class="boxed">
@@ -120,7 +111,7 @@
                 
             </div>
         </section>
-        <section class="projects container">
+       <!--  <section class="projects container">
             <div class="swiper-container projects--swiper  wow fadeInLeft" data-wow-duration="0.3s" data-wow-delay="0">
                 <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -130,7 +121,6 @@
                                 <h2 class="title-strong">Beaubay</h2>
                                 <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</h6>
                                 <p>Backend / API / UI/UX</p>
-                                 <!-- Add Pagination -->
                                 <div class="slide-details">
                                     <div class="swiper-pagination"></div>
                                     <a href="" class="more-details">Details
@@ -148,7 +138,6 @@
                                 <h2 class="title-strong">Beaubay</h2>
                                 <h6>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor.</h6>
                                 <p>Backend / API / UI/UX</p>
-                                 <!-- Add Pagination -->
                                 <div class="slide-details">
                                     <div class="swiper-pagination"></div>
                                     <a href="" class="more-details">Details
@@ -160,11 +149,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- Add Arrows -->
                 <div class="swiper-button-next"></div>
             </div>
         </section>
-        
+         -->
        
         <section class="container team">
             <div class="text-right">
@@ -299,21 +287,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 py-5">
-                        <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.1">
-                            <img src="{% static 'images/team/migz-dorado.png' %}" data-rjs="3">
-                            <div>
-                                <h6 class="title-strong mb-0">Migz Dorado</h6>
-                                <p>Software Engineer</p>
-                            </div>
-                        </div>
-                    </div>
+                   
                     <div class="col-md-6 col-lg-4 py-5">
                         <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.1">
                             <img src="{% static 'images/team/louis-dagusen.png' %}" data-rjs="3">
                             <div>
                                 <h6 class="title-strong mb-0">Louis Dagusen</h6>
                                 <p>Software Engineer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 py-5">
+                        <div class="team--member  wow fadeInUp" data-wow-duration="0.4s" data-wow-delay="0.1">
+                            <img src="{% static 'images/team/josh-dellosa.png' %}" data-rjs="3">
+                            <div>
+                                <h6 class="title-strong mb-0">Josh Dellosa</h6>
+                                <p>Business Development Consultant</p>
                             </div>
                         </div>
                     </div>

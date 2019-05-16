@@ -1,26 +1,69 @@
 .process {
     .hero {
         &--content {
-            padding:0;
+            padding: 0;
             text-align: left;
             width: 100%;
             @include flexbox();
             @include align-items(flex-end);
+            @include mobile{
+                flex-direction: column;
+            }
+            .clip {
+                @include mobile {
+                    width: 50vw;
+                    height: 40vh;
+                    margin:1rem auto 3rem;
+                }
+            }
+            &-copy{
+                background: $white;
+                padding:$spacing-xxlg 1rem $spacing-xlg;
+            }
         }
     }
 
     &-stages {
         padding-top: $spacing-xxxlg;
         padding-bottom: $spacing-xxxlg;
+        position: relative;
+        overflow-x: hidden;
 
         p {
             margin-bottom: $spacing-xlg;
         }
+        @include mobile{
+            padding:0;
+        }
+        .beehive {
+            position: absolute;
+            right: -13rem;
+            top: 0;
+            z-index: 0;
 
+            @include mobile {
+                opacity: 0.5;
+            }
+
+            ellipse {
+
+
+                @for $i from 1 through 50 {
+                    &:nth-child(#{$i}) {
+                        $rand: random();
+                        animation: fill-in ease-in 20s forwards infinite;
+                        animation-delay: #{($rand/$i)*$i}s;
+                    }
+                }
+            }
+
+        }
     }
+
     .team-represent {
         padding-bottom: $spacing-xxxlg;
         background: rgba($white, 0.8);
+
         .team-photo {
             -webkit-clip-path: polygon(100% 0, 100% 68%, 64% 68%, 0% 100%, 0 37%, 59% 4%);
             clip-path: polygon(100% 0, 100% 68%, 64% 68%, 0% 100%, 0 37%, 59% 4%);
@@ -33,19 +76,33 @@
 
             width: 100%;
             height: 70vh;
+            margin-bottom: 4rem;
 
         }
     }
 
     .standpoint {
         padding-top: $spacing-xxxlg;
-        padding-bottom: $spacing-xxxlg;
+        padding-bottom: 22rem;
         background: rgba($white, 0.8);
+
+        @include tablet {
+            padding-bottom: $spacing-xxxlg;
+        }
+        @include mobile{
+                padding: 13rem 1rem 20rem;
+        }
+
         &--statement {
 
             letter-spacing: -0.5px;
             font-size: torem(25);
             margin-bottom: $spacing-xlg;
+            @include mobile{
+                font-size: 1.2rem;
+                text-align-last: center;
+                text-align: justify;
+            }
         }
     }
 
@@ -54,8 +111,9 @@
             padding-top: $spacing-xxxlg;
             padding-bottom: $spacing-xxxlg;
             margin-bottom: $spacing-xxxlg;
-            background:#F9FAFC;
+            background: #F9FAFC;
             position: relative;
+
             &:before {
                 content: '';
                 width: 50%;
@@ -66,6 +124,14 @@
                 position: absolute;
                 top: -80px;
                 right: 0;
+            }
+            @include mobile{
+                *{
+                    text-align: center !important;
+                }
+                p{
+                    margin-bottom: $spacing-xxlg;
+                }
             }
         }
 

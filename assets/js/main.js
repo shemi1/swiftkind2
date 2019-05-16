@@ -37,6 +37,11 @@ $(document).ready(function() {
                 768: {
                     slidesPerView: 1,
                     spaceBetween: 0,
+                },
+                320: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    centeredSlides: true,
                 }
             }
         });
@@ -79,6 +84,11 @@ $(document).ready(function() {
         //     useStickyClasses: true,
         //     stickyBitStickyOffset: 300
         // });
+
+
+        //initialize rellax js
+
+        var rellax = new Rellax('.rellax');
 
 
 
