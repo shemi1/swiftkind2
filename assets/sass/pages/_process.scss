@@ -1,7 +1,7 @@
 .process {
     .hero {
         &--content {
-            padding:0;
+            padding: 0;
             text-align: left;
             width: 100%;
             @include flexbox();
@@ -11,16 +11,36 @@
 
     &-stages {
         padding-top: $spacing-xxxlg;
-        padding-bottom: $spacing-xxxlg;
-
+        padding-bottom:$spacing-xxxlg;
+        position: relative;
+        overflow-x:hidden;
         p {
             margin-bottom: $spacing-xlg;
         }
 
+        .beehive {
+            position: absolute;
+            right: -13rem;
+            top: 0;
+            ellipse{
+
+
+                @for $i from 1 through 50 {
+                    &:nth-child(#{$i}) {
+                        $rand: random();
+                        animation: fill-in ease-in 20s forwards infinite; 
+                        animation-delay: #{($rand/$i)*$i}s;
+                    }
+                }
+            }
+
+        }
     }
+
     .team-represent {
         padding-bottom: $spacing-xxxlg;
         background: rgba($white, 0.8);
+
         .team-photo {
             -webkit-clip-path: polygon(100% 0, 100% 68%, 64% 68%, 0% 100%, 0 37%, 59% 4%);
             clip-path: polygon(100% 0, 100% 68%, 64% 68%, 0% 100%, 0 37%, 59% 4%);
@@ -33,14 +53,19 @@
 
             width: 100%;
             height: 70vh;
+            margin-bottom: 4rem;
 
         }
     }
 
     .standpoint {
         padding-top: $spacing-xxxlg;
-        padding-bottom: $spacing-xxxlg;
+        padding-bottom: 22rem;
         background: rgba($white, 0.8);
+        @include tablet{
+            padding-bottom: $spacing-xxxlg;
+        }
+
         &--statement {
 
             letter-spacing: -0.5px;
@@ -54,8 +79,9 @@
             padding-top: $spacing-xxxlg;
             padding-bottom: $spacing-xxxlg;
             margin-bottom: $spacing-xxxlg;
-            background:#F9FAFC;
+            background: #F9FAFC;
             position: relative;
+
             &:before {
                 content: '';
                 width: 50%;

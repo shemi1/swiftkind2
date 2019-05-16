@@ -18,6 +18,14 @@
     </head>
 
     <body class="page-wrapper">
+        <div class="loading">
+            <div class="loading--content">
+                <div class="site-name">
+                    <h6>Swiftkind</h6>
+                </div>
+                <div class="loading--progress"></div>
+            </div>
+        </div>
         {% block header %}
         <header class="header--container">
             <nav class="navbar main-nav">
@@ -118,7 +126,7 @@
         <!-- PLUG IN -->
         <script type="text/javascript" src="{% static 'js/dist/threejs/three.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/dist/WebGL/WebGL.js' %}"></script>
-
+        <script type="text/javascript" src="{% static 'node_modules/rellax/rellax.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'node_modules/stickybits/dist/jquery.stickybits.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'node_modules/wowjs/dist/wow.js' %}"></script>
         <script type="text/javascript" src="{% static 'node_modules/swiper/dist/js/swiper.min.js' %}"></script>

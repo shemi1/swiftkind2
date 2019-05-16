@@ -221,19 +221,6 @@
 }
 
 
-.box {}
-
-.box1 {
-    top: 30%;
-    position: fixed;
-    z-index: 0;
-    left: 0;
-    z-index: -1;
-    display: none;
-
-    @include mobile {}
-}
-
 canvas {
     width: 100%;
     height: 100%;

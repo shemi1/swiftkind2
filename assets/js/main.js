@@ -81,6 +81,11 @@ $(document).ready(function() {
         // });
 
 
+        //initialize rellax js
+
+        var rellax = new Rellax('.rellax');
+
+
 
     }, 2000);
 
