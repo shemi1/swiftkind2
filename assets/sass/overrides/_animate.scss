@@ -831,3 +831,60 @@
 
 }
 
+
+
+//BUBBLES
+
+
+#bubbles {
+     width: 100%;
+    height: torem(300);
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    top: 0;
+    background: $white;
+    &:before{
+        content: "";
+        position: absolute;
+        top:0;
+        left:0;
+        background-image: linear-gradient(to bottom, #ffffff, rgba(255, 255, 255, 0));
+        height: torem(200);
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+#bubbles div {
+   background-image: linear-gradient(134deg, rgba(220, 229, 244, 0.28), rgba(154, 159, 183, 0.34));
+  border-radius: 100%;
+
+  position: absolute;
+
+  visibility: hidden;
+
+  -webkit-animation: fade 5s infinite;
+}
+
+@-webkit-keyframes fade {
+  from {
+    bottom: -24px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    bottom: 120%;
+  }
+}
+
+@keyframes fade {
+  from {
+    bottom: -24px;
+    opacity: 1;
+    visibility: visible;
+  }
+  to {
+    bottom: 120%;
+  }
+}

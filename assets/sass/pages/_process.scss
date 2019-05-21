@@ -28,7 +28,7 @@
         padding-bottom: $spacing-xxxlg;
         position: relative;
         overflow-x: hidden;
-
+        background: rgba($white, 0.8);
         p {
             margin-bottom: $spacing-xlg;
         }
@@ -65,17 +65,14 @@
         background: rgba($white, 0.8);
 
         .team-photo {
-            -webkit-clip-path: polygon(100% 0, 100% 68%, 64% 68%, 0% 100%, 0 37%, 59% 4%);
-            clip-path: polygon(100% 0, 100% 68%, 64% 68%, 0% 100%, 0 37%, 59% 4%);
-
             background: {
-                image: url(../images/priscilla-du-preez-623040-unsplash.jpg);
+                image: url(../images/dscf-2373.jpg);
                 size: cover;
                 position: center;
             }
 
             width: 100%;
-            height: 70vh;
+            height: 700px;
             margin-bottom: 4rem;
 
         }
@@ -83,8 +80,8 @@
 
     .standpoint {
         padding-top: $spacing-xxxlg;
-        padding-bottom: 22rem;
-        background: rgba($white, 0.8);
+        padding-bottom: 0rem;
+        background: rgba($white,1);
 
         @include tablet {
             padding-bottom: $spacing-xxxlg;
@@ -110,7 +107,6 @@
         &--meaning {
             padding-top: $spacing-xxxlg;
             padding-bottom: $spacing-xxxlg;
-            margin-bottom: $spacing-xxxlg;
             background: #F9FAFC;
             position: relative;
 
