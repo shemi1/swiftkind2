@@ -133,7 +133,7 @@ $(document).ready(function() {
         })();
 
 
-    }, 0);
+    }, 2000);
 
 
     var screen = $(window).width();
