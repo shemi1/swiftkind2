@@ -18,7 +18,7 @@ $(document).ready(function() {
         });
 
         // initialize swiper rtl
-        var swiper = new Swiper('.swiper__generic', {
+        var swiper__generic = new Swiper('.swiper__generic', {
 
 
             pagination: {
@@ -48,11 +48,28 @@ $(document).ready(function() {
 
         //testimony slider
 
-        var swiper = new Swiper('.testimony--swiper', {
+        var testimony = new Swiper('.testimony--swiper', {
             pagination: {
                 el: '.swiper-pagination'
             },
         });
+
+        //project screens slider
+        var project__screen = new Swiper('.project__screen', {
+            pagination: {
+                el: '.swiper-pagination'
+            },
+            loop: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            spaceBetween: 50,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+
+        });
+
 
 
         //project before redirect animation
@@ -116,7 +133,7 @@ $(document).ready(function() {
         })();
 
 
-    }, 2000);
+    }, 0);
 
 
     var screen = $(window).width();

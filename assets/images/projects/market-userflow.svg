@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1142" height="562" viewBox="0 0 1142 562">
+    <defs>
+        <style>
+            .cls-1{fill:#5a43ef}.cls-2{fill:#fff;font-size:16px;font-family:Volte-Semibold,Volte;font-weight:600;letter-spacing:-.024em}.cls-3,.cls-4{fill:#a396f2}.cls-4{stroke:#a396f2;stroke-linejoin:round}
+        </style>
+    </defs>
+    <g id="market-userflow" transform="translate(-154 -3478)">
+        <g id="Group_521" data-name="Group 521" transform="translate(-40 -3)">
+            <rect id="Rectangle_159" width="131" height="47" class="cls-1" data-name="Rectangle 159" rx="23.5" transform="translate(194 3622)"/>
+            <text id="Homepage" class="cls-2" transform="translate(220 3650)">
+                <tspan x="0" y="0">Homepage</tspan>
+            </text>
+        </g>
+        <g id="Group_522" data-name="Group 522" transform="translate(91)">
+            <rect id="Rectangle_160" width="131" height="47" class="cls-1" data-name="Rectangle 160" rx="23.5" transform="translate(289 3478)"/>
+            <text id="Search" class="cls-2" transform="translate(330 3506)">
+                <tspan x="0" y="0">Search</tspan>
+            </text>
+        </g>
+        <g id="Group_524" data-name="Group 524" transform="translate(352 141)">
+            <rect id="Rectangle_160-2" width="169" height="47" class="cls-1" data-name="Rectangle 160" rx="23.5" transform="translate(289 3478)"/>
+            <text id="Select_Product" class="cls-2" data-name="Select Product" transform="translate(323 3506)">
+                <tspan x="0" y="0">Select Product</tspan>
+            </text>
+        </g>
+        <g id="Group_526" data-name="Group 526" transform="translate(616 1)">
+            <rect id="Rectangle_160-3" width="146" height="47" class="cls-1" data-name="Rectangle 160" rx="23.5" transform="translate(289 3478)"/>
+            <text id="View_Demo" class="cls-2" data-name="View Demo" transform="translate(322 3506)">
+                <tspan x="0" y="0">View Demo</tspan>
+            </text>
+        </g>
+        <g id="Group_527" data-name="Group 527" transform="translate(616 282)">
+            <rect id="Rectangle_160-4" width="156" height="47" class="cls-1" data-name="Rectangle 160" rx="23.5" transform="translate(289 3478)"/>
+            <text id="View_Details" class="cls-2" data-name="View Details" transform="translate(322 3506)">
+                <tspan x="0" y="0">View Details</tspan>
+            </text>
+        </g>
+        <g id="Group_530" data-name="Group 530" transform="translate(616 366)">
+            <rect id="Rectangle_160-5" width="156" height="47" class="cls-1" data-name="Rectangle 160" rx="23.5" transform="translate(289 3478)"/>
+            <text id="New_User" class="cls-2" data-name="New User" transform="translate(334 3506)">
+                <tspan x="0" y="0">New User</tspan>
+            </text>
+        </g>
+        <g id="Group_532" data-name="Group 532" transform="translate(352 366)">
+            <rect id="Rectangle_160-6" width="156" height="47" class="cls-1" data-name="Rectangle 160" rx="23.5" transform="translate(289 3478)"/>
+            <text id="Sign_Up" class="cls-2" data-name="Sign Up" transform="translate(340 3506)">
+                <tspan x="0" y="0">Sign Up</tspan>
+            </text>
+        </g>
+        <g id="Group_531" data-name="Group 531" transform="translate(616 515)">
+            <rect id="Rectangle_160-7" width="156" height="47" class="cls-1" data-name="Rectangle 160" rx="23.5" transform="translate(289 3478)"/>
+            <text id="Current_User" class="cls-2" data-name="Current User" transform="translate(323 3506)">
+                <tspan x="0" y="0">Current User</tspan>
+            </text>
+        </g>
+        <g id="Group_533" data-name="Group 533" transform="translate(352 515)">
+            <rect id="Rectangle_160-8" width="166" height="47" class="cls-1" data-name="Rectangle 160" rx="23.5" transform="translate(279 3478)"/>
+            <text id="Goes_to_Payment" class="cls-2" data-name="Goes to Payment" transform="translate(302 3506)">
+                <tspan x="0" y="0">Goes to Payment</tspan>
+            </text>
+        </g>
+        <g id="Group_534" data-name="Group 534" transform="translate(78 515)">
+            <rect id="Rectangle_160-9" width="166" height="47" class="cls-1" data-name="Rectangle 160" rx="23.5" transform="translate(279 3478)"/>
+            <text id="Confirm_Payment" class="cls-2" data-name="Confirm Payment" transform="translate(301 3506)">
+                <tspan x="0" y="0">Confirm Payment</tspan>
+            </text>
+        </g>
+        <g id="Group_529" data-name="Group 529" transform="translate(859.801 441)">
+            <rect id="Rectangle_160-10" width="123.199" height="47" class="cls-1" data-name="Rectangle 160" rx="23.5" transform="translate(289.199 3478)"/>
+            <text id="Login" class="cls-2" transform="translate(331.199 3506)">
+                <tspan x="0" y="0">Login</tspan>
+            </text>
+        </g>
+        <g id="Group_528" data-name="Group 528" transform="translate(830 282)">
+            <rect id="Rectangle_160-11" width="177" height="47" class="cls-1" data-name="Rectangle 160" rx="23.5" transform="translate(289 3478)"/>
+            <text id="Purchase_Product" class="cls-2" data-name="Purchase Product" transform="translate(322 3506)">
+                <tspan x="0" y="0">Purchase Product</tspan>
+            </text>
+        </g>
+        <g id="Group_523" data-name="Group 523" transform="translate(91)">
+            <rect id="Rectangle_161" width="169" height="47" class="cls-1" data-name="Rectangle 161" rx="23.5" transform="translate(289 3760)"/>
+            <text id="Scan_Homepage" class="cls-2" data-name="Scan Homepage" transform="translate(316 3788)">
+                <tspan x="0" y="0">Scan Homepage</tspan>
+            </text>
+        </g>
+        <path id="Rectangle_162" d="M0 0h2v285H0z" class="cls-3" data-name="Rectangle 162" transform="translate(337 3501)"/>
+        <path id="Rectangle_171" d="M0 0h2v285H0z" class="cls-3" data-name="Rectangle 171" transform="translate(862 3501)"/>
+        <path id="Rectangle_176" d="M0 0h2v96H0z" class="cls-3" data-name="Rectangle 176" transform="translate(1207 3814)"/>
+        <path id="Rectangle_168" d="M0 0h2v285H0z" class="cls-3" data-name="Rectangle 168" transform="translate(587 3501)"/>
+        <path id="Rectangle_178" d="M0 0h2v150H0z" class="cls-3" data-name="Rectangle 178" transform="translate(1101 3867)"/>
+        <path id="Rectangle_184" d="M0 0h2v80H0z" class="cls-3" data-name="Rectangle 184" transform="translate(720 3901)"/>
+        <path id="Rectangle_163" d="M0 0h2v30H0z" class="cls-3" data-name="Rectangle 163" transform="rotate(90 -1566.5 1934.5)"/>
+        <path id="Rectangle_173" d="M0 0h2v30H0z" class="cls-3" data-name="Rectangle 173" transform="rotate(90 -1304 2197)"/>
+        <path id="Rectangle_167" d="M0 0h2v66H0z" class="cls-3" data-name="Rectangle 167" transform="rotate(90 -1456.5 2044.5)"/>
+        <path id="Rectangle_165" d="M0 0h2v30H0z" class="cls-3" data-name="Rectangle 165" transform="rotate(90 -1652.5 1989.5)"/>
+        <path id="Rectangle_172" d="M0 0h2v30H0z" class="cls-3" data-name="Rectangle 172" transform="rotate(90 -1390 2252)"/>
+        <path id="Rectangle_169" d="M0 0h2v30H0z" class="cls-3" data-name="Rectangle 169" transform="rotate(90 -1511.5 2130.5)"/>
+        <path id="Rectangle_179" d="M0 0h2v30H0z" class="cls-3" data-name="Rectangle 179" transform="rotate(90 -1406 2537)"/>
+        <path id="Rectangle_164" d="M0 0h2v30H0z" class="cls-3" data-name="Rectangle 164" transform="rotate(90 -1708 2076)"/>
+        <path id="Rectangle_174" d="M0 0h2v30H0z" class="cls-3" data-name="Rectangle 174" transform="rotate(90 -1445.5 2338.5)"/>
+        <path id="Rectangle_175" d="M0 0h2v30H0z" class="cls-3" data-name="Rectangle 175" transform="rotate(90 -1339.5 2444.5)"/>
+        <path id="Rectangle_166" d="M0 0h2v30H0z" class="cls-3" data-name="Rectangle 166" transform="rotate(90 -1598 2186)"/>
+        <path id="Rectangle_180" d="M0 0h2v30H0z" class="cls-3" data-name="Rectangle 180" transform="rotate(90 -1383 2484)"/>
+        <path id="Rectangle_182" d="M0 0h2v71.669H0z" class="cls-3" data-name="Rectangle 182" transform="rotate(90 -1490 2377)"/>
+        <path id="Rectangle_181" d="M0 0h2v30H0z" class="cls-3" data-name="Rectangle 181" transform="rotate(90 -1457 2558)"/>
+        <path id="Rectangle_183" d="M0 0h2v71.669H0z" class="cls-3" data-name="Rectangle 183" transform="rotate(90 -1564 2451)"/>
+        <path id="Rectangle_185" d="M0 0h2v71.669H0z" class="cls-3" data-name="Rectangle 185" transform="rotate(90 -1701 2314)"/>
+        <path id="Path_389" d="M6585.055 270.5h12l-5.842 10z" class="cls-4" data-name="Path 389" transform="translate(-5870 3706)"/>
+        <path id="Path_396" d="M6585.055 270.5h12l-5.842 10z" class="cls-4" data-name="Path 396" transform="translate(-5383 3631)"/>
+        <path id="Path_390" d="M0 10h12L6.158 0z" class="cls-4" data-name="Path 390" transform="rotate(90 -1703.223 2076.278)"/>
+        <path id="Path_391" d="M0 10h12L6.158 0z" class="cls-4" data-name="Path 391" transform="rotate(90 -1561.223 1934.277)"/>
+        <path id="Path_392" d="M0 10h12L6.158 0z" class="cls-4" data-name="Path 392" transform="rotate(90 -1503.723 2132.778)"/>
+        <path id="Path_393" d="M0 10h12L6.158 0z" class="cls-4" data-name="Path 393" transform="rotate(90 -1297.723 2197.778)"/>
+        <path id="Path_394" d="M0 10h12L6.158 0z" class="cls-4" data-name="Path 394" transform="rotate(90 -1439.223 2339.278)"/>
+        <path id="Path_395" d="M0 10h12L6.158 0z" class="cls-4" data-name="Path 395" transform="rotate(90 -1333.723 2444.778)"/>
+        <path id="Path_398" d="M0 0h12L6.158 10z" class="cls-4" data-name="Path 398" transform="rotate(90 -1520.723 2340.778)"/>
+        <path id="Path_399" d="M0 0h12L6.158 10z" class="cls-4" data-name="Path 399" transform="rotate(90 -1594.723 2414.778)"/>
+        <path id="Path_400" d="M0 0h12L6.158 10z" class="cls-4" data-name="Path 400" transform="rotate(90 -1732.223 2277.278)"/>
+        <path id="Path_397" d="M0 10h12L6.158 0z" class="cls-4" data-name="Path 397" transform="rotate(90 -1398.223 2539.278)"/>
+    </g>
+</svg>

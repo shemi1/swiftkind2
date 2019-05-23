@@ -1,103 +1,175 @@
-   .stayed-top{
+.stayed-top {
     position: fixed;
-    top:0;
+    top: 0;
     z-index: 999999;
 
-   }
+}
 
-   .projects {
-    &-page{
+.projects {
+    &-page {
         height: 100%;
         @include flexbox();
         @include align-items(flex-end);
         overflow-y: hidden;
-        padding-top:40vh;
-        .projects{
-            padding:0;
-            .projects--img{
+        padding-top: 40vh;
+
+        .projects {
+            padding: 0;
+
+            .projects--img {
                 animation-duration: 2s;
             }
         }
     }
-        padding-top: $spacing-xxxlg;
-        padding-bottom: $spacing-xxxlg;
 
-        &--swiper {
-            .swiper {
-                &-container {}
+    padding-top: $spacing-xxxlg;
+    padding-bottom: $spacing-xxxlg;
 
-                &-wrapper {}
+    &--swiper {
+        .swiper {
+            &-container {}
 
-                &-slide {}
+            &-wrapper {}
 
-                &-pagination {
-                    position: relative;
-                    text-align: left;
-                    color: transparent;
+            &-slide {}
+
+            &-pagination {
+                position: relative;
+                text-align: left;
+                color: transparent;
+                @include flex-align-center();
+                font-size: $small;
+
+                &-current {
+                    color: $charcoal-grey;
+                }
+
+                &-total {
+                    color: $charcoal-grey;
                     @include flex-align-center();
-                    font-size: $small;
 
-                    &-current {
-                        color: $charcoal-grey;
-                    }
-
-                    &-total {
-                        color: $charcoal-grey;
-                        @include flex-align-center();
-
-                        &:before {
-                            content: "";
-                            width: torem(58);
-                            height: 1px;
-                            background: $charcoal-grey;
-                            display: block;
-                            margin-right: 0.5rem;
-                        }
+                    &:before {
+                        content: "";
+                        width: torem(58);
+                        height: 1px;
+                        background: $charcoal-grey;
+                        display: block;
+                        margin-right: 0.5rem;
                     }
                 }
-            }
-
-            .swiper-button-next {
-                background-image: url(../images/next-arrow.svg);
             }
         }
 
-        &--item {
-            @include flexbox();
-            @include align-items(start);
-            @include justify-content(center);
-            background: rgba($white, 0.5);
-            padding-bottom: $spacing-xxxlg;
-            &.redirecting{
-                opacity: 0;
-                @include transition(all ease 1s);
+        .swiper-button-next {
+            background-image: url(../images/next-arrow.svg);
+        }
+    }
+
+    &--item {
+        @include flexbox();
+        @include align-items(start);
+        @include justify-content(center);
+        background: rgba($white, 0.5);
+        padding-bottom: $spacing-xxxlg;
+
+        &.redirecting {
+            opacity: 0;
+            @include transition(all ease 1s);
+        }
+
+        &--content {
+
+
+            padding-top: 2rem;
+            max-width: torem(450);
+
+            p {
+                font-family: $volte-md;
             }
 
-            &--content {
-               
+            .slide-details {
 
-                padding-top: 2rem;
-                max-width: torem(450);
-                p{
-                    font-family: $volte-md;
-                }
-                .slide-details {
+                margin-top: $spacing-xxlg;
+                @include flex-align-center();
+                @include justify-content(space-between);
 
-                    margin-top: $spacing-xxlg;
+                .more-details {
+                    margin-top: torem(-18);
+                    font-size: $small;
                     @include flex-align-center();
-                    @include justify-content(space-between);
 
-                    .more-details {
-                        margin-top: torem(-18);
-                        font-size: $small;
-                        @include flex-align-center();
-
-                        .arrow-right {
-                            margin-left: 0.5rem;
-                        }
+                    .arrow-right {
+                        margin-left: 0.5rem;
                     }
                 }
+            }
 
+        }
+    }
+}
+
+
+/* PROJECT DETAILS PAGE
+* @desc: Styles for project page;
+*/
+
+
+.c-project {
+    &__header {
+        height: 100vh;
+        @include justify-align-center();
+    }
+
+    &__main-image {}
+
+    &__brief {
+        padding: $spacing-xxxlg 0;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), #fafafa);
+    }
+
+    &__tagline {
+        font-size: torem(45);
+        font-family: $volte-smb;
+        line-height: 1.33;
+    }
+
+    &__screen-slides {
+        padding: $spacing-xxlg 0;
+
+        .project__screen {
+            .swiper-slide {
+                width: auto;
+                padding: $spacing-xxlg 0;
+                @include transition(opacity 0.5s ease);
+                img {
+                    border-radius: 20px;
+                    box-shadow: 0 10px 30px 0 rgba(152, 152, 152, 0.16);
+                }
+                &-prev, &-next{
+                    opacity: 0.5;
+                    @include transition(opacity 0.5s ease);
+                }
+                &-active{
+                    opacity: 1;
+                    @include transition(opacity 0.5s ease);
+                }
             }
         }
     }
+    &__research{
+        padding: $spacing-xxxlg 0;
+        background: $white;
+    }
+    &__phase{
+        font-family: $volte-smb;
+        letter-spacing: 2.7px;
+    }
+    &__next{
+
+        height: 50vh;
+        @include justify-align-center();
+        h3{
+            line-height: 1;
+        }
+    }
+}

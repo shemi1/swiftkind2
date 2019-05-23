@@ -207,17 +207,7 @@
                 }
             }
 
-            .swiper-pagination-bullet {
-                width: torem(54);
-                height: 2px;
-                background-color: $charcoal-grey;
-                opacity: 0.15;
-                border-radius: 0;
-
-                &-active {
-                    opacity: 1;
-                }
-            }
+            
         }
     }
 }
