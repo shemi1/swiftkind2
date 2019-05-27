@@ -6,4 +6,5 @@ urlpatterns = [
     path('process/', TemplateView.as_view(template_name='public/process.html'), name="process"),
     path('projects/', TemplateView.as_view(template_name='public/projects.html'), name="projects"),
     path('maintenance/', TemplateView.as_view(template_name='public/maintenance.html'), name="maintenance"),
+    path('market/', TemplateView.as_view(template_name='public/marketplace.html'), name="blog"),
 ]
