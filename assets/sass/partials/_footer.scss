@@ -8,13 +8,22 @@
         position: absolute;
         height: torem(500);
         width: 100%;
-        top:0;
+        top: 0;
         z-index: -1;
     }
-    h2{
+
+    @include mobile{
+        padding-top:0;
+    }
+    h2 {
         font-size: torem(45);
         line-height: 1;
+
+        @include mobile {
+            font-size: 2.5rem;
+        }
     }
+
     .map {
         position: absolute;
         left: 0;
@@ -28,14 +37,16 @@
         @include flex-direction(column);
         padding-bottom: $spacing-xxxlg;
         z-index: 99;
+        @include mobile{
+            padding-bottom: $spacing-xxlg;
+        }
         a {
             font-size: $h4;
             font-family: $volte-md;
             margin-top: 1rem;
             margin-bottom: 2rem;
             position: relative;
-             letter-spacing: -0.4px;
-
+            letter-spacing: -0.4px;
             &:before {
                 content: "";
                 width: torem(340);
@@ -47,6 +58,16 @@
                 position: absolute;
                 bottom: 0;
             }
+
+            @include mobile {
+                font-size: 1.5rem;
+                text-align: center;
+
+                &:before {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+            }
         }
     }
 }
@@ -57,7 +78,13 @@ footer {
     .address {
         max-width: 30%;
         line-height: 1.67;
-         font-family: $volte-md;
+        font-family: $volte-md;
+        @include tablet{
+            max-width: 50%;
+        }
+        @include mobile{
+            max-width: 100%;
+        }
     }
 
     a {

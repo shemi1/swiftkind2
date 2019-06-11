@@ -2,7 +2,7 @@
  * @desc : Declares breakpoints for each device;
  */
 
-$phone-width: toem(300);
+$phone-width: toem(767);
 $tablet-width: toem(768);
 $desktop-width: toem(992);
 $desktop-md-width: toem(1200);
@@ -10,7 +10,7 @@ $desktop-lg-width:toem(1440);
 $desktop-xlg-width:toem(1600);
 
 @mixin mobile {
-    @media (min-width: $phone-width) and (max-width: $tablet-width) {
+    @media (max-width: $phone-width) {
         @content;
     }
 }

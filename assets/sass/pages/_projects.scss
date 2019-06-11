@@ -7,11 +7,10 @@
 
 .projects {
     &-page {
-        height: 100%;
+        height: 100vh;
         @include flexbox();
-        @include align-items(flex-end);
+        @include align-items(center);
         overflow-y: hidden;
-        padding-top: 40vh;
 
         .projects {
             padding: 0;
@@ -19,6 +18,9 @@
             .projects--img {
                 animation-duration: 2s;
             }
+        }
+        @include mobile{
+            padding-top: 6rem;
         }
     }
 
@@ -79,13 +81,21 @@
 
         &--content {
 
-
+            padding-left: $spacing-xxlg;
             padding-top: 2rem;
             max-width: torem(450);
-
+            @include mobile{
+                display: none;
+            }
+            h2{
+                @include tablet{
+                    font-size:torem(45);
+                }
+            }
             p {
                 font-family: $volte-md;
-            }
+            }  
+            
 
             .slide-details {
 
@@ -106,6 +116,7 @@
 
         }
     }
+
 }
 
 

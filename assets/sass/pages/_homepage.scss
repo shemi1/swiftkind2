@@ -164,7 +164,7 @@
         }
 
         @include mobile {
-            padding: $spacing-xxxlg $spacing-lg;;
+            padding: $spacing-xxxlg 0;
         }
 
         &--content {
