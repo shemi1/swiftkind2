@@ -74,6 +74,10 @@
             width: 100%;
             height: 700px;
             margin-bottom: 4rem;
+            @include mobile{
+                height: 0;
+                margin-bottom: 0;
+            }
 
         }
     }
@@ -87,7 +91,7 @@
             padding-bottom: $spacing-xxxlg;
         }
         @include mobile{
-                padding: 13rem 1rem 20rem;
+                padding: 13rem 1rem 0rem;
         }
 
         &--statement {

@@ -19,7 +19,8 @@
                 animation-duration: 2s;
             }
         }
-        @include mobile{
+
+        @include mobile {
             padding-top: 6rem;
         }
     }
@@ -84,18 +85,21 @@
             padding-left: $spacing-xxlg;
             padding-top: 2rem;
             max-width: torem(450);
-            @include mobile{
+
+            @include mobile {
                 display: none;
             }
-            h2{
-                @include tablet{
-                    font-size:torem(45);
+
+            h2 {
+                @include tablet {
+                    font-size: torem(45);
                 }
             }
+
             p {
                 font-family: $volte-md;
-            }  
-            
+            }
+
 
             .slide-details {
 
@@ -136,6 +140,11 @@
     &__brief {
         padding: $spacing-xxxlg 0;
         background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), #fafafa);
+
+        @include mobile {
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
     }
 
     &__tagline {
@@ -152,35 +161,61 @@
                 width: auto;
                 padding: $spacing-xxlg 0;
                 @include transition(opacity 0.5s ease);
+
                 img {
                     border-radius: 20px;
                     box-shadow: 0 10px 30px 0 rgba(152, 152, 152, 0.16);
                 }
-                &-prev, &-next{
+
+                &-prev,
+                &-next {
                     opacity: 0.5;
                     @include transition(opacity 0.5s ease);
                 }
-                &-active{
+
+                &-active {
                     opacity: 1;
                     @include transition(opacity 0.5s ease);
+                }
+
+                @include mobile {
+                    width: 100%;
                 }
             }
         }
     }
-    &__research{
+
+    &__research {
         padding: $spacing-xxxlg 0;
         background: $white;
+
+        @include mobile {
+            padding: $spacing-xxxlg 2rem;
+
+            ol {
+                padding-left: 1rem;
+            }
+        }
+
     }
-    &__phase{
+
+    &__phase {
         font-family: $volte-smb;
         letter-spacing: 2.7px;
     }
-    &__next{
+
+    &__next {
 
         height: 50vh;
         @include justify-align-center();
-        h3{
+
+        h3 {
             line-height: 1;
+
+            @include mobile {
+                font-size: 2rem;
+            }
         }
+
     }
 }

@@ -30,6 +30,21 @@ $(document).ready(function() {
                 prevEl: '.swiper-button-prev',
             },
             breakpoints: {
+                2500: {
+                    slidesPerView: 1,
+                    spaceBetween: 55,
+                    loop: true
+                },
+                1440: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 55,
+                    loop: true
+                },
+                1200: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 55,
+                    loop: true
+                },
                 1024: {
                     slidesPerView: 1,
                     spaceBetween: 55,
@@ -67,13 +82,23 @@ $(document).ready(function() {
                 el: '.swiper-pagination'
             },
             loop: true,
-            slidesPerView: 'auto',
-            centeredSlides: true,
-            spaceBetween: 50,
+
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,
             },
+            breakpoints: {
+                1440: {
+                    slidesPerView: 'auto',
+                    centeredSlides: true,
+                    spaceBetween: 50,
+                },
+                320: {
+                    slidesPerView: 1,
+                    centeredSlides: true,
+                    spaceBetween: 0,
+                }
+            }
 
         });
 
@@ -256,20 +281,20 @@ $(document).ready(function() {
             var imgLink = $(navItem).hasClass('img-link');
             var link = $(navItem).hasClass('link');
             $('.main').addClass('link-hovered');
-            if (imgLink == true){
+            if (imgLink == true) {
                 $('.cursor').addClass('detail-hovered');
             }
 
-            
-            
-            
+
+
+
         };
 
         // reset isStuck on mouseLeave
         const handleMouseLeave = () => {
             isStuck = false;
-             $('main').removeClass('detail-hovered');
-             $('.cursor').removeClass('detail-hovered');
+            $('main').removeClass('detail-hovered');
+            $('.cursor').removeClass('detail-hovered');
         };
 
         // add event listeners to all items
@@ -290,7 +315,7 @@ $(document).ready(function() {
     //calls drawdots whenever screen is not ipad/tablet
     var is_iPad = navigator.userAgent.match(/iPad/i) != null;
     if (is_iPad == false) {
-        // drawDots();
+        drawDots();
     }
 
     //draws particles on html
