@@ -30,7 +30,7 @@
         <header class="header--container">
             <nav class="navbar main-nav">
                 <div class="container">
-                    <a href="" class="navbar-brand">
+                    <a href="{% url 'index' %}" class="navbar-brand">
                     <img src="{% static 'images/logo-2.png' %}" data-rjs="3">
                     </a>
                     <div class="menu-toggle"></div>
@@ -103,6 +103,15 @@
             </nav>
             <a href="" class="scroll-down link">Scroll</a>
         </header>
+           <div class="page">
+            <div class="page__inner">
+              
+              <!-- The cursor elements --> 
+              <div class="cursor cursor--small"></div>
+              <canvas class="cursor cursor--canvas" resize></canvas>
+              
+            </div>
+          </div>
         {% endblock %}
 
         {% block content %}{% endblock %}
@@ -124,6 +133,9 @@
         <script type="text/javascript" src="{% static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
 
         <!-- PLUG IN -->
+        <script type="text/javascript" src="{% static 'node_modules/simplex-noise/simplex-noise.js' %}"></script>
+        <script type="text/javascript" src="{% static 'node_modules/paper/dist/paper-core.min.js' %}"></script>
+        <script type="text/javascript" src="{% static 'node_modules/paper/dist/paper-core.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/dist/threejs/three.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/dist/WebGL/WebGL.js' %}"></script>
         <script type="text/javascript" src="{% static 'node_modules/rellax/rellax.min.js' %}"></script>

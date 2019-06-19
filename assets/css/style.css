@@ -8262,7 +8262,7 @@ html,
 body {
   color: #2e3039;
   height: 100%;
-  font: normal normal 100%/1.6 'Volte Regular',  'Helvetica', sans-serif;
+  font: normal normal 100%/1.6 'Volte Regular', 'Helvetica', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   position: relative !important; }
@@ -8335,7 +8335,8 @@ a {
     -moz-transition: all ease-in 0.3s;
     -o-transition: all ease-in 0.3s;
     -webkit-transition: all ease-in 0.3s;
-    transition: all ease-in 0.3s; }
+    transition: all ease-in 0.3s;
+    cursor: none; }
   a .arrow-right {
     fill: #2e3039; }
 
@@ -8350,6 +8351,54 @@ a {
 
 .text-emp {
   font-family: "Volte Semibold Italic"; }
+
+body {
+  cursor: none !important; }
+
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none; }
+
+.cursor--small {
+  width: 5px;
+  height: 5px;
+  left: -2.5px;
+  top: -2.5px;
+  border-radius: 50%;
+  z-index: 11000;
+  background: #2e3039;
+  -moz-transition: all ease 0.3s;
+  -o-transition: all ease 0.3s;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s; }
+  .cursor--small.detail-hovered {
+    width: 35px;
+    height: 35px;
+    left: -20.5px;
+    top: -20.5px;
+    z-index: 999999;
+    background: #F9FAFC;
+    -moz-transition: all ease 0.3s;
+    -o-transition: all ease 0.3s;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s; }
+    .cursor--small.detail-hovered:before {
+      content: "open";
+      color: #2e3039;
+      position: absolute;
+      left: 7px;
+      top: 10px;
+      font-size: 0.625rem;
+      font-family: "Volte Bold"; }
+
+.cursor--canvas {
+  width: 100vw;
+  height: 100vh;
+  z-index: 12000; }
+  .cursor--canvas.hovered {
+    opacity: 0; }
 
 .btn {
   min-height: 3.125rem;
@@ -8470,65 +8519,65 @@ html {
       line-height: 1.29;
       letter-spacing: -1px; }
       .hero--content h1 .glitch:nth-child(1):before {
-        animation-delay: 2s; }
+        animation-delay: 3s; }
       .hero--content h1 .glitch:nth-child(1):after {
-        animation-delay: 2s; }
+        animation-delay: 3s; }
       .hero--content h1 .glitch:nth-child(2):before {
-        animation-delay: 8s; }
+        animation-delay: 6s; }
       .hero--content h1 .glitch:nth-child(2):after {
-        animation-delay: 8s; }
+        animation-delay: 6s; }
       .hero--content h1 .glitch:nth-child(3):before {
         animation-delay: 6s; }
       .hero--content h1 .glitch:nth-child(3):after {
         animation-delay: 6s; }
       .hero--content h1 .glitch:nth-child(4):before {
-        animation-delay: 20s; }
+        animation-delay: 8s; }
       .hero--content h1 .glitch:nth-child(4):after {
-        animation-delay: 20s; }
+        animation-delay: 8s; }
       .hero--content h1 .glitch:nth-child(5):before {
-        animation-delay: 10s; }
+        animation-delay: 15s; }
       .hero--content h1 .glitch:nth-child(5):after {
-        animation-delay: 10s; }
+        animation-delay: 15s; }
       .hero--content h1 .glitch:nth-child(6):before {
-        animation-delay: 30s; }
+        animation-delay: 6s; }
       .hero--content h1 .glitch:nth-child(6):after {
-        animation-delay: 30s; }
+        animation-delay: 6s; }
       .hero--content h1 .glitch:nth-child(7):before {
-        animation-delay: 7s; }
+        animation-delay: 21s; }
       .hero--content h1 .glitch:nth-child(7):after {
-        animation-delay: 7s; }
+        animation-delay: 21s; }
       .hero--content h1 .glitch:nth-child(8):before {
-        animation-delay: 40s; }
+        animation-delay: 8s; }
       .hero--content h1 .glitch:nth-child(8):after {
-        animation-delay: 40s; }
+        animation-delay: 8s; }
       .hero--content h1 .glitch:nth-child(9):before {
-        animation-delay: 9s; }
+        animation-delay: 36s; }
       .hero--content h1 .glitch:nth-child(9):after {
-        animation-delay: 9s; }
+        animation-delay: 36s; }
       .hero--content h1 .glitch:nth-child(10):before {
-        animation-delay: 50s; }
+        animation-delay: 10s; }
       .hero--content h1 .glitch:nth-child(10):after {
-        animation-delay: 50s; }
+        animation-delay: 10s; }
       .hero--content h1 .glitch:nth-child(11):before {
-        animation-delay: 33s; }
+        animation-delay: 55s; }
       .hero--content h1 .glitch:nth-child(11):after {
-        animation-delay: 33s; }
+        animation-delay: 55s; }
       .hero--content h1 .glitch:nth-child(12):before {
-        animation-delay: 12s; }
+        animation-delay: 36s; }
       .hero--content h1 .glitch:nth-child(12):after {
-        animation-delay: 12s; }
+        animation-delay: 36s; }
       .hero--content h1 .glitch:nth-child(13):before {
         animation-delay: 13s; }
       .hero--content h1 .glitch:nth-child(13):after {
         animation-delay: 13s; }
       .hero--content h1 .glitch:nth-child(14):before {
-        animation-delay: 28s; }
+        animation-delay: 70s; }
       .hero--content h1 .glitch:nth-child(14):after {
-        animation-delay: 28s; }
+        animation-delay: 70s; }
       .hero--content h1 .glitch:nth-child(15):before {
-        animation-delay: 60s; }
+        animation-delay: 30s; }
       .hero--content h1 .glitch:nth-child(15):after {
-        animation-delay: 60s; }
+        animation-delay: 30s; }
     .hero--content .btn-cta {
       animation: shadow 6s infinite; }
     @media (min-width: 48em) and (max-width: 62em) {
@@ -8536,11 +8585,13 @@ html {
         font-size: 2.9375rem; }
       .hero--content h3 {
         font-size: 1.125rem; } }
-    @media (min-width: 18.75em) and (max-width: 48em) {
+    @media (max-width: 47.9375em) {
       .hero--content {
         max-width: 100%; }
         .hero--content h1 {
-          font-size: 1.875rem; } }
+          font-size: 3rem; }
+          .hero--content h1 .m-sm {
+            display: none; } }
   .hero--links {
     position: absolute;
     left: 0;
@@ -8697,7 +8748,7 @@ body .nav-menu {
   body .nav-menu .navigation-links {
     margin-bottom: 2rem;
     display: block; }
-    @media (min-width: 18.75em) and (max-width: 48em) {
+    @media (max-width: 47.9375em) {
       body .nav-menu .navigation-links {
         margin-top: 4rem; } }
     body .nav-menu .navigation-links a {
@@ -8757,7 +8808,7 @@ body .nav-menu {
       font-family: "Volte Semibold"; }
       body .nav-menu .blog-link a small {
         font-family: "Volte Regular"; }
-    @media (min-width: 18.75em) and (max-width: 48em) {
+    @media (max-width: 47.9375em) {
       body .nav-menu .blog-link {
         display: none; } }
   body .nav-menu .hiring-link {
@@ -8767,7 +8818,7 @@ body .nav-menu {
     right: 0;
     margin-right: -3rem;
     opacity: 0; }
-    @media (min-width: 18.75em) and (max-width: 48em) {
+    @media (max-width: 47.9375em) {
       body .nav-menu .hiring-link {
         display: none; } }
     body .nav-menu .hiring-link a {
@@ -8776,11 +8827,15 @@ body .nav-menu {
     font-size: 1.5rem;
     font-family: "Volte Semibold";
     letter-spacing: -0.5px;
-    bottom: calc($spacing-xlg + $spacing-xxlg);
+    bottom: 10rem;
     right: 0;
     margin-right: -3rem;
     opacity: 0;
     position: absolute; }
+    @media (max-width: 47.9375em) {
+      body .nav-menu .contact--email {
+        left: 1rem;
+        bottom: 10vh; } }
 body.menu-open .nav-menu {
   -moz-transition: ease opacity 0.5s;
   -o-transition: ease opacity 0.5s;
@@ -8791,7 +8846,7 @@ body.menu-open .nav-menu {
   z-index: 98;
   position: fixed;
   overflow-y: auto; }
-  @media (min-width: 18.75em) and (max-width: 48em) {
+  @media (max-width: 47.9375em) {
     body.menu-open .nav-menu {
       padding: 2rem; } }
   body.menu-open .nav-menu .address {
@@ -8817,7 +8872,8 @@ body.menu-open .nav-menu {
       margin-right: 4rem;
       font-family: "Volte Medium";
       text-transform: uppercase; }
-  body.menu-open .nav-menu .hiring-link, body.menu-open .nav-menu .contact--email {
+  body.menu-open .nav-menu .hiring-link,
+  body.menu-open .nav-menu .contact--email {
     margin-right: 0;
     opacity: 1;
     -moz-transition: all ease 0.3s;
@@ -9019,9 +9075,15 @@ body.nav-closing .nav-menu {
     width: 100%;
     top: 0;
     z-index: -1; }
+  @media (max-width: 47.9375em) {
+    .contact-us {
+      padding-top: 3rem; } }
   .contact-us h2 {
     font-size: 2.8125rem;
     line-height: 1; }
+    @media (max-width: 47.9375em) {
+      .contact-us h2 {
+        font-size: 2.5rem; } }
   .contact-us .map {
     position: absolute;
     left: 0;
@@ -9039,6 +9101,9 @@ body.nav-closing .nav-menu {
     flex-direction: column;
     padding-bottom: 6.25rem;
     z-index: 99; }
+    @media (max-width: 47.9375em) {
+      .contact-us--email {
+        padding-bottom: 3.75rem; } }
     .contact-us--email a {
       font-size: 1.875rem;
       font-family: "Volte Medium";
@@ -9056,6 +9121,13 @@ body.nav-closing .nav-menu {
         right: 0;
         position: absolute;
         bottom: 0; }
+      @media (max-width: 47.9375em) {
+        .contact-us--email a {
+          font-size: 1.5rem;
+          text-align: center; }
+          .contact-us--email a:before {
+            width: 50%;
+            margin: 0 auto; } }
 
 footer {
   padding-bottom: 2rem; }
@@ -9063,6 +9135,12 @@ footer {
     max-width: 30%;
     line-height: 1.67;
     font-family: "Volte Medium"; }
+    @media (min-width: 48em) and (max-width: 62em) {
+      footer .address {
+        max-width: 50%; } }
+    @media (max-width: 47.9375em) {
+      footer .address {
+        max-width: 100%; } }
   footer a {
     font-size: 0.75rem;
     font-family: "Volte Medium"; }
@@ -9072,7 +9150,7 @@ footer {
   @media (min-width: 48em) and (max-width: 62em) {
     .homepage .services {
       padding: 0; } }
-  @media (min-width: 18.75em) and (max-width: 48em) {
+  @media (max-width: 47.9375em) {
     .homepage .services {
       padding: 0; } }
   .homepage .services .boxed {
@@ -9081,7 +9159,7 @@ footer {
     @media (min-width: 48em) and (max-width: 62em) {
       .homepage .services .boxed {
         padding-right: 0; } }
-    @media (min-width: 18.75em) and (max-width: 48em) {
+    @media (max-width: 47.9375em) {
       .homepage .services .boxed {
         padding: 2rem 0; } }
   .homepage .services--container .svc-title {
@@ -9123,7 +9201,7 @@ footer {
     margin-left: auto;
     margin-right: 0; }
     .homepage .services--swiper .swiper-slide {
-      max-width: 26.25rem; }
+      max-width: 25rem; }
       .homepage .services--swiper .swiper-slide img {
         width: 100%;
         margin: 0 auto; }
@@ -9185,13 +9263,13 @@ footer {
   @media (min-width: 100em) {
     .homepage .hiring {
       height: 43.75rem; } }
-  @media (min-width: 18.75em) and (max-width: 48em) {
+  @media (max-width: 47.9375em) {
     .homepage .hiring {
       padding: 2.5rem; } }
   .homepage .hiring--content {
     max-width: 40%;
     margin-left: 10%; }
-    @media (min-width: 18.75em) and (max-width: 48em) {
+    @media (max-width: 47.9375em) {
       .homepage .hiring--content {
         max-width: 100%;
         margin-left: 0; } }
@@ -9201,9 +9279,9 @@ footer {
   @media (min-width: 48em) and (max-width: 62em) {
     .homepage .clients {
       padding: 6.25rem 3.75rem; } }
-  @media (min-width: 18.75em) and (max-width: 48em) {
+  @media (max-width: 47.9375em) {
     .homepage .clients {
-      padding: 6.25rem 1.25rem; } }
+      padding: 6.25rem 0; } }
   .homepage .clients--content {
     max-width: 75%;
     margin: 0 auto; }
@@ -9211,7 +9289,7 @@ footer {
       .homepage .clients--content {
         max-width: 100%;
         font-size: 1.5rem; } }
-    @media (min-width: 18.75em) and (max-width: 48em) {
+    @media (max-width: 47.9375em) {
       .homepage .clients--content {
         max-width: 100%; }
         .homepage .clients--content h4 {
@@ -9221,7 +9299,7 @@ footer {
   padding: 6.25rem;
   text-align: center;
   background: #ffffff; }
-  @media (min-width: 18.75em) and (max-width: 48em) {
+  @media (max-width: 47.9375em) {
     .homepage .testimony {
       padding: 1.25rem; } }
   .homepage .testimony--swiper {
@@ -9254,10 +9332,10 @@ canvas {
   -moz-align-items: flex-end;
   -ms-align-items: flex-end;
   align-items: flex-end; }
-  @media (min-width: 18.75em) and (max-width: 48em) {
+  @media (max-width: 47.9375em) {
     .process .hero--content {
       flex-direction: column; } }
-  @media (min-width: 18.75em) and (max-width: 48em) {
+  @media (max-width: 47.9375em) {
     .process .hero--content .clip {
       width: 50vw;
       height: 40vh;
@@ -9273,7 +9351,7 @@ canvas {
   background: rgba(255, 255, 255, 0.8); }
   .process-stages p {
     margin-bottom: 1.875rem; }
-  @media (min-width: 18.75em) and (max-width: 48em) {
+  @media (max-width: 47.9375em) {
     .process-stages {
       padding: 0; } }
   .process-stages .beehive {
@@ -9281,159 +9359,159 @@ canvas {
     right: -13rem;
     top: 0;
     z-index: 0; }
-    @media (min-width: 18.75em) and (max-width: 48em) {
+    @media (max-width: 47.9375em) {
       .process-stages .beehive {
         opacity: 0.5; } }
     .process-stages .beehive ellipse:nth-child(1) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8064905466s; }
+      animation-delay: 0.7646344372s; }
     .process-stages .beehive ellipse:nth-child(2) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.9195688802s; }
+      animation-delay: 0.8166244637s; }
     .process-stages .beehive ellipse:nth-child(3) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3728385956s; }
+      animation-delay: 0.62219215s; }
     .process-stages .beehive ellipse:nth-child(4) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.0034502226s; }
+      animation-delay: 0.5364118653s; }
     .process-stages .beehive ellipse:nth-child(5) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.6458780438s; }
+      animation-delay: 0.6875559302s; }
     .process-stages .beehive ellipse:nth-child(6) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3909408346s; }
+      animation-delay: 0.2962451237s; }
     .process-stages .beehive ellipse:nth-child(7) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.9156348714s; }
+      animation-delay: 0.9895562399s; }
     .process-stages .beehive ellipse:nth-child(8) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.313563921s; }
+      animation-delay: 0.7390574247s; }
     .process-stages .beehive ellipse:nth-child(9) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.4210969201s; }
+      animation-delay: 0.7654853968s; }
     .process-stages .beehive ellipse:nth-child(10) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.7988097512s; }
+      animation-delay: 0.0094253837s; }
     .process-stages .beehive ellipse:nth-child(11) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.191129534s; }
+      animation-delay: 0.7631399281s; }
     .process-stages .beehive ellipse:nth-child(12) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3855720712s; }
+      animation-delay: 0.4319090492s; }
     .process-stages .beehive ellipse:nth-child(13) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8083589766s; }
+      animation-delay: 0.9373046207s; }
     .process-stages .beehive ellipse:nth-child(14) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.2853228603s; }
+      animation-delay: 0.7193426461s; }
     .process-stages .beehive ellipse:nth-child(15) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8190489429s; }
+      animation-delay: 0.7417080177s; }
     .process-stages .beehive ellipse:nth-child(16) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8195472127s; }
+      animation-delay: 0.4505093214s; }
     .process-stages .beehive ellipse:nth-child(17) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8761669053s; }
+      animation-delay: 0.7443828163s; }
     .process-stages .beehive ellipse:nth-child(18) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.2268697631s; }
+      animation-delay: 0.0804119372s; }
     .process-stages .beehive ellipse:nth-child(19) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.93681963s; }
+      animation-delay: 0.2831463995s; }
     .process-stages .beehive ellipse:nth-child(20) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8219988913s; }
+      animation-delay: 0.6060366201s; }
     .process-stages .beehive ellipse:nth-child(21) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3519760212s; }
+      animation-delay: 0.6499217383s; }
     .process-stages .beehive ellipse:nth-child(22) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.7408994828s; }
+      animation-delay: 0.947560909s; }
     .process-stages .beehive ellipse:nth-child(23) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3045434369s; }
+      animation-delay: 0.9868436743s; }
     .process-stages .beehive ellipse:nth-child(24) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3831882748s; }
+      animation-delay: 0.866962308s; }
     .process-stages .beehive ellipse:nth-child(25) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.424726582s; }
+      animation-delay: 0.5051259114s; }
     .process-stages .beehive ellipse:nth-child(26) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3483076013s; }
+      animation-delay: 0.8681297539s; }
     .process-stages .beehive ellipse:nth-child(27) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.6930643482s; }
+      animation-delay: 0.763738246s; }
     .process-stages .beehive ellipse:nth-child(28) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3639036298s; }
+      animation-delay: 0.0499519603s; }
     .process-stages .beehive ellipse:nth-child(29) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.6306824755s; }
+      animation-delay: 0.5814465628s; }
     .process-stages .beehive ellipse:nth-child(30) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8568711197s; }
+      animation-delay: 0.204760985s; }
     .process-stages .beehive ellipse:nth-child(31) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.5956036441s; }
+      animation-delay: 0.1324148288s; }
     .process-stages .beehive ellipse:nth-child(32) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.5361698568s; }
+      animation-delay: 0.4291651856s; }
     .process-stages .beehive ellipse:nth-child(33) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.2759077197s; }
+      animation-delay: 0.5627312089s; }
     .process-stages .beehive ellipse:nth-child(34) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.6233484298s; }
+      animation-delay: 0.5383800136s; }
     .process-stages .beehive ellipse:nth-child(35) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3902026014s; }
+      animation-delay: 0.4495296329s; }
     .process-stages .beehive ellipse:nth-child(36) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.4627198437s; }
+      animation-delay: 0.3693730324s; }
     .process-stages .beehive ellipse:nth-child(37) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.0314394275s; }
+      animation-delay: 0.2328811473s; }
     .process-stages .beehive ellipse:nth-child(38) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.493236789s; }
+      animation-delay: 0.4653442255s; }
     .process-stages .beehive ellipse:nth-child(39) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8291191176s; }
+      animation-delay: 0.9153996282s; }
     .process-stages .beehive ellipse:nth-child(40) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3077094034s; }
+      animation-delay: 0.40285728s; }
     .process-stages .beehive ellipse:nth-child(41) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.0639607274s; }
+      animation-delay: 0.2006250161s; }
     .process-stages .beehive ellipse:nth-child(42) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.0423512349s; }
+      animation-delay: 0.5045864873s; }
     .process-stages .beehive ellipse:nth-child(43) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8922598319s; }
+      animation-delay: 0.9991289159s; }
     .process-stages .beehive ellipse:nth-child(44) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.5975128875s; }
+      animation-delay: 0.5126880599s; }
     .process-stages .beehive ellipse:nth-child(45) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.5161771205s; }
+      animation-delay: 0.6066124995s; }
     .process-stages .beehive ellipse:nth-child(46) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.9481426719s; }
+      animation-delay: 0.9721300938s; }
     .process-stages .beehive ellipse:nth-child(47) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.5804299398s; }
+      animation-delay: 0.2177404032s; }
     .process-stages .beehive ellipse:nth-child(48) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.5638189342s; }
+      animation-delay: 0.9943717684s; }
     .process-stages .beehive ellipse:nth-child(49) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.6309565831s; }
+      animation-delay: 0.0194699277s; }
     .process-stages .beehive ellipse:nth-child(50) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3173890471s; }
+      animation-delay: 0.9965014231s; }
 .process .team-represent {
   padding-bottom: 6.25rem;
   background: rgba(255, 255, 255, 0.8); }
@@ -9444,6 +9522,10 @@ canvas {
     width: 100%;
     height: 700px;
     margin-bottom: 4rem; }
+    @media (max-width: 47.9375em) {
+      .process .team-represent .team-photo {
+        height: 0;
+        margin-bottom: 0; } }
 .process .standpoint {
   padding-top: 6.25rem;
   padding-bottom: 0rem;
@@ -9451,14 +9533,14 @@ canvas {
   @media (min-width: 48em) and (max-width: 62em) {
     .process .standpoint {
       padding-bottom: 6.25rem; } }
-  @media (min-width: 18.75em) and (max-width: 48em) {
+  @media (max-width: 47.9375em) {
     .process .standpoint {
-      padding: 13rem 1rem 20rem; } }
+      padding: 13rem 1rem 0rem; } }
   .process .standpoint--statement {
     letter-spacing: -0.5px;
     font-size: 1.5625rem;
     margin-bottom: 1.875rem; }
-    @media (min-width: 18.75em) and (max-width: 48em) {
+    @media (max-width: 47.9375em) {
       .process .standpoint--statement {
         font-size: 1.2rem;
         text-align-last: center;
@@ -9478,7 +9560,7 @@ canvas {
     position: absolute;
     top: -80px;
     right: 0; }
-  @media (min-width: 18.75em) and (max-width: 48em) {
+  @media (max-width: 47.9375em) {
     .process .logo--meaning * {
       text-align: center !important; }
     .process .logo--meaning p {
@@ -9495,22 +9577,24 @@ canvas {
   padding-top: 6.25rem;
   padding-bottom: 6.25rem; }
   .projects-page {
-    height: 100%;
+    height: 100vh;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-align-items: flex-end;
-    -moz-align-items: flex-end;
-    -ms-align-items: flex-end;
-    align-items: flex-end;
-    overflow-y: hidden;
-    padding-top: 40vh; }
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    -ms-align-items: center;
+    align-items: center;
+    overflow-y: hidden; }
     .projects-page .projects {
       padding: 0; }
       .projects-page .projects .projects--img {
         animation-duration: 2s; }
+    @media (max-width: 47.9375em) {
+      .projects-page {
+        padding-top: 6rem; } }
   .projects--swiper .swiper-pagination {
     position: relative;
     text-align: left;
@@ -9571,8 +9655,15 @@ canvas {
       -webkit-transition: all ease 1s;
       transition: all ease 1s; }
     .projects--item--content {
+      padding-left: 3.75rem;
       padding-top: 2rem;
       max-width: 28.125rem; }
+      @media (max-width: 47.9375em) {
+        .projects--item--content {
+          display: none; } }
+      @media (min-width: 48em) and (max-width: 62em) {
+        .projects--item--content h2 {
+          font-size: 2.8125rem; } }
       .projects--item--content p {
         font-family: "Volte Medium"; }
       .projects--item--content .slide-details {
@@ -9628,6 +9719,10 @@ canvas {
 .c-project__brief {
   padding: 6.25rem 0;
   background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), #fafafa); }
+  @media (max-width: 47.9375em) {
+    .c-project__brief {
+      padding-left: 2rem;
+      padding-right: 2rem; } }
 .c-project__tagline {
   font-size: 2.8125rem;
   font-family: "Volte Semibold";
@@ -9656,9 +9751,17 @@ canvas {
       -o-transition: opacity 0.5s ease;
       -webkit-transition: opacity 0.5s ease;
       transition: opacity 0.5s ease; }
+    @media (max-width: 47.9375em) {
+      .c-project__screen-slides .project__screen .swiper-slide {
+        width: 100%; } }
 .c-project__research {
   padding: 6.25rem 0;
   background: #ffffff; }
+  @media (max-width: 47.9375em) {
+    .c-project__research {
+      padding: 6.25rem 2rem; }
+      .c-project__research ol {
+        padding-left: 1rem; } }
 .c-project__phase {
   font-family: "Volte Semibold";
   letter-spacing: 2.7px; }
@@ -9680,6 +9783,9 @@ canvas {
   -ms-flex-pack: center; }
   .c-project__next h3 {
     line-height: 1; }
+    @media (max-width: 47.9375em) {
+      .c-project__next h3 {
+        font-size: 2rem; } }
 
 .loading {
   position: fixed;

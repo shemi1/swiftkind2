@@ -6,7 +6,7 @@
     <article class="c-project">
         <section class="container c-project__header">
             <div class="c-project__main-image">
-                <img src="{% static 'images/projects/market-logo.png' %}" data-rjs="3" class="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.3s">
+                <img src="{% static 'images/projects/market-logo.png' %}" data-rjs="3" class="wow fadeInUp img-fluid" data-wow-delay="0.2s" data-wow-duration="0.3s">
                 <h5 class="wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.3s">Web App</h5>
             </div>
         </section>
@@ -34,14 +34,14 @@
                         <div class="swiper-wrapper">
                             
                             <div class="swiper-slide">
-                                <img src="{% static 'images/projects/marketplace-v-2-details-page.jpg' %}" data-rjs="3">
+                                <img src="{% static 'images/projects/marketplace-v-2-details-page.jpg' %}" data-rjs="3" class="img-fluid">
                             </div>
                             <div class="swiper-slide">
-                                <img src="{% static 'images/projects/marketplace-v-2-home-page.jpg' %}" data-rjs="3">
+                                <img src="{% static 'images/projects/marketplace-v-2-home-page.jpg' %}" data-rjs="3" class="img-fluid">
                             </div>
                             
                              <div class="swiper-slide">
-                                <img src="{% static 'images/projects/marketplace-v-2-details-page-1.jpg' %}" data-rjs="3">
+                                <img src="{% static 'images/projects/marketplace-v-2-details-page-1.jpg' %}" data-rjs="3" class="img-fluid">
                             </div>
                         </div>
                          <div class="swiper-pagination"></div>
@@ -113,8 +113,8 @@
                         <p class="wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.3s">This is the sample of user flow for the screens in the application.</p>
                     </div>
                     <div class="col-md-12">
-                        <div class="wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="0.5s">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1142" height="562" viewBox="0 0 1142 562">
+                        <div class="wow fadeInLeft " data-wow-delay="0.2s" data-wow-duration="0.5s">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1142" height="562" viewBox="0 0 1142 562" class="img-fluid">
                             <defs>
                                 <style>
                                     .cls-1{fill:#5a43ef}.cls-2{fill:#fff;font-size:16px;font-family:Volte-Semibold,Volte;font-weight:600;letter-spacing:-.024em}.cls-3,.cls-4{fill:#a396f2}.cls-4{stroke:#a396f2;stroke-linejoin:round}
@@ -249,8 +249,8 @@
                     <img src="{% static 'images/arrow-right-black.svg' %}">
                 </h5>
 
-                <a href="#" class="d-flex align-items-center wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.3s">
-                    <img src="{% static 'images/projects/workflow-logo.png' %}">
+                <a href="{% url 'workflow' %}" class="d-flex align-items-center wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.3s">
+                    <img src="{% static 'images/projects/workflow-icon.png' %}" data-rjs="3">
                     <div class="text-left">
                         <h3 class="h2 title-strong mb-0">Workflow</h3>
                         <h5>Web App</h5>

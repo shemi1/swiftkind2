@@ -1,0 +1,198 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<main>
+    <article class="c-project">
+        <section class="container c-project__header">
+            <div class="c-project__main-image">
+                <img src="{% static 'images/projects/workflow-logo.png' %}" data-rjs="3" class="wow fadeInUp img-fluid" data-wow-delay="0.2s" data-wow-duration="0.3s">
+            </div>
+        </section>
+        <section class="c-project__brief">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-6">
+                        <h2 class="c-project__tagline wow fadeInUp" data-wow-delay="0.1s" data-wow-duration="0.3s">Gain ground on you team goal, all the time.</h2>
+                        <h6 class="text-md wow fadeInUp" data-wow-delay="0.3s" data-wow-duration="0.3s">Workflow allows you to monitor and manage your team with daily report integrated with slack</h6>
+                    </div>
+                    <div class="col-md-5 offset-md-1">
+                        <h6 class="wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.3s">The easiest way to manage your teams from daily progress and issue tracking to payroll and HR. Workflow is designed to fit any team and allows you to visualise and plan ahead of everything so you and your team can deliver state-of-the-art products.</h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4 class="title-strong wow fadeInUp" data-wow-delay="0.7s" data-wow-duration="0.3s">Project Brief</h4>
+                        <p class="wow fadeInUp" data-wow-delay="0.9s" data-wow-duration="0.3s">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="c-project__screen-slides wow fadeInRight" data-wow-delay="1s" data-wow-duration="0.3s">
+             <div class="swiper-container project__screen  wow fadeInRight" data-wow-duration="0.4s" data-wow-delay="0">
+                        <div class="swiper-wrapper">
+                            
+                            <div class="swiper-slide">
+                                <img src="{% static 'images/projects/workflow-1.jpg' %}" data-rjs="3" class="img-fluid">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="{% static 'images/projects/workflow-2.jpg' %}" data-rjs="3" class="img-fluid">
+                            </div>
+                            
+                             <div class="swiper-slide">
+                                <img src="{% static 'images/projects/image-13.jpg' %}" data-rjs="3" class="img-fluid">
+                            </div>
+                        </div>
+                         <div class="swiper-pagination"></div>
+
+                    </div>
+        </section>
+        <section class="c-project__research">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h6 class="c-project__phase wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="0.3s">INITIAL RESEARCH</h6>
+                        <div class="wow fadeInLeft" data-wow-delay="0.4s" data-wow-duration="0.3s">
+                            <h3 class="title-strong">User Interviews</h3>
+                            <p>We wanted to find out what are the things we needed to automate to make things easier, faster and fault proof development process. So we conducted user interviews to business owners, project managers, developers and designers.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 wow fadeInLeft" data-wow-delay="0.5s" data-wow-duration="0.3s">
+                        <div class="mb-4">
+                            <label class="title-strong mb-0">Method</label>
+                            <p>Guerilla Research</p>
+                        </div>
+                        <div class="mb-4">
+                            <label class="title-strong mb-0">Respondents</label>
+                            <p>11 people interviewed</p>
+                        </div>
+                        <div class="mb-4">
+                            <label class="title-strong mb-0">Duration</label>
+                            <p>15 minutes each</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <ol class="wow fadeInLeft" data-wow-delay="0.8s" data-wow-duration="0.3s">
+                            <li>
+                                <p>
+                                    What improvements do you think are needed for our current processes?
+                                </p>
+                            </li>
+                            <li>
+                                <p>What are the process you’d like to be automated?</p>
+                            </li>
+                            <li>
+                                <p>
+                                    How will these automated (or not) processes make your daily routine  easier?
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    What integrations you wanted to have?
+                                </p>
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="c-project__research">
+            <div class="container">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h6 class="c-project__phase wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="0.3s">INITIAL RESEARCH</h6>
+                        <div class="wow fadeInLeft" data-wow-delay="0.4s" data-wow-duration="0.3s">
+                            <h3 class="title-strong">Discussions</h3>
+                            <p class="mb-5">Here are few findings we gathered from the respondents</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row text-center justify-content-between">
+                    <div class="col-md-3 mb-5">
+                        <img src="{% static 'images/projects/user-unknown.png' %}" data-rjs="3" class="img-fluid mb-3 fadeInUp wow" data-wow-delay="0.1s" data-wow-duration="0.3s">
+                        <p class="title-strong fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="0.3s">Business Owner</p>
+                        <p class="fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="0.3s">I wanted to monitor all the things that are happening on all departments on demand</p>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <img src="{% static 'images/projects/user-unknown.png' %}" data-rjs="3" class="img-fluid mb-3 fadeInUp wow" data-wow-delay="0.3s" data-wow-duration="0.3s">
+                        <p class="title-strong fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="0.3s">Project Manegers</p>
+                        <p class="fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="0.3s">I want to be able to know all the timely progress and issues to ensure we meet deadlines</p>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <img src="{% static 'images/projects/user-unknown.png' %}" data-rjs="3" class="img-fluid mb-3 fadeInUp wow" data-wow-delay="0.5s" data-wow-duration="0.3s">
+                        <p class="title-strong  fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="0.3s">Devs & Designers</p>
+                        <p class="fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="0.3s">We wanted to be able to submit reports using our team communications medium like slack</p>
+                    </div>
+                    
+                </div>
+                <div class="row justify-content-between text-center">
+                    <div class="col-md-3 mb-5">
+                        <img src="{% static 'images/projects/user-unknown.png' %}" data-rjs="3" class="img-fluid mb-3 fadeInUp wow" data-wow-delay="0.1s" data-wow-duration="0.3s">
+                        <p class="title-strong fadeInUp wow" data-wow-delay="0.2s" data-wow-duration="0.3s">Employee #1</p>
+                        <p class="fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="0.3s">We wanted a platform where we request for leaves and adjust schedules</p>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <img src="{% static 'images/projects/user-unknown.png' %}" data-rjs="3" class="img-fluid mb-3 fadeInUp wow" data-wow-delay="0.3s" data-wow-duration="0.3s">
+                        <p class="title-strong fadeInUp wow" data-wow-delay="0.4s" data-wow-duration="0.3s">Employee #2</p>
+                        <p class="fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="0.3s">I wanted to be able to know and asses my overall performance </p>
+                    </div>
+                    <div class="col-md-3 mb-5">
+                        <img src="{% static 'images/projects/user-unknown.png' %}" data-rjs="3" class="img-fluid mb-3 fadeInUp wow" data-wow-delay="0.5s" data-wow-duration="0.3s">
+                        <p class="title-strong fadeInUp wow" data-wow-delay="0.6s" data-wow-duration="0.3s">Employee #3</p>
+                        <p class="fadeInUp wow" data-wow-delay="0.8s" data-wow-duration="0.3s">I’d like to be updated about the companies latest and upcoming events.</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section class="c-project__research">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-6 mb-5">
+                        <h6 class="c-project__phase wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="0.3s">INITIAL FINDINGS</h6>
+                        <h3 class="title-strong wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.3s">User flow</h3>
+                        <p class="wow fadeInUp" data-wow-delay="0.6s" data-wow-duration="0.3s">This is the sample of user flow for the screens in the application.</p>
+                    </div>
+                    <div class="col-md-12">
+                        <div class="wow fadeInUp text-center" data-wow-delay="0.2s" data-wow-duration="0.5s">
+                            <img src="{% static 'images/projects/workflow-userflow.png' %}" data-rjs="3" class="mx-auto img-fluid">
+                        </div>
+
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <section class="c-project__next">
+            <div class="text-center">
+                <h5 class="title-strong wow fadeInLeft" data-wow-delay="0.2s" data-wow-duration="0.3s">
+                    Next Project
+                    <img src="{% static 'images/arrow-right-black.svg' %}">
+                </h5>
+
+                <a href="{% url 'marketplace' %}" class="d-flex align-items-start wow fadeInUp" data-wow-delay="0.5s" data-wow-duration="0.3s">
+                     <img src="{% static 'images/projects/marketplace-icon.svg' %}" data-rjs="3" class="wow fadeInUp" data-wow-delay="0.2s" data-wow-duration="0.3s">
+                    <div class="text-left">
+                        <h3 class="h2 title-strong mb-0">Workflow</h3>
+                        <h5>Web App</h5>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="contact-us">
+            <iframe src="https://snazzymaps.com/embed/27006" width="100%" height="500px" style="border:none;" class="map"></iframe>
+            <div class="container">
+                <h2 class="title-strong">Let’s talk about the future!</h2>
+                <h6 class="mb-4">Or maybe start a project with us?</h6>
+                    <div class="contact-us--email">
+                       
+                        <a href="">business@swiftkind.com</a>
+                    </div>
+            </div>
+        </section>
+    </article>
+</main>
+{% endblock %}

@@ -65,7 +65,10 @@ html {
         @include mobile{
             max-width: 100%;
             h1{
-                font-size: $h4;
+                font-size: 3rem;
+                .m-sm{
+                    display: none;
+                }
             }
         }
 
