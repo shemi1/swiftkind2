@@ -90,7 +90,7 @@ a {
         text-decoration: none;
         color: $accent-color;
         @include transition(all ease-in 0.3s);
-        cursor: none;
+      
     }
 
     .arrow-right {
@@ -116,59 +116,3 @@ a {
     font-family: $volte-smbi;
 }
 
-
-
-//cursor styling
-body {
-     cursor: none !important;
-}
-
-.cursor {
-    position: fixed;
-    left: 0;
-    top: 0;
-    pointer-events: none;
-}
-
-
-.cursor--small {
-    width: 5px;
-    height: 5px;
-    left: -2.5px;
-    top: -2.5px;
-    border-radius: 50%;
-    z-index: 11000;
-    background: $charcoal-grey;
-    @include transition(all ease 0.3s);
-    &.detail-hovered{
-        width: 35px;
-            height: 35px;
-            left: -20.5px;
-            top: -20.5px;
-            z-index: 999999;
-            background: $light-grey;
-            @include transition(all ease 0.3s);
-
-            &:before {
-                content: "open";
-                color: $charcoal-grey;
-                position: absolute;
-                left: 7px;
-                top: 10px;
-                font-size: $xsmall;
-                font-family: $volte-bld;
-            }
-    }
-
-}
-
-.cursor--canvas {
-    width: 100vw;
-    height: 100vh;
-    z-index: 12000;
-
-    &.hovered {
-        opacity: 0;
-    }
-
-}
