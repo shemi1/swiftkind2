@@ -1,0 +1,154 @@
+//blogindex utils for type
+
+.blog-pages {
+
+    h1,
+    .h1 {
+        font-size: $h1;
+        @include font-family(Volte, Semibold);
+        line-height: 1.25;
+        letter-spacing: -0.4px;
+    }
+
+    h2,
+    .h2 {
+        font-size: $h2;
+        letter-spacing: -0.4px;
+        line-height: 1.25;
+    }
+
+    h3,
+    .h3 {
+        font-size: $h3;
+        line-height: 1.25;
+        letter-spacing: -0.4px;
+    }
+
+    h4,
+    .h4 {
+        font-size: $h4;
+        line-height: 1.25;
+        letter-spacing: -0.4px;
+
+    }
+
+    h5,
+    .h5 {
+        font-size: $h5;
+        line-height: 1.25;
+        letter-spacing: -0.4px;
+
+    }
+
+    h6,
+    .h6 {
+        font-size: $h6;
+        line-height: 1.25;
+        letter-spacing: -0.4px;
+
+    }
+}
+
+@include desktop {
+    .container {
+        max-width: torem(1000);
+    }
+}
+
+.author-details {
+    h6 {
+        font-family: $volte-smb;
+    }
+
+    @include flexbox();
+}
+
+
+.catergory-tags {
+    margin-bottom: 0.5rem;
+
+    a {
+        font-family: $volte-smb;
+        font-size: $normal;
+    }
+}
+
+
+.blog-index {
+    padding: $spacing-xxxlg 0;
+
+    .feature-article {
+        padding: $spacing-xxxlg 0;
+        background: #f5f5f5;
+
+        h2 {
+            line-height: 1.43;
+            font-size: torem(35);
+            font-family: $volte-smb;
+        }
+
+        p {
+            margin-bottom: 0.5rem;
+        }
+    }
+}
+
+.blog {
+    &--list {
+        @include flexbox();
+        @include flex-wrap(wrap);
+        @include justify-content(space-between);
+        padding: $spacing-xxxlg 0;
+
+        @include tablet {
+            @include justify-content(center);
+        }
+
+        @include mobile {
+            @include justify-content(center);
+        }
+
+        &__item {
+            width: torem(431);
+            margin-bottom: $spacing-xxxlg;
+
+            &__img {
+                width: torem(431);
+                height: torem(268);
+                object-fit: contain;
+                margin-bottom: $spacing-xlg;
+            }
+
+            &__preview {
+                max-height: torem(72);
+                overflow-y: hidden;
+                margin-bottom: $spacing-xlg;
+                margin-top: $spacing-sm;
+            }
+        }
+    }
+}
+
+.work-with-us {
+    text-align: center;
+
+    h5 {
+        margin-bottom: $spacing-lg;
+    }
+
+    a {
+        font-size: $h4;
+        font-family: $volte-smb;
+        position: relative;
+
+        &:after {
+            content: "";
+            width: 100%;
+            border-bottom: solid 1px #d5d7e3;
+            position: absolute;
+            left: 0;
+            bottom: -0.5rem;
+        }
+
+    }
+}
