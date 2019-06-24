@@ -1,4 +1,4 @@
-{% extends 'blog_base.html' %}
+{% extends 'base.html' %}
 {% load staticfiles %}
 
 {% block content %}
@@ -42,19 +42,8 @@
                         </div>
                     </div>
                 </div>
-            </section><!-- 
-            <section class="py-5 container">
-                <div class="search-bar">
-                    <div class="input-group mb-3">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">@</span>
-                      </div>
-                      <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                    </div>
-                </div>
-            </section> -->
-         
-                <section class="container blog--list">
+            </section>
+            <section class="container blog--list">
                     <div class="blog--list__item">
                         <img src="{% static 'images/blog/leone-venter-693463-unsplash.jpg' %}" data-rjs="3" class="blog--list__item__img">
                         <a href="" class="title-strong h5">User Experience by the Numbers: Hurting the Ones We Love</a>

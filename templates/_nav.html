@@ -1,0 +1,79 @@
+{% load staticfiles %}
+{% load wagtailcore_tags wagtailroutablepage_tags %}
+
+<header class="header--container">
+    <nav class="navbar main-nav">
+        <div class="container">
+            <a href="{% url 'index' %}" class="navbar-brand">
+            <img src="{% static 'images/logo-2.png' %}" data-rjs="3">
+            </a>
+            <div class="menu-toggle"></div>
+        </div>
+        <div class="nav-menu">
+            <div class="container">
+                <div class="d-flex align-items-start justify-content-between w-100">
+                    <div class="navigation-links">
+                        <a href="{% url 'index' %}" class="active">Home</a>
+                        <a href="{% url 'process' %}">Process</a>
+                        <a href="{% url 'projects' %}">Works</a>
+                        <a href="{% routablepageurl request.site.root_page.specific 'blog' %}">Blog</a>
+                    </div>
+                    <div class="blog-link">
+                        <p class="text-muted">Blogs</p>
+                        <div class="blog">
+                            <a href="" class="">
+                                <h6 class="mb-0">Transforming JavaScript arrays with array.map</h6>
+                                <small class="text-grey">#django #python #heroku</small>
+                            </a>
+                            <a href="" class="">
+                                <h6 class="mb-0">Finding Key-Value pairs on JSON  data with Python’s List Comprehension</h6>
+                                <small class="text-grey">#django #python #heroku</small>
+                            </a>
+                            <a href="" class="">
+                                <h6 class="mb-0">Creating Simple SVGs with Photoshop CC</h6>
+                                <small class="text-grey">#photoshop #svg</small>
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="nav-info">
+                    <div class="address">
+                        <h5 class="">SWIFTKIND HQ.</h5>
+                        <p class=""> Door 1, 3rd Floor, Consuelo Building,
+                            <br/>
+                            J.P. Laurel Avenue, Lanang, Davao City, 
+                            <br/>Philippines, 8000</p>
+                    </div>
+                    <div class="d-flex align-items-start justify-content-between">
+                        <div class="social-link">
+                            <p class="small">More about us</p>
+                            <div class="d-flex">
+                                <a href="https://github.com/swiftkind" class="">
+                                    Github
+                                </a>
+                                <a href="https://ph.linkedin.com/company/swiftkind" class="">
+                                    Linkedin
+                                </a>
+                                <a href="https://www.facebook.com/swiftkind" class="">
+                                    Facebook
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <a href="" class="contact--email">business@swiftkind.com</a>
+                            <p class="hiring-link">Want to work with us? <a href="https://www.facebook.com/swiftkind/photos/a.391950621158684/714704812216595/?type=3&theater">Join our team!</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            
+        </div>
+
+    </nav>
+    <a href="" class="scroll-down link">Scroll</a>
+</header>
