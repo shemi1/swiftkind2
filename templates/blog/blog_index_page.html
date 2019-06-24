@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
+{% load wagtailcore_tags %}
 
 {% block content %}
 <main>
         <article class="blog-index">
+            {% if page.featured_blog %}
             <section class="feature-article">
                 <div class="container">
                     <div class="row">
@@ -11,8 +13,9 @@
                             <img src="{% static 'images/blog/craig-whitehead-256284.jpg'%}" data-rjs="3" class="mb-4" >
                         </div>
                         <div class="col-lg-6 col-md-12 col-sm-12">
-                            <h2>User Experience by the Numbers: Hurting the Ones We Love</h2>
-                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore.</p>
+                            <h2><a href="{% pageurl page.featured_blog %}">{{ page.featured_blog.title }}</a></h2>
+                            {{ page.featured_blog.body | truncatechars:"100" | safe }}
+                          
                             <div class="catergory-tags">
                                <a href="">#django</a>
                                <a href="">#python</a>
@@ -43,91 +46,30 @@
                     </div>
                 </div>
             </section>
+            {% endif %}
             <section class="container blog--list">
-                    <div class="blog--list__item">
-                        <img src="{% static 'images/blog/leone-venter-693463-unsplash.jpg' %}" data-rjs="3" class="blog--list__item__img">
-                        <a href="" class="title-strong h5">User Experience by the Numbers: Hurting the Ones We Love</a>
-                        <p class="blog--list__item__preview">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.
-                        </p>
-                        <div class="catergory-tags mb-4">
-                           <a href="">#django</a>
-                           <a href="">#python</a>
-                           <a href="">#heroku</a>
-                       </div>
-                       <small>5 Mins read</small>
-                       <div class="author-details mt-4">
-                          <div class="avatar-sm mr-3" style="background-image: url({% static 'images/team/josh-dellosa.png' %})" data-rjs="2"> </div>
-                          <div>
-                              <h6 class="mb-0"><strong>Josh Dellosa</strong></h6>
-                              <p>Business Development Consultant</p>
-                              
-                          </div>
-                      </div>
-                    </div>
-                    <div class="blog--list__item">
-                        <img src="{% static 'images/blog/leone-venter-693463-unsplash.jpg' %}" data-rjs="3" class="blog--list__item__img">
-                        <a href="" class="title-strong h5">User Experience by the Numbers: Hurting the Ones We Love</a>
-                        <p class="blog--list__item__preview">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.
-                        </p>
-                        <div class="catergory-tags mb-4">
-                           <a href="">#django</a>
-                           <a href="">#python</a>
-                           <a href="">#heroku</a>
-                       </div>
-                       <small>5 Mins read</small>
-                       <div class="author-details mt-4">
-                          <div class="avatar-sm mr-3" style="background-image: url({% static 'images/team/josh-dellosa.png' %})" data-rjs="2"> </div>
-                          <div>
-                              <h6 class="mb-0"><strong>Josh Dellosa</strong></h6>
-                              <p>Business Development Consultant</p>
-                              
-                          </div>
-                      </div>
-                    </div>
-                    <div class="blog--list__item">
-                        <img src="{% static 'images/blog/leone-venter-693463-unsplash.jpg' %}" data-rjs="3" class="blog--list__item__img">
-                        <a href="" class="title-strong h5">User Experience by the Numbers: Hurting the Ones We Love</a>
-                        <p class="blog--list__item__preview">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.
-                        </p>
-                        <div class="catergory-tags mb-4">
-                           <a href="">#django</a>
-                           <a href="">#python</a>
-                           <a href="">#heroku</a>
-                       </div>
-                       <small>5 Mins read</small>
-                       <div class="author-details mt-4">
-                          <div class="avatar-sm mr-3" style="background-image: url({% static 'images/team/josh-dellosa.png' %})" data-rjs="2"> </div>
-                          <div>
-                              <h6 class="mb-0"><strong>Josh Dellosa</strong></h6>
-                              <p>Business Development Consultant</p>
-                              
-                          </div>
-                      </div>
-                    </div>
-                    <div class="blog--list__item">
-                        <img src="{% static 'images/blog/leone-venter-693463-unsplash.jpg' %}" data-rjs="3" class="blog--list__item__img">
-                        <a href="" class="title-strong h5">User Experience by the Numbers: Hurting the Ones We Love</a>
-                        <p class="blog--list__item__preview">
-                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam.
-                        </p>
-                        <div class="catergory-tags mb-4">
-                           <a href="">#django</a>
-                           <a href="">#python</a>
-                           <a href="">#heroku</a>
-                       </div>
-                       <small>5 Mins read</small>
-                       <div class="author-details mt-4">
-                          <div class="avatar-sm mr-3" style="background-image: url({% static 'images/team/josh-dellosa.png' %})" data-rjs="2"> </div>
-                          <div>
-                              <h6 class="mb-0"><strong>Josh Dellosa</strong></h6>
-                              <p>Business Development Consultant</p>
-                              
-                          </div>
-                      </div>
-                    </div>
+                    {% for post in posts %}
+                        <div class="blog--list__item">
+                                <img src="{% static 'images/blog/leone-venter-693463-unsplash.jpg' %}" data-rjs="3" class="blog--list__item__img">
+                                <a href="" class="title-strong h5">{{ post.title }}</a>
+                                <p class="blog--list__item__preview">
+                                    {{ post.body | truncatechars:"300" | richtext }}
+                                </p>
+                                <div class="catergory-tags mb-4">
+                                   <a href="">#django</a>
+                                   <a href="">#python</a>
+                                   <a href="">#heroku</a>
+                               </div>
+                               <small>5 Mins read</small>
+                               <div class="author-details mt-4">
+                                  <div class="avatar-sm mr-3" style="background-image: url({% static 'images/team/josh-dellosa.png' %})" data-rjs="2"> </div>
+                                    <div>
+                                        <h6 class="mb-0"><strong>{{ post.author }}</strong></h6>
+                                        <p>Business Development Consultant</p>
+                                    </div>
+                              </div>
+                        </div>
+                    {% endfor %}
             </section>
             <section class="work-with-us">
                 <h5 class="title-strong">Want to work with us?</h5>

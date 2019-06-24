@@ -5,11 +5,16 @@ from django.shortcuts import render
 
 from wagtail.core.models import Page
 from wagtail.core.fields import RichTextField
-from wagtail.admin.edit_handlers import FieldPanel
+from wagtail.admin.edit_handlers import (
+    FieldPanel,
+    MultiFieldPanel,
+    PageChooserPanel
+)
 from wagtail.search import index
 from wagtail.contrib.routable_page.models import RoutablePageMixin, route
 
 from taggit.models import Tag, TaggedItemBase
+
 
 class BlogPage(Page):
     """ Blog page models
@@ -31,13 +36,38 @@ class BlogPage(Page):
 
 
 class BlogIndexPage(RoutablePageMixin, Page):
+    """ Blog index models 
+    """
+
+    # Featured blog section
+    featured_blog = models.ForeignKey(BlogPage,
+        null=True,
+        blank=True,
+        related_name='+',
+        on_delete="CASCADE",
+        help_text="Featured blog item",
+        verbose_name="Feature blog section",
+    )
     introduction = models.TextField(
         help_text='Text to describe the page',
         blank=True)
 
+    content_panels = Page.content_panels + [
+        FieldPanel('introduction'),
+        MultiFieldPanel([
+            PageChooserPanel('featured_blog'),
+        ], heading="Featured blog section", classname="collapsible"),
+    ]
+
     @route(r'^$', name='blog')
     def index_route(self, request, *args, **kwargs):
         return super(BlogIndexPage, self).index_route(request, *args, **kwargs)
+
+    def get_context(self, request):
+        context = super(BlogIndexPage, self).get_context(request)
+        context['posts'] = self.get_posts().order_by(
+            '-last_published_at')
+        return context
 
     @route('^tags/$', name='tag_archive')
     @route('^tags/([\w-]+)/$', name='tag_archive')
