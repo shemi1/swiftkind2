@@ -13,7 +13,16 @@ from wagtail.admin.edit_handlers import (
 from wagtail.search import index
 from wagtail.contrib.routable_page.models import RoutablePageMixin, route
 
-from taggit.models import Tag, TaggedItemBase
+from modelcluster.fields import ParentalKey
+from modelcluster.contrib.taggit import ClusterTaggableManager
+from taggit.models import TaggedItemBase, Tag
+
+
+class BlogPageTag(TaggedItemBase):
+    """ Blog tags
+    """
+
+    content_object = ParentalKey('BlogPage', related_name='tagged_items')
 
 
 class BlogPage(Page):
@@ -28,10 +37,12 @@ class BlogPage(Page):
         index.SearchField('title'),
         index.SearchField('body')
     ]
+    tags = ClusterTaggableManager(through=BlogPageTag, blank=True)
 
     content_panels = Page.content_panels + [
         FieldPanel('body'),
-        FieldPanel('author')
+        FieldPanel('author'),
+        FieldPanel('tags')
     ]
 
 
@@ -40,7 +51,8 @@ class BlogIndexPage(RoutablePageMixin, Page):
     """
 
     # Featured blog section
-    featured_blog = models.ForeignKey(BlogPage,
+    featured_blog = models.ForeignKey(
+        BlogPage,
         null=True,
         blank=True,
         related_name='+',
