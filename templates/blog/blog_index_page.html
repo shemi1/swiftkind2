@@ -1,17 +1,23 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-{% load wagtailcore_tags wagtailroutablepage_tags %}
+{% load wagtailcore_tags wagtailroutablepage_tags wagtailimages_tags %}
 
 {% block content %}
 <main>
         <article class="blog-index">
             {% if page.featured_blog %}
+
+            {% image page.featured_blog.main_image fill-462x272 as hero_img %}
+
             <section class="feature-article">
                 <div class="container">
                     <div class="row">
+
+                        {% if hero_img %}
                         <div class="col-lg-6 col-md-12 col-sm-12">
-                            <img src="{% static 'images/blog/craig-whitehead-256284.jpg'%}" data-rjs="3" class="mb-4" >
+                            <img src="{{hero_img.url}}" data-rjs="3" class="mb-4" >
                         </div>
+                        {% endif %}
                         <div class="col-lg-6 col-md-12 col-sm-12">
                             <h2><a href="{% pageurl page.featured_blog %}">{{ page.featured_blog.title }}</a></h2>
                             {{ page.featured_blog.body | truncatechars:"100" | safe }}
@@ -36,9 +42,8 @@
                                <div class="author-details">
                                   <div class="avatar-sm mr-3" style="background-image: url({% static 'images/team/josh-dellosa.png' %})" data-rjs="2"> </div>
                                   <div>
-                                      <h6 class="mb-0"><strong>Josh Dellosa</strong></h6>
+                                      <h6 class="mb-0"><strong>{{ page.featured_blog.author }}</strong></h6>
                                       <p>Business Development Consultant</p>
-                                      
                                   </div>
                               </div>
                            </div>
@@ -50,7 +55,10 @@
             <section class="container blog--list">
                     {% for post in posts %}
                         <div class="blog--list__item">
-                                <img src="{% static 'images/blog/leone-venter-693463-unsplash.jpg' %}" data-rjs="3" class="blog--list__item__img">
+                                {% image post.main_image fill-462x272 as post_image %}
+                                {% if post_image %}
+                                <img src="{{ post_image.url }}" data-rjs="3" class="blog--list__item__img">
+                                {% endif %}
                                 <a href="" class="title-strong h5">{{ post.title }}</a>
                                 <p class="blog--list__item__preview">
                                     {{ post.body | truncatechars:"300" | richtext }}
@@ -62,7 +70,8 @@
                                </div>
                                <small>5 Mins read</small>
                                <div class="author-details mt-4">
-                                  <div class="avatar-sm mr-3" style="background-image: url({% static 'images/team/josh-dellosa.png' %})" data-rjs="2"> </div>
+                                   {% image post.main_image fill-462x272 as post_image %}
+                                    <div class="avatar-sm mr-3" style="background-image: url({% static 'images/team/josh-dellosa.png' %})" data-rjs="2"> </div>
                                     <div>
                                         <h6 class="mb-0"><strong>{{ post.author }}</strong></h6>
                                         <p>Business Development Consultant</p>
