@@ -8,8 +8,9 @@ from wagtail.core.fields import RichTextField
 from wagtail.admin.edit_handlers import (
     FieldPanel,
     MultiFieldPanel,
-    PageChooserPanel
+    PageChooserPanel,
 )
+from wagtail.images.edit_handlers import ImageChooserPanel
 from wagtail.search import index
 from wagtail.contrib.routable_page.models import RoutablePageMixin, route
 
@@ -28,8 +29,14 @@ class BlogPageTag(TaggedItemBase):
 class BlogPage(Page):
     """ Blog page models
     """
-
     author = models.ForeignKey(User, related_name='blogs', on_delete='CASCADE')
+    main_image = models.ForeignKey(
+        'wagtailimages.Image',
+        null=True,
+        blank=True,
+        on_delete=models.SET_NULL,
+        related_name='+',
+    )
     body = RichTextField(blank=True)
     date_created = models.DateTimeField(auto_now_add=True)
 
@@ -40,6 +47,7 @@ class BlogPage(Page):
     tags = ClusterTaggableManager(through=BlogPageTag, blank=True)
 
     content_panels = Page.content_panels + [
+        ImageChooserPanel('main_image'),
         FieldPanel('body'),
         FieldPanel('author'),
         FieldPanel('tags')
@@ -84,7 +92,6 @@ class BlogIndexPage(RoutablePageMixin, Page):
     @route('^tags/$', name='tag_archive')
     @route('^tags/([\w-]+)/$', name='tag_archive')
     def tag_archive(self, request, tag=None):
-
         try:
             tag = Tag.objects.get(slug=tag)
         except Tag.DoesNotExist:
