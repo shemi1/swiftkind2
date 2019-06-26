@@ -29,7 +29,6 @@ class BlogPageTag(TaggedItemBase):
 class BlogPage(Page):
     """ Blog page models
     """
-    author = models.ForeignKey(User, related_name='blogs', on_delete='CASCADE')
     main_image = models.ForeignKey(
         'wagtailimages.Image',
         null=True,
@@ -49,7 +48,6 @@ class BlogPage(Page):
     content_panels = Page.content_panels + [
         ImageChooserPanel('main_image'),
         FieldPanel('body'),
-        FieldPanel('author'),
         FieldPanel('tags')
     ]
 
