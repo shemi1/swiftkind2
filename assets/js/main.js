@@ -81,5 +81,8 @@ $(document).ready(function() {
 
     }, 0);
 
-  
+    $.get('/recent/', function( response ) {
+        var template = $("#recent_blog_tpl").html();
+        $("#recent_blog").html(_.template(template)({posts:response}));
+    });
 });
