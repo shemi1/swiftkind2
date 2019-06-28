@@ -1,6 +1,19 @@
 {% load staticfiles %}
 {% load wagtailcore_tags wagtailroutablepage_tags %}
 
+
+<script type="text/html" id="recent_blog_tpl">
+    <% _.each(posts, function(post){ %>
+        <a href="/blog/<%= post.slug %>" class="">
+            <h6 class="mb-0"><%= post.title %></h6>
+            <% _.each(post.tags, function(tag) { %>
+                <small class="text-grey"><%= tag %></small>
+            <% }); %>
+        </a>
+    <% }); %>
+</script>
+
+
 <header class="header--container">
     <nav class="navbar main-nav">
         <div class="container">
@@ -20,24 +33,11 @@
                     </div>
                     <div class="blog-link">
                         <p class="text-muted">Blogs</p>
-                        <div class="blog">
-                            <a href="" class="">
-                                <h6 class="mb-0">Transforming JavaScript arrays with array.map</h6>
-                                <small class="text-grey">#django #python #heroku</small>
-                            </a>
-                            <a href="" class="">
-                                <h6 class="mb-0">Finding Key-Value pairs on JSON  data with Python’s List Comprehension</h6>
-                                <small class="text-grey">#django #python #heroku</small>
-                            </a>
-                            <a href="" class="">
-                                <h6 class="mb-0">Creating Simple SVGs with Photoshop CC</h6>
-                                <small class="text-grey">#photoshop #svg</small>
-                            </a>
+                        <div class="blog" id="recent_blog">
+                            <!-- recent blog goes here -->
                         </div>
                     </div>
-                    
                 </div>
-                
                 
                 <div class="nav-info">
                     <div class="address">

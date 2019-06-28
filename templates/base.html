@@ -28,9 +28,8 @@
                 <div class="loading--progress"></div>
             </div>
         </div>
-        {% block header %}
-            {% include '_nav.html'%}
-        {% endblock %}
+        {% include '_nav.html'%}
+
 
         {% block content %}{% endblock %}
 
@@ -51,6 +50,7 @@
         <script type="text/javascript" src="{% static 'node_modules/bootstrap/dist/js/bootstrap.min.js' %}"></script>
 
         <!-- PLUG IN -->
+        <script type="text/javascript" src="{% static 'node_modules/underscore/underscore-min.js' %}"></script>
         <script type="text/javascript" src="{% static 'node_modules/simplex-noise/simplex-noise.js' %}"></script>
         <script type="text/javascript" src="{% static 'node_modules/paper/dist/paper-core.min.js' %}"></script>
         <script type="text/javascript" src="{% static 'js/dist/threejs/three.js' %}"></script>
@@ -66,6 +66,7 @@
         {% if not page %}
         <script type="text/javascript" src="{% static 'js/particle.js' %}"></script>
         {% endif %}
+
     </body>
 
 </html>

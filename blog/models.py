@@ -2,7 +2,6 @@ from django.db import models
 from django.contrib.auth.models import User
 from django.shortcuts import render
 
-
 from wagtail.core.models import Page
 from wagtail.core.fields import RichTextField
 from wagtail.admin.edit_handlers import (
@@ -38,7 +37,6 @@ class BlogPage(Page):
     )
     body = RichTextField(blank=True)
     date_created = models.DateTimeField(auto_now_add=True)
-
     search_fields = Page.search_fields + [
         index.SearchField('title'),
         index.SearchField('body')
@@ -50,6 +48,7 @@ class BlogPage(Page):
         FieldPanel('body'),
         FieldPanel('tags')
     ]
+
 
 
 class BlogIndexPage(RoutablePageMixin, Page):
@@ -101,7 +100,8 @@ class BlogIndexPage(RoutablePageMixin, Page):
         posts = self.get_posts(tag=tag)
         context = {
             'tag': tag,
-            'posts': posts
+            'posts': posts,
+            'page': True
         }
         return render(request, 'blog/blog_index_page.html', context)
 
