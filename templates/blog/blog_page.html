@@ -11,9 +11,10 @@
                 {% image page.main_image fill-1965x490 as hero_img %}
                 <div class="blog--banner" style="background-image: url({{ hero_img.url }})"></div>
             {% endif %}
-            {% if pagge.main_image.source %}
-            <small class="footnote">Credit: Greg Baker/Getty Images</small>
-            {% endif %}
+            <small class="footnote">Credit:
+                {% if page.main_image.source %}
+                Greg Baker/Getty Images #TODO: get image source
+                {% endif %}</small>
             <div class="blog--meta container">
                 <div class="row">
                     <div class="col-md-6">
