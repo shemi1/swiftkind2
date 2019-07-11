@@ -1,17 +1,19 @@
 {% extends 'base.html' %}
 {% load staticfiles wagtailcore_tags wagtailroutablepage_tags wagtailimages_tags %}
 
+{% load account_tags %}
+
 {% block content %}
 <main>
     <article class="blog">
         <div class="blog--header">
             {% if page.main_image %}
-
-            {% image page.main_image fill-1965x490 as hero_img %}
-
-            <div class="blog--banner" style="background-image: url({{ hero_img.url }})"></div>
+                {% image page.main_image fill-1965x490 as hero_img %}
+                <div class="blog--banner" style="background-image: url({{ hero_img.url }})"></div>
             {% endif %}
+            {% if pagge.main_image.source %}
             <small class="footnote">Credit: Greg Baker/Getty Images</small>
+            {% endif %}
             <div class="blog--meta container">
                 <div class="row">
                     <div class="col-md-6">
@@ -25,10 +27,10 @@
                     </div>
                     <div class="col-md-4 offset-md-2">
                         <div class="author-details">
-                            <div class="avatar-sm mr-3" style="background-image: url({% static 'images/team/josh-dellosa.png' %})" data-rjs="2"> </div>
+                            <div class="avatar-sm mr-3" style="background-image: url('{% avatar_url page.owner %}')" data-rjs="2"> </div>
                             <div>
-                                <h6 class="mb-0"><strong>{{ page.owner }}</strong></h6>
-                                <p>Business Development Consultant</p>
+                                <h6 class="mb-0"><strong>{{ page.owner.fullname }}</strong></h6>
+                                <p>{{ page.owner.position_verbose | title }}</p>
                                 <div>
                                     <a href="">
                                         <img src="{% static 'images/icons/facebook-f.png' %}" class="img-fluid mr-2" data-rjs="3">
@@ -41,7 +43,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
         <div class="blog--content">

@@ -16,7 +16,7 @@ class RecentBlogView(View):
             data = {
                 'title': post.title,
                 'slug': post.slug,
-                'owner': post.owner.username,
+                'owner': post.owner.fullname,
                 'tags': [tag.name for tag in post.tags.all()]
             }
             results.append(data)
