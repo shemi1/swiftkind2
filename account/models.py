@@ -86,6 +86,7 @@ class User(AbstractBaseUser, PermissionsMixin):
         help_text="Designates whether the user is super user or site admin")
 
     USERNAME_FIELD = 'email'
+    REQUIRED_FIELDS = ['first_name', 'last_name']
     objects  = UserManager()
 
     def __str__(self):
