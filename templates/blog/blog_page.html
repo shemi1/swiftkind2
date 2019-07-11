@@ -24,7 +24,7 @@
                                 <a href="{% routablepageurl request.site.root_page.specific 'tag_archive' tag %}">#{{tag}}</a>
                             {% endfor %}
                         </div>
-                        <p>{{ page.last_published_at }}</p>
+                        <p>{{ page.last_published_at | date:"M d, Y" }}</p>
                     </div>
                     <div class="col-md-4 offset-md-2">
                         <div class="author-details">
