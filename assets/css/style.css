@@ -8351,6 +8351,17 @@ a {
 .text-emp {
   font-family: "Volte Semibold Italic"; }
 
+.avatar, .avatar-sm, .avatar-md {
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; }
+  .avatar-sm {
+    width: 3.125rem;
+    height: 3.125rem; }
+  .avatar-md {
+    width: 6.25rem;
+    height: 6.25rem; }
+
 .btn {
   min-height: 3.125rem;
   padding-left: 3rem;
@@ -8470,65 +8481,65 @@ html {
       line-height: 1.29;
       letter-spacing: -1px; }
       .hero--content h1 .glitch:nth-child(1):before {
-        animation-delay: 1s; }
+        animation-delay: 5s; }
       .hero--content h1 .glitch:nth-child(1):after {
-        animation-delay: 1s; }
+        animation-delay: 5s; }
       .hero--content h1 .glitch:nth-child(2):before {
         animation-delay: 2s; }
       .hero--content h1 .glitch:nth-child(2):after {
         animation-delay: 2s; }
       .hero--content h1 .glitch:nth-child(3):before {
-        animation-delay: 6s; }
+        animation-delay: 12s; }
       .hero--content h1 .glitch:nth-child(3):after {
-        animation-delay: 6s; }
+        animation-delay: 12s; }
       .hero--content h1 .glitch:nth-child(4):before {
-        animation-delay: 12s; }
+        animation-delay: 20s; }
       .hero--content h1 .glitch:nth-child(4):after {
-        animation-delay: 12s; }
+        animation-delay: 20s; }
       .hero--content h1 .glitch:nth-child(5):before {
-        animation-delay: 10s; }
+        animation-delay: 25s; }
       .hero--content h1 .glitch:nth-child(5):after {
-        animation-delay: 10s; }
+        animation-delay: 25s; }
       .hero--content h1 .glitch:nth-child(6):before {
-        animation-delay: 24s; }
+        animation-delay: 18s; }
       .hero--content h1 .glitch:nth-child(6):after {
-        animation-delay: 24s; }
+        animation-delay: 18s; }
       .hero--content h1 .glitch:nth-child(7):before {
-        animation-delay: 35s; }
+        animation-delay: 7s; }
       .hero--content h1 .glitch:nth-child(7):after {
-        animation-delay: 35s; }
+        animation-delay: 7s; }
       .hero--content h1 .glitch:nth-child(8):before {
-        animation-delay: 32s; }
+        animation-delay: 16s; }
       .hero--content h1 .glitch:nth-child(8):after {
-        animation-delay: 32s; }
+        animation-delay: 16s; }
       .hero--content h1 .glitch:nth-child(9):before {
-        animation-delay: 9s; }
+        animation-delay: 27s; }
       .hero--content h1 .glitch:nth-child(9):after {
-        animation-delay: 9s; }
+        animation-delay: 27s; }
       .hero--content h1 .glitch:nth-child(10):before {
-        animation-delay: 10s; }
+        animation-delay: 30s; }
       .hero--content h1 .glitch:nth-child(10):after {
-        animation-delay: 10s; }
+        animation-delay: 30s; }
       .hero--content h1 .glitch:nth-child(11):before {
-        animation-delay: 33s; }
+        animation-delay: 11s; }
       .hero--content h1 .glitch:nth-child(11):after {
-        animation-delay: 33s; }
+        animation-delay: 11s; }
       .hero--content h1 .glitch:nth-child(12):before {
-        animation-delay: 60s; }
+        animation-delay: 36s; }
       .hero--content h1 .glitch:nth-child(12):after {
-        animation-delay: 60s; }
+        animation-delay: 36s; }
       .hero--content h1 .glitch:nth-child(13):before {
-        animation-delay: 52s; }
+        animation-delay: 39s; }
       .hero--content h1 .glitch:nth-child(13):after {
-        animation-delay: 52s; }
+        animation-delay: 39s; }
       .hero--content h1 .glitch:nth-child(14):before {
-        animation-delay: 70s; }
+        animation-delay: 28s; }
       .hero--content h1 .glitch:nth-child(14):after {
-        animation-delay: 70s; }
+        animation-delay: 28s; }
       .hero--content h1 .glitch:nth-child(15):before {
-        animation-delay: 15s; }
+        animation-delay: 45s; }
       .hero--content h1 .glitch:nth-child(15):after {
-        animation-delay: 15s; }
+        animation-delay: 45s; }
     .hero--content .btn-cta {
       animation: shadow 6s infinite; }
     @media (min-width: 48em) and (max-width: 62em) {
@@ -9315,154 +9326,154 @@ canvas {
         opacity: 0.5; } }
     .process-stages .beehive ellipse:nth-child(1) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.6431324517s; }
+      animation-delay: 0.3484397189s; }
     .process-stages .beehive ellipse:nth-child(2) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.5934414215s; }
+      animation-delay: 0.3370268488s; }
     .process-stages .beehive ellipse:nth-child(3) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.7391730901s; }
+      animation-delay: 0.6601915575s; }
     .process-stages .beehive ellipse:nth-child(4) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8263953825s; }
+      animation-delay: 0.8635935411s; }
     .process-stages .beehive ellipse:nth-child(5) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.1353103053s; }
+      animation-delay: 0.3372204529s; }
     .process-stages .beehive ellipse:nth-child(6) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.1169580193s; }
+      animation-delay: 0.0705579823s; }
     .process-stages .beehive ellipse:nth-child(7) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.1621286916s; }
+      animation-delay: 0.1955087492s; }
     .process-stages .beehive ellipse:nth-child(8) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.1712533733s; }
+      animation-delay: 0.9004153303s; }
     .process-stages .beehive ellipse:nth-child(9) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.2623083959s; }
+      animation-delay: 0.8646337371s; }
     .process-stages .beehive ellipse:nth-child(10) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.9210789715s; }
+      animation-delay: 0.4195700365s; }
     .process-stages .beehive ellipse:nth-child(11) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.491794236s; }
+      animation-delay: 0.8713458936s; }
     .process-stages .beehive ellipse:nth-child(12) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.1715675322s; }
+      animation-delay: 0.9900140526s; }
     .process-stages .beehive ellipse:nth-child(13) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8117994764s; }
+      animation-delay: 0.2057951034s; }
     .process-stages .beehive ellipse:nth-child(14) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.5433029651s; }
+      animation-delay: 0.9331135796s; }
     .process-stages .beehive ellipse:nth-child(15) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.6949777979s; }
+      animation-delay: 0.1096365483s; }
     .process-stages .beehive ellipse:nth-child(16) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.0252887643s; }
+      animation-delay: 0.893407769s; }
     .process-stages .beehive ellipse:nth-child(17) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.2394268109s; }
+      animation-delay: 0.5116200834s; }
     .process-stages .beehive ellipse:nth-child(18) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.4207711366s; }
+      animation-delay: 0.3046186449s; }
     .process-stages .beehive ellipse:nth-child(19) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.7058633305s; }
+      animation-delay: 0.363483019s; }
     .process-stages .beehive ellipse:nth-child(20) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.78183438s; }
+      animation-delay: 0.0662058604s; }
     .process-stages .beehive ellipse:nth-child(21) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3445624226s; }
+      animation-delay: 0.4896829393s; }
     .process-stages .beehive ellipse:nth-child(22) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.0900362901s; }
+      animation-delay: 0.5576131535s; }
     .process-stages .beehive ellipse:nth-child(23) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3682680033s; }
+      animation-delay: 0.3567851583s; }
     .process-stages .beehive ellipse:nth-child(24) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.0742550244s; }
+      animation-delay: 0.3888163493s; }
     .process-stages .beehive ellipse:nth-child(25) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.2881006712s; }
+      animation-delay: 0.1524142176s; }
     .process-stages .beehive ellipse:nth-child(26) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8311314655s; }
+      animation-delay: 0.3042792453s; }
     .process-stages .beehive ellipse:nth-child(27) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.5835411956s; }
+      animation-delay: 0.585406406s; }
     .process-stages .beehive ellipse:nth-child(28) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3465142954s; }
+      animation-delay: 0.2419225443s; }
     .process-stages .beehive ellipse:nth-child(29) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.641385031s; }
+      animation-delay: 0.6352515284s; }
     .process-stages .beehive ellipse:nth-child(30) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.0345695347s; }
+      animation-delay: 0.6384660556s; }
     .process-stages .beehive ellipse:nth-child(31) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.7640692644s; }
+      animation-delay: 0.5186062125s; }
     .process-stages .beehive ellipse:nth-child(32) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.7329233767s; }
+      animation-delay: 0.0801133924s; }
     .process-stages .beehive ellipse:nth-child(33) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.6195457758s; }
+      animation-delay: 0.9966059626s; }
     .process-stages .beehive ellipse:nth-child(34) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3811056389s; }
+      animation-delay: 0.3513838073s; }
     .process-stages .beehive ellipse:nth-child(35) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3585368857s; }
+      animation-delay: 0.7096412154s; }
     .process-stages .beehive ellipse:nth-child(36) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.1841541106s; }
+      animation-delay: 0.1760883049s; }
     .process-stages .beehive ellipse:nth-child(37) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.3169489147s; }
+      animation-delay: 0.5981281689s; }
     .process-stages .beehive ellipse:nth-child(38) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.1147029475s; }
+      animation-delay: 0.0345645556s; }
     .process-stages .beehive ellipse:nth-child(39) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.2202166447s; }
+      animation-delay: 0.5980277641s; }
     .process-stages .beehive ellipse:nth-child(40) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.0773148705s; }
+      animation-delay: 0.8327120653s; }
     .process-stages .beehive ellipse:nth-child(41) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.079219903s; }
+      animation-delay: 0.9507331242s; }
     .process-stages .beehive ellipse:nth-child(42) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.1615999968s; }
+      animation-delay: 0.2607206352s; }
     .process-stages .beehive ellipse:nth-child(43) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.7874302255s; }
+      animation-delay: 0.6527364439s; }
     .process-stages .beehive ellipse:nth-child(44) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.1780624947s; }
+      animation-delay: 0.5575242859s; }
     .process-stages .beehive ellipse:nth-child(45) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.0183561943s; }
+      animation-delay: 0.9426829122s; }
     .process-stages .beehive ellipse:nth-child(46) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.0207504948s; }
+      animation-delay: 0.9596568301s; }
     .process-stages .beehive ellipse:nth-child(47) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.8773872442s; }
+      animation-delay: 0.9602249751s; }
     .process-stages .beehive ellipse:nth-child(48) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.5321996094s; }
+      animation-delay: 0.6211765837s; }
     .process-stages .beehive ellipse:nth-child(49) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.5648615219s; }
+      animation-delay: 0.5003116131s; }
     .process-stages .beehive ellipse:nth-child(50) {
       animation: fill-in ease-in 20s forwards infinite;
-      animation-delay: 0.7206778508s; }
+      animation-delay: 0.1512197211s; }
 .process .team-represent {
   padding-bottom: 6.25rem;
   background: rgba(255, 255, 255, 0.8); }

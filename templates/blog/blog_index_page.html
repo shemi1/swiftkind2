@@ -1,6 +1,8 @@
 {% extends 'base.html' %}
+
 {% load staticfiles %}
 {% load wagtailcore_tags wagtailroutablepage_tags wagtailimages_tags %}
+{% load account_tags %}
 
 {% block content %}
 <main>
@@ -40,12 +42,12 @@
                                   </div>
                                </div>
                                <div class="author-details">
-                                  <div class="avatar-sm mr-3" style="background-image: url({% static 'images/team/josh-dellosa.png' %})" data-rjs="2"> </div>
+                                  <div class="avatar-sm mr-3" style="background-image: url('{% avatar_url page.featured_blog.owner %}')" data-rjs="2" data-rjs-processed="true"></div>
                                   <div>
-                                      <h6 class="mb-0"><strong>{{ page.featured_blog.owner }}</strong></h6>
-                                      <p>Business Development Consultant</p>
+                                  <h6 class="mb-0"><strong>{{ page.featured_blog.owner.fullname }}</strong></h6>
+                                  <p>{{  page.featured_blog.owner.position_verbose | title }}</p>
                                   </div>
-                              </div>
+                                </div>
                            </div>
                         </div>
                     </div>
@@ -70,11 +72,12 @@
                                </div>
                                <small>5 Mins read</small>
                                <div class="author-details mt-4">
-                                   {% image post.main_image fill-462x272 as post_image %}
-                                    <div class="avatar-sm mr-3" style="background-image: url({% static 'images/team/josh-dellosa.png' %})" data-rjs="2"> </div>
+                                    {% image post.main_image fill-462x272 as post_image %}
+                                    <div class="avatar-sm mr-3" style="background-image: url('{{ post.owner.avatar.url }}')" data-rjs="2"> </div>
+
                                     <div>
-                                        <h6 class="mb-0"><strong>{{ post.owner }}</strong></h6>
-                                        <p>Business Development Consultant</p>
+                                        <h6 class="mb-0"><strong>{{ post.owner.fullname }}</strong></h6>
+                                        <p>{{ post.owner.position_verbose | title }}</p>
                                     </div>
                               </div>
                         </div>
