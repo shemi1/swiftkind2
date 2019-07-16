@@ -16,6 +16,7 @@ from wagtail.contrib.routable_page.models import RoutablePageMixin, route
 from modelcluster.fields import ParentalKey
 from modelcluster.contrib.taggit import ClusterTaggableManager
 from taggit.models import TaggedItemBase, Tag
+import readtime
 
 
 class BlogPageTag(TaggedItemBase):
@@ -48,7 +49,11 @@ class BlogPage(Page):
         FieldPanel('body'),
         FieldPanel('tags')
     ]
+    read_time = models.CharField(max_length=200, blank=True, null=True)
 
+    def save(self, *args, **kwargs):
+        self.read_time = str(readtime.of_text(self.body))
+        super(BlogPage, self).save(*args, **kwargs)
 
 
 class BlogIndexPage(RoutablePageMixin, Page):
