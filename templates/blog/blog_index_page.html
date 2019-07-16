@@ -42,7 +42,7 @@
                                   </div>
                                </div>
                                <div class="author-details">
-                                  <div class="avatar-sm mr-3" style="background-image: url('{% avatar_url page.featured_blog.owner %}')" data-rjs="2" data-rjs-processed="true"></div>
+                                  <div class="avatar-sm mr-3" style="background-image: url('{% user_avatar_url page.featured_blog.owner %}')" data-rjs="2" data-rjs-processed="true"></div>
                                   <div>
                                   <h6 class="mb-0"><strong>{{ page.featured_blog.owner.fullname }}</strong></h6>
                                   <p>{{  page.featured_blog.owner.position_verbose | title }}</p>
@@ -61,7 +61,7 @@
                                 {% if post_image %}
                                 <img src="{{ post_image.url }}" data-rjs="3" class="blog--list__item__img">
                                 {% endif %}
-                                <a href="" class="title-strong h5">{{ post.title }}</a>
+                                <a href="{% pageurl post %}" class="title-strong h5">{{ post.title }}</a>
                                 <p class="blog--list__item__preview">
                                     {{ post.body | truncatechars:"300" | richtext }}
                                 </p>

@@ -4,7 +4,7 @@ from django.templatetags.static import static
 register = template.Library()
 
 @register.simple_tag
-def avatar_url(user, size=50):
+def user_avatar_url(user, size=50):
     """
     A template tag that receives a user and size and return
     the appropiate avatar url for that user.
