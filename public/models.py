@@ -10,11 +10,13 @@ from wagtail.admin.edit_handlers import FieldPanel
 from modelcluster.fields import ParentalManyToManyField, ParentalKey
 
 from wagtail.snippets.edit_handlers import SnippetChooserPanel
+from wagtail.images.edit_handlers import ImageChooserPanel
+
 from wagtail.admin.edit_handlers import (
     FieldPanel,
     MultiFieldPanel,
     PageChooserPanel,
-    InlinePanel
+    InlinePanel,
 )
 
 from wagtail.snippets.models import register_snippet
@@ -34,9 +36,11 @@ class HomePage(Page):
         related_name='+',
         verbose_name='Hero CTA link',
     )
-
-
-    featured_section_1_title = models.CharField(max_length=256, blank=True, null=True)
+    featured_section_1_title = models.CharField(
+        max_length=256,
+        blank=True,
+        null=True
+    )
     feature_section_1_cover = models.ForeignKey(
         'wagtailimages.Image',
         null=True,
@@ -53,7 +57,11 @@ class HomePage(Page):
         verbose_name='Featured section 1'
     )
 
-    featured_section_2_title = models.CharField(max_length=256, blank=True, null=True)
+    featured_section_2_title = models.CharField(
+        max_length=256, 
+        blank=True,
+        null=True
+    )
     feature_section_2_cover = models.ForeignKey(
         'wagtailimages.Image',
         null=True,
@@ -79,10 +87,12 @@ class HomePage(Page):
         MultiFieldPanel([
             MultiFieldPanel([
                 FieldPanel('featured_section_1_title'),
+                ImageChooserPanel('feature_section_1_cover'),
                 PageChooserPanel('featured_section_1'),
                 ]),
             MultiFieldPanel([
                 FieldPanel('featured_section_2_title'),
+                ImageChooserPanel('feature_section_2_cover'),
                 PageChooserPanel('featured_section_2'),
                 ])
         ], heading="Featured homepage sections", classname="collapsible")

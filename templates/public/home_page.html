@@ -29,5 +29,65 @@
                 {% endif %}
         </div>
     </section>
+
+
+    <section class=" services wow fadeInUp" data-wow-duration="0.5s" data-wow-delay="0s">
+            <div class="container">
+                <div class="row services--row_wrap">
+                    <div class="col-md-3 col-lg-5 col-sm-10 d-md-none d-lg-block d-block offset-sm-1 offset-md-0">
+
+                        {% image page.feature_section_1_cover fill-930x788 as f1_image %}
+                        {% if page.feature_section_1_cover %}
+                            <img src="{{ f1_image.url }}" class="img-fluid">
+                        {% endif %}
+                    </div>
+                    <div class="col-md-10 col-lg-6 col-sm-12 offset-md-1 offset-lg-1 offset-sm-0">
+                        <div class="services--container boxed">
+                            <h6 class="svc-title wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0" >Development</h6>
+                            <h3 class="services--title">{{ page.featured_section_1_title }}</h3>
+                             <h6 class="wow fadeInLeft mb-4"data-wow-duration="0.4s" data-wow-delay="0">Building solutions through emerging technologies and guarantees agility without compromising security and quality. </h6>
+                            <div class="services--item">
+                                <img src="{% static 'images/check-mark.svg' %}">
+                                <div>
+                                    <h6 class="title-strong wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0" >Backend</h6>
+                                     <p class=" wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0">
+                                    Python (2.x & 3.x) / Django Framework / Restful APIs (DRF) / Angular JS (1.x,2 & 4) / JavaScript (ES5/ES6) / MySQL, Sqlite, PostgreSQL Linux/Ubuntu (DO, AWS) / 
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="services--item">
+                                 <img src="{% static 'images/check-mark.svg' %}">
+                                <div>
+                                    <h6 class="title-strong wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0">API</h6>
+                                    <p class="wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0">
+                                        Django Rest Framework / Linux/Ubuntu Servers / Nginx (uwsgi/gunicorn)
+                                    </p>
+                                </div>
+                            </div>
+                             <div class="services--item">
+                                <img src="{% static 'images/check-mark.svg' %}">
+                                <div>
+                                    <h6 class="title-strong wow fadeInLeft"data-wow-duration="0.4s">Cross-Platform</h6>
+                                    <p class="wow fadeInLeft"data-wow-duration="0.4s" data-wow-delay="0">
+                                    Ionic / AngularJS / Firebase / Titanium
+                                    </p>
+                                    {% if page.featured_section_1 %}
+                                    <a href="{% pageurl page.featured_section_1 %}" class="btn btn-cta mt-5">Know our process
+                                        <img src="{% static 'images/arrow-right.svg' %}">
+                                    </a>
+                                    {% endif %}
+                                </div>
+                            </div>
+                        </div>
+                        
+                       
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+
+
 </article>
 {% endblock %}
