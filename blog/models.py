@@ -47,7 +47,7 @@ class BlogPage(Page):
 
     content_panels = Page.content_panels + [
         ImageChooserPanel('main_image'),
-        FieldPanel('body'),
+        FieldPanel('body', classname='full'),
         FieldPanel('tags')
     ]
     read_time = models.CharField(max_length=200, blank=True, null=True)

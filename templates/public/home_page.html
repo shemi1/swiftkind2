@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load staticfiles %}
+{% load wagtailcore_tags wagtailroutablepage_tags wagtailimages_tags %}
+{% load account_tags %}
+
+{% block content %}
+
+<article class="homepage">
+    <section class="container hero">
+       <div class="hero--content">
+            <div id="info"></div>
+                {% if page.hero_title %} 
+                <h1 class="hero-text wow fadeInUp h2 glitch-wrapper" data-wow-duration="0.3s">
+                    {{ page.hero_title }}
+
+                    <!-- <span class="wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0s">A</span>
+                    <div class="glitch wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.1s" data-text="design">design</div>
+                    & 
+                    <div class="glitch wow fadeInUp" data-wow-duration="0.3s" data-wow-delay="0.2s" data-text="development">development</div>
+                     <div class="glitch m-sm" data-text="company">company</div> <span class="m-sm">for</span>  <div class="glitch m-sm" data-text="digital">digital</div> <div class="glitch m-sm" data-text="users.">users.</div> -->
+                </h1>
+                {% endif %}
+                <h5 class="wow fadeInUp" data-wow-duration="0.3s">{{ page.hero_text }}</h5>
+                {% if page.hero_cta_link %}
+                <a href="{% pageurl page.hero_cta_link %}" class="btn btn-cta link">Discover
+                    <img src="{% static 'images/arrow-right.svg' %}">
+                </a>
+                {% endif %}
+        </div>
+    </section>
+</article>
+{% endblock %}
