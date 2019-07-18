@@ -3,6 +3,16 @@
 
 {% load account_tags %}
 
+{% block meta_tags %}
+<meta name="twitter:card" content="summary"></meta>
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.body }}">
+{% if page.main_image %}
+    {% image page.main_image fill-500x500 as hero_img %}
+    <meta name="og:image" content="https://be9f8399.ngrok.io{{ hero_img.url }}">
+{% endif %}
+{% endblock %}
+
 {% block content %}
 <main>
     <article class="blog">
