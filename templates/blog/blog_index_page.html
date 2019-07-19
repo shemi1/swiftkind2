@@ -33,10 +33,10 @@
                                <div>
                                    <small>{{ page.featured_blog.read_time }}</small>
                                    <div class="pt-1">
-                                      <a href="">
+                                      <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.featured_blog.full_url }}">
                                           <img src="{% static 'images/icons/facebook-f.png' %}" class="img-fluid mr-2" data-rjs="3">
                                       </a>
-                                      <a href="">
+                                      <a href="https://twitter.com/intent/tweet?text={{ page.featured_blog.full_url }}">
                                           <img src="{% static 'images/icons/twitter.png' %}" class="img-fluid" data-rjs="3">
                                       </a>
                                   </div>
