@@ -9,7 +9,7 @@
 <meta name="twitter:description" content="{{ page.body }}">
 {% if page.main_image %}
     {% image page.main_image fill-500x500 as hero_img %}
-    <meta name="og:image" content="https://be9f8399.ngrok.io{{ hero_img.url }}">
+    <meta name="og:image" content="http://{{ request.get_host }}{{ hero_img.url }}">
 {% endif %}
 {% endblock %}
 
