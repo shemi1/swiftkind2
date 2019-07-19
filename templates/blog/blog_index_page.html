@@ -31,7 +31,7 @@
                            </div>
                            <div class="d-flex justify-content-between pt-3">
                                <div>
-                                   <small>5 Mins read</small>
+                                   <small>{{ page.featured_blog.read_time }}</small>
                                    <div class="pt-1">
                                       <a href="">
                                           <img src="{% static 'images/icons/facebook-f.png' %}" class="img-fluid mr-2" data-rjs="3">
@@ -70,7 +70,7 @@
                                         <a href="{% routablepageurl request.site.root_page.specific 'tag_archive' tag %}">#{{tag}}</a>
                                     {% endfor %}
                                </div>
-                               <small>5 Mins read</small>
+                               <small>{{ post.read_time }}</small>
                                <div class="author-details mt-4">
                                     {% image post.main_image fill-462x272 as post_image %}
                                     <div class="avatar-sm mr-3" style="background-image: url('{{ post.owner.avatar.url }}')" data-rjs="2"> </div>
