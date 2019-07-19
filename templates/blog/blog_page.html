@@ -3,6 +3,16 @@
 
 {% load account_tags %}
 
+{% block meta_tags %}
+<meta name="twitter:card" content="summary"></meta>
+<meta name="twitter:title" content="{{ page.title }}">
+<meta name="twitter:description" content="{{ page.body }}">
+{% if page.main_image %}
+    {% image page.main_image fill-500x500 as hero_img %}
+    <meta name="og:image" content="https://be9f8399.ngrok.io{{ hero_img.url }}">
+{% endif %}
+{% endblock %}
+
 {% block content %}
 <main>
     <article class="blog">
@@ -33,7 +43,7 @@
                                 <h6 class="mb-0"><strong>{{ page.owner.fullname }}</strong></h6>
                                 <p>{{ page.owner.position_verbose | title }}</p>
                                 <div>
-                                    <a href="">
+                                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ page.full_url }}">
                                         <img src="{% static 'images/icons/facebook-f.png' %}" class="img-fluid mr-2" data-rjs="3">
                                     </a>
                                     <a href="">
